@@ -1,0 +1,21 @@
+#!/bin/sh -e
+
+MECH=$1
+
+echo "[$0] Setting paths for mechanism $MECH"
+
+DIR_CHEMKIN=$MECH/chemkin
+DIR_CANTERA=$MECH/cantera
+DIR_OPENFOAM=$MECH/openfoam # for chemkinToFoam
+DIR_PYJAC=$MECH/pyjac
+
+CHEMKIN_CHEM=$DIR_CHEMKIN/${MECH}.inp
+CHEMKIN_THERMO=$DIR_CHEMKIN/${MECH}.thermo
+CHEMKIN_TRANSPORT=$DIR_CHEMKIN/${MECH}.transport
+
+CANTERA_CHEM=$DIR_CANTERA/${MECH}.cti
+
+# For OpenFOAM's chemkinToFoam tool
+OPENFOAM_CHEM=$DIR_OPENFOAM/${MECH}.foam
+OPENFOAM_THERMO=$DIR_OPENFOAM/thermo${MECH}.foam
+CHEMKINTOFOAM_TRANSPORT=$DIR_OPENFOAM/chemkinToFoamTransport.foam

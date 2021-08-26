@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "[$0] Cleaning mechanism $MECH folder"
+
+rm -rf $DIR_CANTERA $DIR_PYJAC
+rm -f $MECH/log*

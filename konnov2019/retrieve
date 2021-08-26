@@ -1,0 +1,20 @@
+#!/bin/bash -e
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+
+echo "WARNING! Please download mechanism manually from paper's supplementary material."
+echo "https://doi.org/10.1016/j.combustflame.2019.01.032"
+echo "Put chemkin files to $CHEMKIN_CHEM $CHEMKIN_THERMO $CHEMKIN_TRANSPORT"
+echo
+echo "WARNING! This mechanism can be converted to .cti only with --permissive option"
+
+
+# PATH_CHEMKINTOFOAM_TRANSPORT=/opt/openfoam8/tutorials/combustion/reactingFoam/RAS/SandiaD_LTS/chemkin/transportProperties
+
+# echo -n "Getting transportProperties file (for chemkinToFoam) from SandiaD tutorial"
+# cp $PATH_CHEMKINTOFOAM_TRANSPORT $CHEMKINTOFOAM_TRANSPORT
+# echo " Done"

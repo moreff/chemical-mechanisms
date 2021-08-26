@@ -1,0 +1,20 @@
+#!/bin/bash -e
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+
+
+WEB_CHEM=http://web.eng.ucsd.edu/mae/groups/combustion/sdmech/sandiego20161214/sandiego20161214_mechCK.txt
+WEB_THERMO=http://web.eng.ucsd.edu/mae/groups/combustion/sdmech/sandiego20161214/sandiego20160815_therm.txt
+WEB_TRANSPORT=http://web.eng.ucsd.edu/mae/groups/combustion/sdmech/sandiego20161214/sandiego20160815_trans.txt
+
+echo "Getting files from web"
+wget --output-document=$CHEMKIN_CHEM $WEB_CHEM
+wget --output-document=$CHEMKIN_THERMO $WEB_THERMO
+wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
+echo "Done"
+
+echo "WARNING! This mechanism can be converted to .cti only with --permissive option"

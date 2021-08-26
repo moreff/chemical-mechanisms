@@ -1,0 +1,33 @@
+#!/bin/sh -e
+
+MECH=$1
+if [ ! -d "$MECH" ]; then
+    echo "Please provide mechanism name"
+    exit 1
+fi
+. ./setpaths $MECH
+. ./clean $MECH
+mkdir $DIR_CANTERA $DIR_PYJAC
+
+# echo -n "Running chemkinToFoam..."
+# # echo "creating temporary $CHEMKIN_THERMO.foam file with first line listing species"
+# chemkinToFoam -newFormat $CHEMKIN_CHEM $CHEMKIN_THERMO $CHEMKINTOFOAM_TRANSPORT $OPENFOAM_CHEM $OPENFOAM_THERMO
+# echo "Done"
+
+echo "[$0] Running ck2cti..."
+python -m cantera.ck2cti --input=$CHEMKIN_CHEM --thermo=$CHEMKIN_THERMO --transport=$CHEMKIN_TRANSPORT -d --output=$CANTERA_CHEM | tee $MECH/log.ck2cti
+echo "[$0] Done"
+
+echo "[$0] Running ct2foam..."
+ct2foam --input $CANTERA_CHEM --output $DIR_PYJAC --Tmid 1000.0 --plot | tee $MECH/log.ct2foam
+echo "[$0] Done"
+
+echo "[$0] Running pyjac2foam..."
+python -m pyjac --lang c --last_species N2 --input $CANTERA_CHEM | tee $MECH/log.pyjac
+pyjac2foam.sh -m $CANTERA_CHEM -i out -c | tee $MECH/log.pyjac2foam
+mv foam $DIR_PYJAC/
+mv lib $DIR_PYJAC/
+mv out $DIR_PYJAC/
+echo "[$0] Done"
+
+echo "All done."

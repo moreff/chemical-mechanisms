@@ -1,0 +1,26 @@
+#!/bin/bash -e
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+
+
+WEB_CHEM=http://combustion.berkeley.edu/gri-mech/version30/files30/grimech30.dat
+WEB_THERMO=http://combustion.berkeley.edu/gri-mech/version30/files30/thermo30.dat
+WEB_TRANSPORT=http://combustion.berkeley.edu/gri-mech/version30/files30/transport.dat
+PATH_CHEMKINTOFOAM_TRANSPORT=/opt/openfoam8/tutorials/combustion/reactingFoam/RAS/SandiaD_LTS/chemkin/transportProperties
+
+echo "Getting files from web"
+wget --output-document=$CHEMKIN_CHEM $WEB_CHEM
+wget --output-document=$CHEMKIN_THERMO $WEB_THERMO
+wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
+echo "Done"
+
+echo "Warning! Changing THERMO to THRMO ALL for chemkinToFoam"
+sed -i 's/THERMO/THERMO ALL/' $CHEMKIN_THERMO
+
+# echo -n "Getting transportProperties file (for chemkinToFoam) from SandiaD tutorial"
+# cp $PATH_CHEMKINTOFOAM_TRANSPORT $CHEMKINTOFOAM_TRANSPORT
+# echo " Done"
