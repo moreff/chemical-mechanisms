@@ -1,0 +1,20 @@
+#!/bin/bash -e
+# Burke, Michael P., et al. "Comprehensive H2/O2 kinetic model for high‐pressure combustion." International Journal of Chemical Kinetics 44.7 (2012): 444-474.
+# https://doi.org/10.1002/kin.20603
+# https://burke.me.columbia.edu/content/mechanisms-and-downloads
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN $DIR_CANTERA_ORIG
+
+WEB_INP=https://burke.me.columbia.edu/sites/default/files/content/chem.txt # contains chem, thermo
+WEB_TRANSPORT=https://burke.me.columbia.edu/sites/default/files/content/tran.txt
+WEB_CANTERA=https://burke.me.columbia.edu/sites/default/files/content/chem_cti.txt
+
+echo "Getting files from git"
+wget --output-document=$CHEMKIN_CHEM $WEB_INP
+wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
+wget --output-document=$CANTERA_ORIG_CHEM $WEB_CANTERA
+echo "Done"
