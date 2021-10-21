@@ -6,6 +6,7 @@ echo "[$0] Setting paths for mechanism $MECH"
 
 DIR_CHEMKIN=$MECH/chemkin
 DIR_CANTERA=$MECH/cantera
+DIR_CANTERA_ORIG=$MECH/cantera_orig # if a mechanism has .cti file provided
 DIR_OPENFOAM=$MECH/openfoam # for chemkinToFoam
 DIR_PYJAC=$MECH/pyjac
 
@@ -14,6 +15,7 @@ CHEMKIN_THERMO=$DIR_CHEMKIN/${MECH}.thermo
 CHEMKIN_TRANSPORT=$DIR_CHEMKIN/${MECH}.transport
 
 CANTERA_CHEM=$DIR_CANTERA/${MECH}.cti
+CANTERA_ORIG_CHEM=$DIR_CANTERA_ORIG/${MECH}.cti
 
 # For OpenFOAM's chemkinToFoam tool
 OPENFOAM_CHEM=$DIR_OPENFOAM/${MECH}.foam

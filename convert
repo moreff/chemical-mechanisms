@@ -14,20 +14,32 @@ mkdir $DIR_CANTERA $DIR_PYJAC
 # chemkinToFoam -newFormat $CHEMKIN_CHEM $CHEMKIN_THERMO $CHEMKINTOFOAM_TRANSPORT $OPENFOAM_CHEM $OPENFOAM_THERMO
 # echo "Done"
 
+if [ -f "$CANTERA_ORIG_CHEM" ]; then
+echo "[$0] Found original .cti file! Skipping ck2cti run..."
+cp $CANTERA_ORIG_CHEM $CANTERA_CHEM
+else
 echo "[$0] Running ck2cti..."
-python -m cantera.ck2cti --input=$CHEMKIN_CHEM --thermo=$CHEMKIN_THERMO --transport=$CHEMKIN_TRANSPORT -d --output=$CANTERA_CHEM | tee $MECH/log.ck2cti
+    # check if file exists, because for some mechs .inp has all the data
+    if [ -f "$CHEMKIN_THERMO" ]; then
+        THERMO_OPTION=--thermo=$CHEMKIN_THERMO
+    fi
+    if [ -f "$CHEMKIN_TRANSPORT" ]; then
+        TRANSPORT_OPTION=--transport=$CHEMKIN_TRANSPORT
+    fi
+    python -m cantera.ck2cti --input=$CHEMKIN_CHEM $THERMO_OPTION $TRANSPORT_OPTION -d --output=$CANTERA_CHEM --permissive | tee $MECH/log.ck2cti
 echo "[$0] Done"
+fi
 
 echo "[$0] Running ct2foam..."
-ct2foam --input $CANTERA_CHEM --output $DIR_PYJAC --Tmid 1000.0 --plot | tee $MECH/log.ct2foam
+    ct2foam --input $CANTERA_CHEM --output $DIR_PYJAC --Tmid 1000.0 --plot | tee $MECH/log.ct2foam
 echo "[$0] Done"
 
 echo "[$0] Running pyjac2foam..."
-python -m pyjac --lang c --last_species N2 --input $CANTERA_CHEM | tee $MECH/log.pyjac
-pyjac2foam.sh -m $CANTERA_CHEM -i out -c | tee $MECH/log.pyjac2foam
-mv foam $DIR_PYJAC/
-mv lib $DIR_PYJAC/
-mv out $DIR_PYJAC/
+    python -m pyjac --lang c --last_species N2 --input $CANTERA_CHEM | tee $MECH/log.pyjac
+    pyjac2foam.sh -m $CANTERA_CHEM -i out -c | tee $MECH/log.pyjac2foam
+    mv foam $DIR_PYJAC/
+    mv lib $DIR_PYJAC/
+    mv out $DIR_PYJAC/
 echo "[$0] Done"
 
 echo "All done."
