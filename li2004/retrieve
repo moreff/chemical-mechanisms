@@ -1,0 +1,16 @@
+#!/bin/bash -e
+# Li, Juan, et al. "An updated comprehensive kinetic model of hydrogen combustion." International journal of chemical kinetics 36.10 (2004): 566-575.
+# https://doi.org/10.1002/kin.20026
+# https://github.com/jiweiqi/CollectionOfMechanisms/tree/master/Hydrogen_H2/Li_Juan_2004
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+
+WEB_INP=https://raw.githubusercontent.com/jiweiqi/CollectionOfMechanisms/master/Hydrogen_H2/Li_Juan_2004/h2_li_19.inp # contains chem, thermo and transport
+
+echo "Getting files from git"
+wget --output-document=$CHEMKIN_CHEM $WEB_INP
+echo "Done"
