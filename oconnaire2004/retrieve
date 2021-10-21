@@ -1,0 +1,20 @@
+#!/bin/bash -e
+# Ó Conaire, Marcus, et al. "A comprehensive modeling study of hydrogen oxidation." International journal of chemical kinetics 36.11 (2004): 603-622.
+# https://doi.org/10.1002/kin.20036
+# https://combustion.llnl.gov/archived-mechanisms/hydrogen
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+
+WEB_CHEM=https://combustion.llnl.gov/sites/combustion/files/h2_v1b_mech.txt
+WEB_THERMO=https://combustion.llnl.gov/sites/combustion/files/h2_v1a_therm.txt
+WEB_TRANSPORT=https://combustion.llnl.gov/sites/combustion/files/h2_v1a_tran.txt
+
+echo "Getting files from web"
+wget --output-document=$CHEMKIN_CHEM $WEB_CHEM
+wget --output-document=$CHEMKIN_THERMO $WEB_THERMO
+wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
+echo "Done"
