@@ -1,0 +1,17 @@
+#!/bin/bash -e
+# Boivin, Pierre. "Reduced-kinetic mechanisms for hydrogen and syngas combustion including autoignition." (2011).
+# https://www.cerfacs.fr/cantera/docs/mechanisms/hydrogen-air/Boivin/Thesis_Pierre_Boivin.pdf
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN $DIR_CANTERA_ORIG
+
+WEB_CANTERA=https://www.cerfacs.fr/cantera/docs/mechanisms/hydrogen-air/Boivin/Boivin_newTherm.cti
+
+echo "Getting .cti file"
+wget --output-document=$CANTERA_ORIG_CHEM $WEB_CANTERA
+echo "Done"
+echo "This .cti file has thermo information in NASA9 format, which is not supported by pyJac."
+echo "So please manually copy thermo properties from some other meshanism in order to use pyJac."
