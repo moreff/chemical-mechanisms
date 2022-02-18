@@ -1,0 +1,25 @@
+#!/bin/bash -e
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+
+# http://creckmodeling.chem.polimi.it/menu-kinetics/menu-kinetics-detailed-mechanisms/107-category-kinetic-mechanisms/401-mechanisms-1911-syngas
+WEB_CHEM=http://creckmodeling.chem.polimi.it/images/site/kinetic_mechanisms/version2003/CRECK_2003_SYNGAS/CRECK_2003_SYNGAS.CKI
+WEB_THERMO=http://creckmodeling.chem.polimi.it/images/site/kinetic_mechanisms/version2003/CRECK_2003_SYNGAS/CRECK_2003_SYNGAS.CKT
+WEB_TRANSPORT=http://creckmodeling.chem.polimi.it/images/site/kinetic_mechanisms/version2003/CRECK_2003_SYNGAS/CRECK_2003_SYNGAS.TRC
+
+echo "Getting files from web"
+wget --output-document=$CHEMKIN_CHEM $WEB_CHEM
+wget --output-document=$CHEMKIN_THERMO $WEB_THERMO
+wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
+echo "Done"
+
+#echo "Warning! fixing float format for chemkinToFoam"
+#sed -i 's/300.      1000.     5000./   300.000  1000.000  5000.000/' #$CHEMKIN_THERMO
+
+# echo -n "Getting transportProperties file (for chemkinToFoam) from SandiaD tutorial"
+# cp $PATH_CHEMKINTOFOAM_TRANSPORT $CHEMKINTOFOAM_TRANSPORT
+# echo " Done"
