@@ -1,0 +1,25 @@
+#!/bin/bash -e
+# G.P. Smith, Y. Tao, and H. Wang, Foundational Fuel Chemistry Model Version 1.0 (FFCM-1), http://nanoenergy.stanford.edu/ffcm1, 2016
+# https://web.stanford.edu/group/haiwanglab/FFCM1/pages/download.html
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN $DIR_CANTERA_ORIG
+
+WEB_CHEM=https://web.stanford.edu/group/haiwanglab/FFCM1/download/mech-FFCM1
+WEB_THERMO=https://web.stanford.edu/group/haiwanglab/FFCM1/download/thermdat
+WEB_TRANSPORT=https://web.stanford.edu/group/haiwanglab/FFCM1/download/trandat-d
+WEB_CANTERA=https://web.stanford.edu/group/haiwanglab/FFCM1/download/mech-FFCM1.cti
+
+echo "Getting files from web"
+wget --output-document=$CHEMKIN_CHEM $WEB_CHEM
+wget --output-document=$CHEMKIN_THERMO $WEB_THERMO
+wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
+wget --output-document=$CANTERA_ORIG_CHEM $WEB_CANTERA
+echo "Done"
+
+cd -
+echo "WARNING!"
+cat warning.txt
