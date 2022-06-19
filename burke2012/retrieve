@@ -13,7 +13,7 @@ WEB_INP=https://burke.me.columbia.edu/sites/default/files/content/chem.txt # con
 WEB_TRANSPORT=https://burke.me.columbia.edu/sites/default/files/content/tran.txt
 WEB_CANTERA=https://burke.me.columbia.edu/sites/default/files/content/chem_cti.txt
 
-echo "Getting files from git"
+echo "Getting files"
 wget --output-document=$CHEMKIN_CHEM $WEB_INP
 wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
 wget --output-document=$CANTERA_ORIG_CHEM $WEB_CANTERA
