@@ -1,5 +1,7 @@
 */cantera
 */openfoam
 */pyjac
+lib/*
+out/*
 
 */log*
