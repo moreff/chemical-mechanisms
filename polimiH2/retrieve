@@ -1,4 +1,9 @@
 #!/bin/bash -e
+# Ranzi, E., Frassoldati, A., Stagni, A., Pelucchi, M., Cuoci, A., Faravelli, T., Reduced kinetic schemes of complex reaction systems: Fossil and biomass-derived transportation fuels (2014) International Journal of Chemical Kinetics, 46 (9), pp. 512-542, DOI: 10.1002/kin.20867
+# Ranzi, E., Cavallotti, C., Cuoci, A., Frassoldati, A., Pelucchi, M., Faravelli, T., New reaction classes in the kinetic modeling of low temperature oxidation of n-alkanes (2015) Combustion and Flame, 162 (5), pp. 1679-1691, DOI: 10.1016/j.combustflame.2014.11.030
+# Ranzi, E., Frassoldati, A., Grana, R., Cuoci, A., Faravelli, T., Kelley, A.P., Law, C.K., Hierarchical and comparative kinetic modeling of laminar flame speeds of hydrocarbon and oxygenated fuels, Progress in Energy and Combustion Science, 38 (4), pp. 468-501 (2012), DOI: 10.1016/j.pecs.2012.03.004
+# http://creckmodeling.chem.polimi.it/menu-kinetics/menu-kinetics-detailed-mechanisms/107-category-kinetic-mechanisms/401-mechanisms-1911-syngas
+# Mechanism contains 21 species and 62 reactions.
 
 MECH=${PWD##*/}
 
@@ -6,7 +11,6 @@ cd ..
 source ./setpaths $MECH
 mkdir $DIR_CHEMKIN
 
-# http://creckmodeling.chem.polimi.it/menu-kinetics/menu-kinetics-detailed-mechanisms/107-category-kinetic-mechanisms/401-mechanisms-1911-syngas
 WEB_CHEM=http://creckmodeling.chem.polimi.it/images/site/kinetic_mechanisms/version2003/CRECK_2003_SYNGAS/CRECK_2003_SYNGAS.CKI
 WEB_THERMO=http://creckmodeling.chem.polimi.it/images/site/kinetic_mechanisms/version2003/CRECK_2003_SYNGAS/CRECK_2003_SYNGAS.CKT
 WEB_TRANSPORT=http://creckmodeling.chem.polimi.it/images/site/kinetic_mechanisms/version2003/CRECK_2003_SYNGAS/CRECK_2003_SYNGAS.TRC
@@ -16,10 +20,3 @@ wget --output-document=$CHEMKIN_CHEM $WEB_CHEM
 wget --output-document=$CHEMKIN_THERMO $WEB_THERMO
 wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
 echo "Done"
-
-#echo "Warning! fixing float format for chemkinToFoam"
-#sed -i 's/300.      1000.     5000./   300.000  1000.000  5000.000/' #$CHEMKIN_THERMO
-
-# echo -n "Getting transportProperties file (for chemkinToFoam) from SandiaD tutorial"
-# cp $PATH_CHEMKINTOFOAM_TRANSPORT $CHEMKINTOFOAM_TRANSPORT
-# echo " Done"

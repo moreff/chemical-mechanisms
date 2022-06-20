@@ -1,11 +1,13 @@
 #!/bin/bash -e
+# Gregory P. Smith, David M. Golden, Michael Frenklach, Nigel W. Moriarty, Boris Eiteneer, Mikhail Goldenberg, C. Thomas Bowman, Ronald K. Hanson, Soonho Song, William C. Gardiner, Jr., Vitali V. Lissianski, and Zhiwei Qin http://www.me.berkeley.edu/gri_mech/
+# http://combustion.berkeley.edu/gri-mech/version30/text30.html
+# Mechanism contains 13 species and 27 reactions.
 
 MECH=${PWD##*/}
 
 cd ..
 source ./setpaths $MECH
 mkdir $DIR_CHEMKIN
-
 
 WEB_CHEM=http://combustion.berkeley.edu/gri-mech/version30/files30/grimech30.dat
 WEB_THERMO=http://combustion.berkeley.edu/gri-mech/version30/files30/thermo30.dat
@@ -20,7 +22,3 @@ echo "Done"
 
 echo "Warning! Changing THERMO to THRMO ALL for chemkinToFoam"
 sed -i 's/THERMO/THERMO ALL/' $CHEMKIN_THERMO
-
-# echo -n "Getting transportProperties file (for chemkinToFoam) from SandiaD tutorial"
-# cp $PATH_CHEMKINTOFOAM_TRANSPORT $CHEMKINTOFOAM_TRANSPORT
-# echo " Done"

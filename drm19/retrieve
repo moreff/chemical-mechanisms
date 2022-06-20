@@ -1,4 +1,7 @@
 #!/bin/bash -e
+# A. Kazakov and M. Frenklach, http://www.me.berkeley.edu/drm/
+# http://combustion.berkeley.edu/drm/
+# Mechanism contains 21 species and 84 reactions.
 
 MECH=${PWD##*/}
 
@@ -6,21 +9,16 @@ cd ..
 source ./setpaths $MECH
 mkdir $DIR_CHEMKIN
 
-
-WEB_DRM19=http://combustion.berkeley.edu/drm/drm19.dat
-WEB_THERMO_GRI12=http://combustion.berkeley.edu/gri_mech/new21/version12/files12/thermo12.dat
-WEB_TRANSPORT_GRI12=http://combustion.berkeley.edu/gri_mech/new21/version12/files12/transport.dat
+WEB_CHEM=http://combustion.berkeley.edu/drm/drm19.dat
+WEB_THERMO=http://combustion.berkeley.edu/gri_mech/new21/version12/files12/thermo12.dat
+WEB_TRANSPORT=http://combustion.berkeley.edu/gri_mech/new21/version12/files12/transport.dat
 PATH_CHEMKINTOFOAM_TRANSPORT=/opt/openfoam8/tutorials/combustion/reactingFoam/RAS/SandiaD_LTS/chemkin/transportProperties
 
 echo "Getting files from web"
-wget --output-document=$CHEMKIN_CHEM $WEB_DRM19
-wget --output-document=$CHEMKIN_THERMO $WEB_THERMO_GRI12
-wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT_GRI12
+wget --output-document=$CHEMKIN_CHEM $WEB_CHEM
+wget --output-document=$CHEMKIN_THERMO $WEB_THERMO
+wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
 echo "Done"
 
 echo "Warning! fixing float format for chemkinToFoam"
 sed -i 's/300.      1000.     5000./   300.000  1000.000  5000.000/' $CHEMKIN_THERMO
-
-# echo -n "Getting transportProperties file (for chemkinToFoam) from SandiaD tutorial"
-# cp $PATH_CHEMKINTOFOAM_TRANSPORT $CHEMKINTOFOAM_TRANSPORT
-# echo " Done"

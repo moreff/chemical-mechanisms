@@ -1,4 +1,6 @@
 #!/bin/bash -e
+# http://web.eng.ucsd.edu/mae/groups/combustion/mechanism.html
+# Mechanism contains 58 species and 270 reactions.
 
 MECH=${PWD##*/}
 

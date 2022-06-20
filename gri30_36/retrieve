@@ -1,4 +1,6 @@
 #!/bin/bash -e
+# https://github.com/OpenFOAM/OpenFOAM-9/tree/master/tutorials/combustion/reactingFoam/RAS/SandiaD_LTS/chemkin
+# Mechanism contains 36 species and 219 reactions.
 
 MECH=${PWD##*/}
 
@@ -6,8 +8,7 @@ cd ..
 source ./setpaths $MECH
 mkdir $DIR_CHEMKIN
 
-
-PATH_SANDIAD=/opt/openfoam8/tutorials/combustion/reactingFoam/RAS/SandiaD_LTS
+PATH_SANDIAD=/opt/openfoam9/tutorials/combustion/reactingFoam/RAS/SandiaD_LTS
 WEB_GRI_TRANSPORT=http://combustion.berkeley.edu/gri-mech/version30/files30/transport.dat
 
 echo "Copying files from openfoam SandiaD tutorial"

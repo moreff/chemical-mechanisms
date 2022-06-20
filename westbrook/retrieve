@@ -1,11 +1,13 @@
 #!/bin/bash -e
+# Westbrook, Charles K., and Frederick L. Dryer. "Simplified reaction mechanisms for the oxidation of hydrocarbon fuels in flames." Combustion science and technology 27.1-2 (1981): 31-43.
+# https://doi.org/10.1080/00102208108946970
+# Mechanism contains 6 species and 2 reactions.
 
 MECH=${PWD##*/}
 
 cd ..
 source ./setpaths $MECH
 mkdir $DIR_CHEMKIN
-
 
 WEB_THERMO_GRI12=http://combustion.berkeley.edu/gri_mech/new21/version12/files12/thermo12.dat
 WEB_TRANSPORT_GRI12=http://combustion.berkeley.edu/gri_mech/new21/version12/files12/transport.dat
@@ -22,7 +24,3 @@ sed -i 's/300.      1000.     5000./   300.000  1000.000  5000.000/' $CHEMKIN_TH
 echo "WARNING! Please construct .inp file manually using data from the original paper"
 echo "https://doi.org/10.1080/00102208108946970"
 echo "Put resulting file to $CHEMKIN_CHEM"
-
-# echo -n "Getting transportProperties file (for chemkinToFoam) from SandiaD tutorial"
-# cp $PATH_CHEMKINTOFOAM_TRANSPORT $CHEMKINTOFOAM_TRANSPORT
-# echo " Done"

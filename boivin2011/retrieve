@@ -1,6 +1,7 @@
 #!/bin/bash -e
 # Boivin, Pierre. "Reduced-kinetic mechanisms for hydrogen and syngas combustion including autoignition." (2011).
 # https://www.cerfacs.fr/cantera/docs/mechanisms/hydrogen-air/Boivin/Thesis_Pierre_Boivin.pdf
+# Mechanism contains 9 species and 12 reactions.
 
 MECH=${PWD##*/}
 

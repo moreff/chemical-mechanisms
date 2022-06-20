@@ -2,13 +2,13 @@
 # Stagni, Alessandro, et al. "An experimental, theoretical and kinetic-modeling study of the gas-phase oxidation of ammonia." Reaction Chemistry & Engineering 5.4 (2020): 696-711.
 # https://doi.org/10.1039/C9RE00429G
 # https://www.rsc.org/suppdata/c9/re/c9re00429g/c9re00429g1.zip
+# Mechanism contains 31 species and 203 reactions.
 
 MECH=${PWD##*/}
 
 cd ..
 source ./setpaths $MECH
 mkdir $DIR_CHEMKIN
-
 
 echo "Getting files from web"
 mkdir TEMP

@@ -1,4 +1,8 @@
 #!/bin/bash -e
+# Konnov, Alexander A. "Yet another kinetic mechanism for hydrogen combustion." Combustion and Flame 203 (2019): 14-22.
+# https://doi.org/10.1016/j.combustflame.2019.01.032
+# https://www.sciencedirect.com/science/article/pii/S0010218019300501?casa_token=gLi_hgHZj-kAAAAA:P-X_wGvinanMfhSQFitNeTFnmUwPkVzYNPwjw5ZmjEk3RvuRMqSsorWqGQwYG3Zfi3_BuBKfGg#ecom0001
+# Mechanism contains 15 species and 75 reactions.
 
 MECH=${PWD##*/}
 
@@ -6,15 +10,13 @@ cd ..
 source ./setpaths $MECH
 mkdir $DIR_CHEMKIN
 
-echo "WARNING! Please download mechanism manually from paper's supplementary material."
-echo "https://doi.org/10.1016/j.combustflame.2019.01.032"
-echo "Put chemkin files to $CHEMKIN_CHEM $CHEMKIN_THERMO $CHEMKIN_TRANSPORT"
-echo
-echo "WARNING! This mechanism can be converted to .cti only with --permissive option"
+echo "Getting files from web"
+mkdir TEMP
+wget --output-document=TEMP/$MECH.zip https://ars.els-cdn.com/content/image/1-s2.0-S0010218019300501-mmc2.zip
+unzip TEMP/$MECH.zip -d TEMP
 
-
-# PATH_CHEMKINTOFOAM_TRANSPORT=/opt/openfoam8/tutorials/combustion/reactingFoam/RAS/SandiaD_LTS/chemkin/transportProperties
-
-# echo -n "Getting transportProperties file (for chemkinToFoam) from SandiaD tutorial"
-# cp $PATH_CHEMKINTOFOAM_TRANSPORT $CHEMKINTOFOAM_TRANSPORT
-# echo " Done"
+mv TEMP/H2_new_mech/H2_new_mech.txt  $CHEMKIN_CHEM
+mv TEMP/H2_new_mech/excite_therm.txt $CHEMKIN_THERMO
+mv TEMP/H2_new_mech/H2_new_trans.txt $CHEMKIN_TRANSPORT
+rm -r TEMP
+echo "Done"
