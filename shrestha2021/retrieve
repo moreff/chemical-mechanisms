@@ -1,0 +1,21 @@
+#!/bin/bash -e
+# Shrestha, Krishna Prasad, et al. "An experimental and modeling study of ammonia with enriched oxygen content and ammonia/hydrogen laminar flame speed at elevated pressure and temperature." Proceedings of the Combustion Institute 38.2 (2021): 2163-2174.
+# https://doi.org/10.1016/j.proci.2020.06.197
+# https://www.sciencedirect.com/science/article/abs/pii/S1540748920302881?via%3Dihub
+# Mechanism contains 125 species and 1099 reactions.
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+
+WEB_CHEM=https://ars.els-cdn.com/content/image/1-s2.0-S1540748920302881-mmc2.txt
+WEB_THERMO=https://ars.els-cdn.com/content/image/1-s2.0-S1540748920302881-mmc4.txt
+WEB_TRANSPORT=https://ars.els-cdn.com/content/image/1-s2.0-S1540748920302881-mmc5.txt
+
+echo "Getting files from web"
+wget --output-document=$CHEMKIN_CHEM $WEB_CHEM
+wget --output-document=$CHEMKIN_THERMO $WEB_THERMO
+wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
+echo "Done"
