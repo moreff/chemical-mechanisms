@@ -1,7 +1,7 @@
 #!/bin/bash -e
 # Gregory P. Smith, David M. Golden, Michael Frenklach, Nigel W. Moriarty, Boris Eiteneer, Mikhail Goldenberg, C. Thomas Bowman, Ronald K. Hanson, Soonho Song, William C. Gardiner, Jr., Vitali V. Lissianski, and Zhiwei Qin http://www.me.berkeley.edu/gri_mech/
 # http://combustion.berkeley.edu/gri-mech/version30/text30.html
-# Mechanism contains 13 species and 27 reactions.
+# Mechanism contains 53 species and 325 reactions.
 
 MECH=${PWD##*/}
 
