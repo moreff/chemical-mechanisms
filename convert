@@ -30,6 +30,10 @@ echo "[$0] Running ck2cti..."
 echo "[$0] Done"
 fi
 
+echo "[$0] Running cti2yaml..."
+python -m cantera.cti2yaml $CANTERA_CHEM
+echo "[$0] Done"
+
 echo "[$0] Running ct2foam..."
     ct2foam --input $CANTERA_CHEM --output $DIR_PYJAC --Tmid 1000.0 --plot | tee $MECH/log.ct2foam
 echo "[$0] Done"
