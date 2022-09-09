@@ -1,0 +1,38 @@
+#!/bin/bash -e
+# Li, Rui, et al. "Chemical mechanism development and reduction for combustion of NH3/H2/CH4 mixtures." Fuel 257 (2019): 116059.
+# https://doi.org/10.1016/j.fuel.2019.116059
+# https://www.sciencedirect.com/science/article/pii/S0016236119314139?casa_token=sD66hZvkBIsAAAAA:lEME0zSD6RbYzv03oxVojpZt_7WZ5WwAV1oY8aTdV3kQN00PHiH9ohAvM6Qfr19UQUUgFpwbsg
+# Mechanism contains 28 species and 213 reactions.
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+echo $DIR_CHEMKIN
+echo "Getting files from web"
+mkdir TEMP
+wget --output-document=TEMP/${MECH}_CHEM.zip https://ars.els-cdn.com/content/image/1-s2.0-S0016236119314139-mmc5.zip
+wget --output-document=TEMP/${MECH}_THERMO.zip https://ars.els-cdn.com/content/image/1-s2.0-S0016236119314139-mmc2.zip
+wget --output-document=TEMP/${MECH}_TRANSPORT.zip https://ars.els-cdn.com/content/image/1-s2.0-S0016236119314139-mmc4.zip
+unzip TEMP/${MECH}_CHEM.zip -d TEMP
+unzip TEMP/${MECH}_THERMO.zip -d TEMP
+unzip TEMP/${MECH}_TRANSPORT.zip -d TEMP
+
+mv TEMP/28-213.inp $CHEMKIN_CHEM
+mv TEMP/128-957.dat $CHEMKIN_THERMO
+mv TEMP/128-957.tran $CHEMKIN_TRANSPORT
+rm -r TEMP
+
+echo "Warning! Fixing displaced entries for ck2cti"
+# CH3CH2NH2         7/11C    2.H   7.N 1.   0.G   200.000  6000.000 1000.00      1
+# sed -i 's/300.      1000.     5000./   300.000  1000.000  5000.000/' $CHEMKIN_THERMO
+sed -i 's|CH3CH2NH2  Et-amin  T 7/11C  2.H  7.N  1.   0.G   200.000  6000.000 1000.        1|CH3CH2NH2 Et-amin T 7/11C   2.H  7.N  1.  0.G   200.000  6000.000 1000.00      1|' $CHEMKIN_THERMO
+echo "Warning! Removing third-body efficiency for undefined species for ck2cti"
+sed -i 's|C2H6/3.0/||g' $CHEMKIN_CHEM
+sed -i 's|CH4/3.0/||g' $CHEMKIN_CHEM
+sed -i 's|CO/0.75/||g' $CHEMKIN_CHEM
+sed -i 's|HE/0.35/||g' $CHEMKIN_CHEM
+sed -i 's|CO2/1.50/||g' $CHEMKIN_CHEM
+
+echo "Done"
