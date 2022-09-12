@@ -1,0 +1,468 @@
+ELEM C O N AR H HE
+END
+SPECIES ! structure, source of thermo-data 
+H  ! burcat 
+H2 ! burcat 2012 
+O    ! burcat 
+OX   ! O(1D), burcat
+OH   ! burcat 2002 
+OHX  ! OH*, burcat
+H2O  ! burcat
+O2    ! burcat 2012
+O2X   ! O2(1delta), burcat 
+HO2   ! burcat 2012 
+H2O2  ! burcat 2003 
+O3   ! burcat 
+
+N    ! burcat
+NH   ! burcat ATCT
+NH2  ! burcat 2003
+NH3  ! burcat
+NNH   ! burcat 2011
+N2H2  ! HNNH, burcat 2011
+N2H3  ! burcat 2011
+N2H4  ! burcat
+NO    ! burcat
+HNO   ! burcat ATCT
+H2NO  ! burcat 2015
+HNOH  ! burcat 2011
+NH2OH ! burcat ATCT
+N2O   ! burcat
+HNNO  ! chemkin
+NO2   ! burcat
+HONO  ! burcat 2011
+NO3  ! burcat ATCT
+HNO3 ! burcat 2003
+N2O3  ! burcat
+N2O4  ! burcat ATCT
+
+HE ! burcat
+AR ! burcat
+N2 ! burcat
+
+END
+REACTIONS      
+           
+H+H+M=H2+M                     7.000E+17     -1.0         0.0 ! 15ALE/CHR1884
+ H2/0.0/ N2/0.0/ H/0.0/ H2O/14.3/ ! CO/3.0/ CO2/3.0/ 
+H+H+H2=H2+H2                   1.000E+17     -0.6         0.0 ! 15ALE/CHR1884
+H+H+N2=H2+N2                   5.400E+18     -1.3         0.0 ! 15ALE/CHR1884
+H+H+H=H2+H                     3.200E+15      0.0         0.0 ! 15ALE/CHR1884
+O+O+M=O2+M                     1.000E+17     -1.0         0.0 ! 15ALE/CHR1884
+ O/28.8/ O2/8.0/ N2/2.0/ H2O/5.0/ ! NO/2.0/ N/2.0/ 
+O+H+M=OH+M                     6.750E+18     -1.0         0.0 ! 15ALE/CHR1884
+ H2O/5.0/ 
+H2O+M=H+OH+M                   6.060E+27     -3.312  120770.0 ! 15ALE/CHR1884
+ H2O /0/ H2/3.0/ N2 /2.0/ O2 /1.5/ HE /1.1/! CO2 /4/ CH4/7/  
+H2O+H2O=H+OH+H2O               1.000E+26     -2.44   120160.0 ! 15ALE/CHR1884
+
+H+O2(+M)=HO2(+M)               4.660E+12      0.44        0.0 ! 19KON14
+    LOW /1.225E+19 -1.2 0.0/ 
+    TROE /0.5 1 1E+10/
+ AR/0.72/ H2O/16.6/ O2/1.0/ H2/1.5/ HE/0.57/ ! CO2/3.61/ CH4/3.5/   
+H2O2(+M)=OH+OH(+M)             2.000E+12      0.9     48750.0 ! 15ALE/CHR1884
+    LOW /2.49E+24 -2.3 48750.0 /  
+    TROE /0.42 1 1E+10/
+ H2O/7.5/ H2O2/7.7/ O2/1.2/ N2/1.5/ H2/3.7/ HE/0.65/ ! CO2/1.6/ CO/2.8/  
+O+H2=OH+H                      5.080E+04      2.67     6292.0 ! 15ALE/CHR1884
+H+O2=OH+O                      1.040E+14      0.0     15286.0 ! 15ALE/CHR1884
+H2+OH=H2O+H                    2.140E+08      1.52     3450.0 ! 15ALE/CHR1884
+OH+OH=H2O+O                    2.668E+06      1.82    -1647.0 ! 19KON14   
+HO2+O=OH+O2                    2.850E+10      1.0      -723.9 ! 15ALE/CHR1884
+H+HO2=OH+OH                    7.080E+13      0.0       300.0 ! 15ALE/CHR1884
+H2O+O=H+HO2                    2.200E+08      2.0     61600.0 ! 15ALE/CHR1884
+H2+O2=H+HO2                    7.400E+05      2.43    53500.0 ! 15ALE/CHR1884
+HO2+OH=H2O+O2                  7.000E+12      0.0     -1093.0 ! 15ALE/CHR1884
+    DUPLICATE
+HO2+OH=H2O+O2                  4.500E+14      0.0     10930.0 ! 15ALE/CHR1884
+    DUPLICATE
+HO2+HO2=H2O2+O2                1.030E+14      0.0     11040.0 ! 15ALE/CHR1884
+    DUPLICATE
+HO2+HO2=H2O2+O2                1.940E+11      0.0     -1409.0 ! 15ALE/CHR1884
+    DUPLICATE
+H2O2+H=HO2+H2                  5.020E+06      2.07     4300.0 ! 15ALE/CHR1884
+H2O2+H=H2O+OH                  2.030E+07      2.02     2620.0 ! 15ALE/CHR1884
+H2O2+O=HO2+OH                  9.550E+06      2.0      3970.0 ! 15ALE/CHR1884
+H2O2+OH=HO2+H2O                1.740E+12      0.0       318.0 ! 15ALE/CHR1884
+    DUPLICATE
+H2O2+OH=HO2+H2O                7.590E+13      0.0      7269.0 ! 15ALE/CHR1884
+    DUPLICATE 
+O2+O+AR=O3+AR                  4.290E+17     -1.5         0.0 ! 15KON3753
+    DUPLICATE
+O2+O+AR=O3+AR                  5.100E+21     -3.2         0.0 ! 15KON3753
+    DUPLICATE
+O2+O+M=O3+M                    6.530E+17     -1.5         0.0 ! 15KON3753
+  AR/0.0/ O2/0.95/ O3/2.5/ O/4.0/
+    DUPLICATE
+O2+O+M=O3+M                    1.330E+22     -3.3         0.0 ! 15KON3753
+  AR/0.0/ O2/1.07/ O3/2.5/ O/4.0/
+    DUPLICATE
+O3+O=O2+O2                     4.820E+12      0.0      4094.0 ! 15KON3753
+O3+O=O2X+O2                    1.440E+11      0.0      4094.0 ! 15KON3753
+O+O+M=O2X+M                    7.000E+15     -1.0         0.0 ! 15KON3753
+ O/28.8/ O2/8.0/ N2/2.0/ H2O/5.0/ O3/8.0/ ! NO/2.0/ N/2.0/ 
+O2X+M=O2+M                     1.800E+06      0.0       400.0 ! 15KON3753
+ O/0/ H/0/ AR/0.005/ N2/0.002/ H2O/3.3/ H2/2.5/ HE/0.005/ ! CO2/0.01/ CO/5.6/ 
+O2X+O=O2+O                     7.800E+07      0.0         0.0 ! 15KON3753
+O2X+H=O2+H                     4.000E+13      0.0      5030.0 ! 15KON3753
+O2X+O+M=O+O2+M                 3.600E+15      0.0         0.0 ! 15KON3753
+  AR/0.63/ 
+O2X+O3=O2+O2+O                 3.130E+13      0.0      5644.0 ! 15KON3753
+OX+O2X=O+O2                    6.030E+12      0.0         0.0 ! 15KON3753
+OX+O2=O+O2X                    1.590E+13      0.0      -139.0 ! 15KON3753
+OX+O2=O+O2                     2.810E+12      0.0      -139.0 ! 15KON3753
+OX+M=O+M                       4.800E+11      0.0         0.0 ! 15KON3753
+  O2/0/ N2/0/ O/10.0/ H2O/3.0/
+OX+N2=O+N2                     1.260E+13      0.0      -230.0 ! 15KON3753
+OX+O3=O2+O+O                   7.230E+13      0.0         0.0 ! 15KON3753
+OX+O3=O2+O2                    7.230E+13      0.0         0.0 ! 15KON3753
+H2+O2X=H+HO2                   6.160E+05      2.335   31080.0 ! 15KON3753
+H+O2X=OH+O                     3.500E+08      1.45     4508.0 ! 15KON3753
+H+O2X+M=HO2+M                  9.890E+09      2.03     3360.0 ! 15KON3753
+HO2+OH=H2O+O2X                 2.140E+06      1.65     2180.0 ! 19KON14
+OH+O2X=O+HO2                   1.300E+13      0.0     34000.0 ! 15KON3753
+O3+H=OH+O2                     8.430E+13      0.0       934.0 ! 15KON3753
+O3+OH=HO2+O2                   1.000E+12      0.0      1870.0 ! 15KON3753
+O3+HO2=OH+O2+O2                5.850E-04      4.57    -1377.0 ! 15KON3753
+H+HO2=H2O+OX                   2.500E+12      0.0       300.0 ! 15KON3753
+OX+H2=OH+H                     8.100E+13      0.0         0.0 ! 15KON3753
+OX+H2O=OH+OH                   1.000E+14      0.0       -71.0 ! 15KON3753
+O+H+M=OHX+M                    1.500E+13      0.0      5970.0 ! 15KON3753
+   AR/0.35/ H2O/6.5/ O2/0.4/ N2/0.4/
+OHX+O2=OH+O2                   8.400E+11      0.5      -482.0 ! 15KON3753
+OHX+N2=OH+N2                   1.080E+11      0.5     -1238.0 ! 15KON3753
+OHX+H2O=OH+H2O                 2.960E+12      0.5      -861.0 ! 15KON3753
+OHX+H2=OH+H2                   3.540E+11      0.5      -444.0 ! 15KON3753
+OHX+OH=OH+OH                   1.500E+12      0.5         0.0 ! 15KON3753
+OHX+H=OH+H                     1.500E+12      0.5         0.0 ! 15KON3753
+OHX+O=OH+O                     1.500E+12      0.5         0.0 ! 15KON3753
+OHX+AR=OH+AR                   2.170E+10      0.5      2060.0 ! 15KON3753
+OHX+H2=H2O+H                   2.600E+12      0.5      -444.0 ! 15KON3753
+OHX+O2=O3+H                    2.520E+11      0.5      -482.0 ! 15KON3753
+OHX+O2=HO2+O                   1.008E+12      0.5      -482.0 ! 15KON3753
+OHX+H2O=H2O2+H                 2.960E+12      0.5      -861.0 ! 15KON3753
+OHX=OH+hv                      1.400E+06      0.0         0.0 ! 15KON3753
+H+O2+H=H2+O2                   8.800E+22     -1.835     800.0 ! 19KON14
+H+O2+H=OH+OH                   4.000E+22     -1.835     800.0 ! 19KON14
+H+O2+O=OH+O2                   7.350E+22     -1.835     800.0 ! 19KON14
+H+O2+OH=H2O+O2                 2.560E+22     -1.835     800.0 ! 19KON14
+
+N+OH=NO+H                      2.800E+13      0.0         0.0 ! 01KON/DER1
+N+O2=NO+O                      5.850E+09      1.01     6200.0 ! volkov konnov 20201108
+  
+N2+M=N+N+M                     1.000E+28     -3.33   225000.0 ! 01KON/DER1
+    N/5/ O/2.2/
+
+NO+O(+M)=NO2(+M)               2.950E+14     -0.4         0.0 ! konnov 20160514 
+    LOW / 2.27E+20 -1.6  0.0/
+    TROE /0.8 1.0 1.0E+10 /
+  N2 /1.46/ NO2 /10.0/ NO /2.8/ O2 /1.3/ H2O /10.0/ N2O /7.0/
+
+NO+N=N2+O                      1.529E+13     -0.0027  -185.41 ! 21HAN/LUB349
+NO+M=N+O+M                     7.710E+19     -1.31   150000.0 ! volkov konnov 20201108
+    N2 /1.5/ NO /3.0/ ! CO2/2.5/
+NO+HO2=NO2+OH                  2.050E+12      0.0      -497.0 ! konnov 20160514
+NO+NO=N2+O2                    3.000E+11      0.0     65000.0 ! 01KON/DER1
+NO+NO+NO=N2O+NO2               1.070E+10      0.0     26800.0 ! volkov konnov 20201108
+
+N2O(+M)=N2+O(+M)               9.900E+10      0.0     57900.0 ! volkov konnov 20201027
+    LOW / 6.000E+14 0.0 57440.0/ 
+    TROE /-0.2 7300.0 10.0 /
+   O2/1.4/ N2/1.7/ N2O/3.5/ NO/3.0/ H2O/12.0/
+
+N2O+O=N2+O2                    3.690E+12      0.0     15940.0 ! volkov konnov 20201108
+N2O+O=NO+NO                    9.150E+13      0.0     27680.0 ! 21HAN/LUB349
+N2O+H=N2+OH                    6.440E+07      1.84    13490.0 ! konnov 20201103 
+N2O+H=NH+NO                    7.340E+20     -1.55    36940.0 ! konnov 20201103 
+N2O+H=NNH+O                    2.250E+19     -1.1     48180.0 ! konnov 20201103 
+
+N2O+H=OHX+N2                     1.60E+14   0.00      50300.0  ! konnov 20201103 
+
+N2O+H=HNNO                     8.000E+24     -4.39    10530.0 ! 01KON/DER1
+N2O+H2=N2+H2O                  7.00E+12       0.0     32500.0 ! konnov 20201103 
+
+N2O+OH=N2+HO2                  1.300E-02      4.72    36561.0 ! konnov 20201103
+N2O+OH=HNO+NO                  1.180E-04      4.33    25082.0 ! konnov 20201103
+N2O+N=N2+NO                    2.500E+12      0.0     20000.0 ! volkov konnov 20201109
+N2O+NO=N2+NO2                  2.750E+14      0.0     50000.0 ! 01KON/DER1
+
+NO2+O=NO+O2                    3.300E+12      0.0      -374.0 ! volkov konnov 20201109
+NO2+H=NO+OH                    8.850E+13      0.0         0.0 ! konnov 20160514 
+NO2+N=N2O+O                    1.000E+12      0.0      -437.0 ! volkov konnov 20201109
+NO2+N=NO+NO                    8.000E+11      0.0      -437.0 ! volkov konnov 20201109
+NO2+N=N2+O2                    2.400E+11      0.0      -437.0 ! volkov konnov 20201109
+NO2+NO=N2O+O2                  1.000E+12      0.0     60000.0 ! 01KON/DER1
+NO2+NO2=NO+NO+O2               3.950E+12      0.0     27590.0 ! 01KON/DER1
+NO2+NO2=NO3+NO                 1.130E+04      2.58    22720.0 ! 01KON/DER1
+NO2+O(+M)=NO3(+M)              3.500E+12      0.24        0.0 ! volkov konnov 20201109
+    LOW / 2.40E+20 -1.5 0.0 /
+    TROE /0.29 1700.0 10.0 /
+    AR/1.2/ H2O/10.0/ ! CO/2/
+ 
+NO2+NO(+M)=N2O3(+M)            1.600E+09      1.4         0.0 ! 01KON/DER1
+     LOW /1.0E+33  -7.7  0.0/
+     TROE /0.6 1.0 1.0E+10/
+     N2/1.36/
+NO2+HO2=HONO+O2                4.640E+11      0.0      -479.0 ! 01KON/DER1
+NO2+H2=HONO+H                  7.330E+11      0.0     28800.0 ! 01KON/DER1 
+NO2+NH=N2O+OH                  8.650E+10      0.0     -2270.0 ! 01KON/DER1
+NO2+NH=NO+HNO                  1.245E+11      0.0     -2270.0 ! 01KON/DER1
+
+NO3=NO+O2                      2.500E+06      0.0     12120.0 ! 01KON/DER1
+NO3+NO2=NO+NO2+O2              1.510E+10      0.0      2440.0 ! volkov konnov 20201109
+NO3+O=NO2+O2                   1.000E+13      0.0         0.0 ! 01KON/DER1
+NO3+H=NO2+OH                   6.620E+13      0.0         0.0 ! 01KON/DER1
+NO3+OH=NO2+HO2                 1.210E+13      0.0         0.0 ! 01KON/DER1
+NO3+HO2=HNO3+O2                5.550E+11      0.0         0.0 ! 01KON/DER1
+NO3+HO2=NO2+OH+O2              1.510E+12      0.0         0.0 ! 01KON/DER1
+NO3+NO3=NO2+NO2+O2             5.120E+11      0.0      4870.0 ! 01KON/DER1
+
+N2O3+O=NO2+NO2                 2.710E+11      0.0         0.0 ! 01KON/DER1
+N2O3+H2O=HONO+HONO             3.790E+13      0.0      8880.0 ! 01KON/DER1
+
+N2O4(+M)=NO2+NO2(+M)           1.150E+16      0.0     12840.0 ! volkov konnov 20201110
+     LOW /2.0E+28  -3.8  12720.0/
+    TROE /0.4 1.0 1.0E+10 /
+     AR/0.8/ N2O4/2.0/ NO2/2.0/
+
+N2O4+O=N2O3+O2                 1.210E+12      0.0         0.0 ! 01KON/DER1
+N2O4+H2O=HONO+HNO3             2.520E+14      0.0     11590.0 ! 01KON/DER1
+
+NH+M=N+H+M                     2.650E+14      0.0     75500.0 ! 01KON/DER1
+NH+H=N+H2                      1.880E+08      1.55      205.0 ! konnov 20201029
+NH+O=NO+H                      7.000E+13      0.0         0.0 ! 01KON/DER1
+NH+O=N+OH                      7.000E+12      0.0         0.0 ! 01KON/DER1
+NH+OH=HNO+H                    3.240E+14     -0.376     -45.7 ! konnov 20160514
+NH+OH=N+H2O                    1.580E+07      1.737    -576.0 ! konnov 20160514
+NH+OH=NO+H2                    1.620E+13     -0.376     -45.7 ! konnov 20160514
+NH+HO2=HNO+OH                  1.000E+13      0.0      2000.0 ! 01KON/DER1
+NH+O2=HNO+O                    4.000E+13      0.0     17880.0 ! 01KON/DER1
+NH+O2=NO+OH                    4.500E+08      0.79     1190.0 ! 01KON/DER1
+NH+NO=N2+OH                    6.100E+13     -0.50      120.0 ! 01KON/DER1
+NH+N2O=N2+HNO                  2.000E+12      0.0      6000.0 ! 01KON/DER1
+NH+N=N2+H                      9.000E+11      0.5         0.0 ! 01KON/DER1
+NH+NH=NH2+N                    5.660E-01      3.88       342.0 ! konnov 20201110  
+NH+NH=N2+H2                    1.000E+08      1.0         0.0 ! 01KON/DER1
+NH+NH=N2+H+H                   2.540E+13      0.0         0.0 ! konnov 20201110
+ 
+NH2+M=NH+H+M                   3.160E+23     -2.0     91400.0 ! 01KON/DER1
+NH2+H=NH+H2                    1.090E+05      2.59     1812.3 ! konnov 20201029
+NH2+N=N2+H+H                   6.900E+13      0.0         0.0 ! 01KON/DER1
+NH2+O=H2+NO                    5.000E+12      0.0         0.0 ! 01KON/DER1
+NH2+O=HNO+H                    6.600E+13      0.0         0.0 ! konnov 20201103
+NH2+O=NH+OH                    7.000E+12      0.0         0.0 ! 01KON/DER1
+NH2+OH=NH+H2O                  9.000E+07      1.5      -460.0 ! 01KON/DER1
+NH2+HO2=NH3+O2                 1.650E+04      1.55     2027.0 ! 01KON/DER1
+NH2+HO2=HNO+H2O                5.680E+15     -1.12      707.0 ! 01KON/DER1
+NH2+HO2=H2NO+OH                2.910E+17     -1.32     1248.0 ! 01KON/DER1
+
+NH2+O2=H2NO+O                  2.620E+11      0.487   29050.0 ! konnov 20201105      
+NH2+O2=HNO+OH                  2.880E-02      3.76    18180.0 ! konnov 20201105
+  
+NH2+NO=N2+H2O                  2.610E+19     -2.369     866.0 ! konnov 20201105
+NH2+NO=NNH+OH                  4.290E+10      0.294    -870.0 ! konnov 20201105 
+
+NH2+NO=H2+N2O                  1.000E+13      0.0     33700.0 ! 01KON/DER1
+NH2+NO2=N2O+H2O                1.620E+16     -1.44      270.0 ! 01KON/DER1
+NH2+NO2=H2NO+NO                6.480E+16     -1.44      270.0 ! 01KON/DER1
+NH2+NH=N2H2+H                  4.260E+14     -0.272     -77.5 ! konnov 20201029  
+NH2+NH=NH3+N                   1.000E+13      0.0      2000.0 ! 01KON/DER1
+NH2+NH2=N2H2+H2                1.740E+08      1.02    11783.0 ! konnov 20201111  
+
+NH2+H(+M)=NH3(+M)               1.600E+14      0.0         0.0 ! konnov 20201101 
+  LOW  /3.6E+22 -1.760 0/                                    
+  TROE /0.5 1E-30 1E30 1E30/                                  
+  AR /0.7/  H2O /7/ N2O /2/ ! CH4 /2.6/ C2H6 /4.8/  CO2 /2.8/ 
+
+NH3+M=NH+H2+M                  6.300E+14      0.0     93390.0 ! 01KON/DER1
+NH3+H=NH2+H2                   6.400E+05      2.39    10171.0 ! konnov 20201030
+NH3+O=NH2+OH                   1.100E+06      2.1      5210.0 ! 01KON/DER1
+NH3+OH=NH2+H2O                 5.000E+07      1.6       950.0 ! 01KON/DER1
+NH3+HO2=NH2+H2O2               3.000E+11      0.0     22000.0 ! 01KON/DER1
+NH3+NH=NH2+NH2                 3.160E+14      0.0     26770.0 ! 01KON/DER1
+
+NNH=N2+H                       3.000E+08      0.0         0.0 ! 01KON/DER1
+NNH+M=N2+H+M                   1.000E+13      0.5      3060.0 ! 01KON/DER1
+NNH+H=N2+H2                    1.000E+14      0.0         0.0 ! 01KON/DER1
+NNH+O=NH+NO                    2.000E+14      0.0      4000.0 ! 01KON/DER1
+NNH+O=N2+OH                    1.700E+16     -1.23      500.0 ! 01KON/DER1
+NNH+OH=N2+H2O                  2.400E+22     -2.88     2444.0 ! 01KON/DER1
+NNH+O2=N2+HO2                  1.200E+12     -0.34      150.0 ! 01KON/DER1
+NNH+O2=N2O+OH                  2.900E+11     -0.34      150.0 ! 01KON/DER1
+NNH+HO2=N2+H2O2                1.000E+13      0.0      2000.0 ! 01KON/DER1
+NNH+NO=N2+HNO                  5.000E+13      0.0         0.0 ! 01KON/DER1
+NNH+N=NH+N2                    3.000E+13      0.0      2000.0 ! 01KON/DER1
+NNH+NH=N2+NH2                  2.000E+11      0.5      2000.0 ! 01KON/DER1
+NNH+NH2=N2+NH3                 1.000E+13      0.0         0.0 ! 01KON/DER1
+NNH+NNH=N2H2+N2                1.000E+13      0.0      4000.0 ! 01KON/DER1
+
+N2H2=NNH+H        1.800E+40   -8.410  73353.0 ! konnov 20201102
+PLOG /  0.1       5.600E+36   -7.750  70215.0 /
+PLOG /  1         1.800E+40  -8.410  73353.0 /
+PLOG /  10        3.100E+41  -8.420  76004.2 /
+DUPLICATE
+N2H2=NNH+H        2.600E+40  -8.530  72886.2 !
+PLOG /  0.1       1.600E+37  -7.940  70721.5 /
+PLOG /  1         2.600E+40  -8.530  72886.2 /
+PLOG /  10        1.300E+44  -9.220  77036.9 /
+DUPLICATE
+
+N2H2+H=N2+H2+H                 4.820E+08      1.76      739.2 ! konnov 20201102
+N2H2+O=NH2+NO                  1.000E+13      0.0         0.0 ! 01KON/DER1
+N2H2+O=NNH+OH                  2.000E+13      0.0      1000.0 ! 01KON/DER1
+N2H2+OH=NNH+H2O                5.920E+01      3.4     -1360.0 ! 01KON/DER1
+N2H2+HO2=NNH+H2O2              1.000E+13      0.0      2000.0 ! 01KON/DER1
+
+N2H2+NO=N2O+NH2                4.000E+12      0.0     11922.0 ! konnov 20201107
+
+N2H2+N=NNH+NH                  1.000E+06      2.0         0.0 ! 01KON/DER1
+N2H2+NH=NNH+NH2                1.000E+13      0.0      6000.0 ! 01KON/DER1
+N2H2+NH2=NH3+NNH               8.800E-02      4.05    -1610.0 ! 01KON/DER1
+
+N2H3=N2H2+H           3.600E+47 -10.380  68973.8 ! konnov 20201111
+PLOG /  0.1  2.300E+43  -9.550  64435.8 / 
+PLOG / 1     3.600E+47 -10.380  68973.8 /
+PLOG / 10    1.800E+45  -9.390  70105.8 /
+
+N2H3+H=N2H2+H2                 1.000E+13      0.0         0.0 ! 01KON/DER1
+N2H3+H=NH+NH3                  1.000E+11      0.0         0.0 ! 01KON/DER1
+N2H3+H=NH2+NH2                 5.000E+13      0.0      2000.0 ! 01KON/DER1
+N2H3+O=N2H2+OH                 2.000E+13      0.0      1000.0 ! 01KON/DER1
+N2H3+O=NNH+H2O                 3.160E+11      0.5         0.0 ! 01KON/DER1
+N2H3+O=NH2+HNO                 1.000E+13      0.0         0.0 ! 01KON/DER1
+N2H3+OH=N2H2+H2O               3.000E+10      0.68     1290.0 ! 01KON/DER1
+N2H3+OH=NH3+HNO                1.000E+12      0.0     15000.0 ! 01KON/DER1
+N2H3+O2=N2H2+HO2               3.000E+12      0.0         0.0 ! 01KON/DER1
+N2H3+HO2=N2H2+H2O2             1.000E+13      0.0      2000.0 ! 01KON/DER1
+N2H3+HO2=N2H4+O2               8.000E+12      0.0         0.0 ! 01KON/DER1
+N2H3+NO=HNO+N2H2               1.000E+12      0.0         0.0 ! 01KON/DER1
+N2H3+N=N2H2+NH                 1.000E+06      2.0         0.0 ! 01KON/DER1
+N2H3+NH=N2H2+NH2               2.000E+13      0.0         0.0 ! 01KON/DER1
+
+N2H3+NH2=N2H2+NH3              9.200E+05      1.94    -1152.0 ! konnov 20201111
+N2H3+NNH=N2H2+N2H2             1.000E+13      0.0      4000.0 ! 01KON/DER1
+N2H3+N2H2=N2H4+NNH             1.000E+13      0.0      6000.0 ! 01KON/DER1
+N2H3+N2H3=NH3+NH3+N2           3.000E+12      0.0         0.0 ! 01KON/DER1
+N2H3+N2H3=N2H4+N2H2            1.200E+13      0.0         0.0 ! 01KON/DER1
+
+NH2+NH2(+M)=N2H4(+M)           5.62E+14      -0.414      66.0 ! konnov 20201111  
+ LOW  /1.62E+34 -5.49 1987/                  
+ TROE /0.31 1E-30 1E30 1E30/              
+
+N2H4+H=N2H3+H2                 7.000E+12      0.0      2500.0 ! 01KON/DER1
+N2H4+H=NH2+NH3                 2.400E+09      0.0      3100.0 ! 01KON/DER1
+N2H4+O=N2H2+H2O                8.500E+13      0.0      1200.0 ! 01KON/DER1
+N2H4+O=N2H3+OH                 2.500E+12      0.0      1200.0 ! 01KON/DER1
+N2H4+OH=N2H3+H2O               3.000E+10      0.68     1290.0 ! 01KON/DER1
+N2H4+OH=NH3+H2NO               3.670E+13      0.0         0.0 ! 01KON/DER1
+N2H4+N=N2H3+NH                 1.000E+10      1.0      2000.0 ! 01KON/DER1
+N2H4+NH=NH2+N2H3               6.090E+01      3.61     5800.0 ! konnov 20201111 
+N2H4+NH2=N2H3+NH3              1.800E+06      1.71    -1380.0 ! 01KON/DER1
+
+H+NO(+M)=HNO(+M)               1.520E+15     -0.41        0.0 ! konnov 20160514
+    LOW /2.360E+14 0.206 -1550.0 /
+    TROE / 0.82 1.0 1.0E+10 /
+    N2 /1.6 /
+HNO+H=NO+H2                    6.690E+10      0.94      495.0 ! konnov 20160514
+HNO+OH=NO+H2O                  1.200E+09      1.189     334.0 ! konnov 20160514
+HNO+O=OH+NO                    5.000E+11      0.5      2000.0 ! 01KON/DER1
+HNO+O=NO2+H                    5.000E+10      0.0      2000.0 ! 01KON/DER1
+HNO+O2=NO+HO2                  2.200E+10      0.0      9140.0 ! 01KON/DER1
+HNO+N=NO+NH                    1.000E+11      0.5      2000.0 ! 01KON/DER1 
+HNO+N=H+N2O                    5.000E+10      0.5      3000.0 ! 01KON/DER1
+HNO+NH=NH2+NO                  5.000E+11      0.5         0.0 ! 01KON/DER1
+HNO+NH2=NH3+NO                 5.870E+02      2.95    -3469.0 ! konnov 20201106
+HNO+NO+NO=HNNO+NO2             1.600E+11      0.0      2090.0 ! 01KON/DER1
+HNO+HNO=N2O+H2O                3.630E-03      3.98     1190.0 ! 01KON/DER1
+HNO+HNO=HNOH+NO                2.000E+08      0.0      4170.0 ! 01KON/DER1
+HNO+NO2=HONO+NO                4.400E+04      2.64     4040.0 ! konnov 20160514
+
+H2NO+M=H2+NO+M                 7.830E+27     -4.29    60300.0 ! 01KON/DER1
+  H2O/10.0/
+H2NO+M=HNO+H+M                 2.800E+24     -2.83    64915.0 ! 01KON/DER1
+  H2O/10.0/
+H2NO+M=HNOH+M                  1.100E+29     -3.99    43980.0 ! 01KON/DER1
+  H2O/10.0/
+H2NO+H=HNO+H2                  3.000E+07      2.0      2000.0 ! 01KON/DER1
+H2NO+H=NH2+OH                  5.000E+13      0.0         0.0 ! 01KON/DER1
+H2NO+O=HNO+OH                  3.000E+07      2.0      2000.0 ! 01KON/DER1
+H2NO+OH=HNO+H2O                2.000E+07      2.0      1000.0 ! 01KON/DER1
+H2NO+HO2=HNO+H2O2              2.900E+04      2.69    -1600.0 ! 01KON/DER1
+H2NO+NH2=HNO+NH3               3.000E+12      0.0      1000.0 ! 01KON/DER1
+H2NO+O2=HNO+HO2                3.000E+12      0.0     25000.0 ! 01KON/DER1
+H2NO+NO=HNO+HNO                2.000E+04      2.0     13000.0 ! konnov 20200628
+H2NO+NO2=HONO+HNO              6.000E+11      0.0      2000.0 ! 01KON/DER1
+
+HNOH+M=HNO+H+M                 2.000E+24     -2.84    58935.0 ! 01KON/DER1
+   H2O/10.0/
+HNOH+H=HNO+H2                  4.800E+08      1.5       380.0 ! 01KON/DER1
+HNOH+H=NH2+OH                  4.000E+13      0.0         0.0 ! 01KON/DER1
+HNOH+O=HNO+OH                  7.000E+13      0.0         0.0 ! 01KON/DER1
+    DUPLICATE
+HNOH+O=HNO+OH                  3.300E+08      1.5      -360.0 ! 01KON/DER1
+    DUPLICATE
+HNOH+OH=HNO+H2O                2.400E+06      2.0     -1190.0 ! 01KON/DER1
+HNOH+HO2=HNO+H2O2              2.900E+04      2.69    -1600.0 ! 01KON/DER1
+HNOH+NH2=HNO+NH3               1.800E+06      1.94    -1150.0 ! 01KON/DER1
+HNOH+NO2=HONO+HNO              6.000E+11      0.0      2000.0 ! 01KON/DER1
+HNOH+O2=HNO+HO2                3.000E+12      0.0     25000.0 ! 01KON/DER1
+HNOH+HNO=NH2OH+NO              1.000E+12      0.0      3000.0 ! 01KON/DER1
+
+NH2OH(+M)=NH2+OH(+M)           1.40E+20      -1.310   64080.0 ! konnov 20201111 
+LOW  /5.45E+37 -5.96 66783/            
+TROE /0.31 1E-30 1E30 1E30/        
+
+NH2OH+H=HNOH+H2                      4.8E+08   1.50     6249 ! konnov 20201111   
+NH2OH+H=H2NO+H2                      2.4E+08   1.50     5067 ! konnov 20201111  
+
+NH2OH+O=HNOH+OH                      3.3E+08   1.50     3865 ! konnov 20201111  
+NH2OH+O=H2NO+OH                      1.7E+08   1.50     3010 ! konnov 20201111 
+
+NH2OH+OH=HNOH+H2O              1.54E+04   2.61    -3537 ! konnov 20201111
+NH2OH+OH=H2NO+H2O              1.53E+05   2.28    -1296 ! konnov 20201111
+
+NH2OH+HO2=HNOH+H2O2                  2.9E+04   2.69     9557 ! konnov 20201111
+NH2OH+HO2=H2NO+H2O2                  1.4E+04   2.69     6418 ! konnov 20201111
+
+NH2OH+NH=HNOH+NH2                    2.91E-03   4.40     1564 ! konnov 20201111
+NH2OH+NH=H2NO+NH2                    1.46E-03   4.60     2424 ! konnov 20201111
+
+NH2OH+NH2=HNOH+NH3                   1.10E-01   4.00      -97 ! konnov 20201111
+NH2OH+NH2=H2NO+NH3                   9.45E+00   3.42    -1013 ! konnov 20201111
+
+NH+NO+M=HNNO+M                 1.630E+23     -2.6      1820.0 ! 01KON/DER1
+HNNO+H=N2O+H2                  2.000E+13      0.0         0.0 ! 01KON/DER1
+HNNO+H=NH2+NO                  1.000E+12      0.0         0.0 ! 01KON/DER1
+HNNO+O=N2O+OH                  2.000E+13      0.0         0.0 ! 01KON/DER1
+HNNO+OH=H2O+N2O                2.000E+13      0.0         0.0 ! 01KON/DER1
+HNNO+OH=HNOH+NO                1.000E+12      0.0         0.0 ! 01KON/DER1
+HNNO+NO=N2+HONO                2.600E+11      0.0      1610.0 ! 01KON/DER1
+HNNO+NO=NNH+NO2                3.200E+12      0.0       540.0 ! 01KON/DER1
+HNNO+NO=N2O+HNO                1.000E+12      0.0         0.0 ! 01KON/DER1
+HNNO+NO2=N2O+HONO              1.000E+12      0.0         0.0 ! 01KON/DER1
+HNNO+NO2=NNH+NO3               1.000E+13      0.0     17000.0 ! 01KON/DER1
+
+NO+OH(+M)=HONO(+M)             2.000E+12     -0.05     -721.0 ! 01KON/DER1
+    LOW / 5.08E+23 -2.51 -67.6 /
+    TROE /0.62 10.0 100000.0 /
+    H2O/10.0/ O2/2.0/ AR/0.75/ H2/2.0/ ! CO2/0.0/  
+NO2+H+M=HONO+M                 1.400E+18     -1.5       900.0 ! 01KON/DER1
+HONO+H=HNO+OH                  5.640E+10      0.86     4970.0 ! 01KON/DER1
+HONO+H=NO+H2O                  8.120E+06      1.89     3840.0 ! 01KON/DER1
+HONO+O=OH+NO2                  1.200E+13      0.0      5960.0 ! 01KON/DER1
+HONO+OH=H2O+NO2                1.690E+12      0.0      -517.0 ! 01KON/DER1
+HONO+NH=NH2+NO2                1.000E+13      0.0         0.0 ! 01KON/DER1
+HONO+NH2=NO2+NH3               5.000E+12      0.0         0.0 ! 01KON/DER1
+HONO+HONO=H2O+NO2+NO           1.000E+13      0.0      8540.0 ! 01KON/DER1
+
+NO2+OH(+M)=HNO3(+M)            2.410E+13      0.0         0.0 ! 01KON/DER1
+    LOW / 6.42E+32 -5.49 2350.0 /
+    TROE /1.0 10.0 1168.0 /
+    H2O/10.0/ O2/2.0/ AR/0.75/ H2/2.0/ !CO2/0.0/ 
+NO+HO2+M=HNO3+M                1.500E+24     -3.5      2200.0 ! 01KON/DER1
+HNO3+H=H2+NO3                  5.560E+08      1.53    16400.0 ! 01KON/DER1
+HNO3+H=H2O+NO2                 6.080E+01      3.29     6290.0 ! 01KON/DER1
+HNO3+H=OH+HONO                 3.820E+05      2.3      6980.0 ! 01KON/DER1
+HNO3+OH=NO3+H2O                1.030E+10      0.0     -1240.0 ! 01KON/DER1
+
+END

@@ -1,0 +1,24 @@
+#!/bin/bash -e
+# Han, Xinlu, Marco Lubrano Lavadera, and Alexander A. Konnov. "An experimental and kinetic modeling study on the laminar burning velocity of NH3+ N2O+ air flames." Combustion and Flame 228 (2021): 13-28.
+# https://doi.org/10.1016/j.combustflame.2021.01.027
+# https://www.sciencedirect.com/science/article/pii/S0010218021000419
+# Mechanism contains 28 species and 213 reactions.
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+echo $DIR_CHEMKIN
+echo "Getting files from web"
+mkdir TEMP
+wget --output-document=TEMP/${MECH}.zip https://ars.els-cdn.com/content/image/1-s2.0-S0010218021000419-mmc2.zip
+unzip TEMP/${MECH}.zip -d TEMP
+unrar x TEMP/hno_model_rev.rar
+
+mv hno_model/hno_new_mod.txt    $CHEMKIN_CHEM
+mv hno_model/therm_20200508.dat $CHEMKIN_THERMO
+mv hno_model/trans_20200508.txt $CHEMKIN_TRANSPORT
+rm -r TEMP
+
+echo "Done"

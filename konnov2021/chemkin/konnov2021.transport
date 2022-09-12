@@ -1,0 +1,1819 @@
+!H                  0   145.000     2.050     0.000     0.000     0.000 ! Chemkin transport database
+H                  0   541.672     1.530     0.000     0.666     0 ! theoret trans
+
+!H2                 1    38.000     2.920     0.000     0.790   280.000 ! Chemkin transport database
+H2                 1   304.690     2.190     0.000     0.775   280 ! theoret trans
+
+!O                  0    80.000     2.750     0.000     0.000     0.000 ! Chemkin transport database
+O                  0   235.686     2.485     0.000     0.744     0 ! theoret trans
+
+!OX                 0    80.000     2.750     0.000     0.000     0.000 ! =O
+OX                 0   235.686     2.485     0.000     0.744     0 ! =O
+
+!OH                 1   809.100     2.641     0.000     0.000     0.000 !ivanov
+!OH                 1    80.000     2.750     0.000     0.000     0.000 ! Chemkin transport database		
+!OH                 1    63.884     3.212     0.000     0.000     0.000 ! LJcjp Miller trans
+OH                 1   514.598     2.582     1.635     1.077     0 ! theoret trans
+
+!OHX                1   809.100     2.641     0.000     0.000     0.000 ! =OH
+OHX                1   514.598     2.582     1.635     1.077     0 ! =OH
+
+!H2O                2   809.100     2.641     1.844     0.000     4.000 !ivanov
+!H2O                2   572.400     2.605     1.844     0.000     4.000 ! Chemkin transport database		
+H2O                2   637.056     2.943     1.851     1.407     4 ! theoret trans
+
+!O2                 1   106.700     3.467     0.000     1.600     3.800 !ivanov
+!O2                 1   107.400     3.458     0.000     1.600     3.800 ! Chemkin transport database		
+O2                 1   676.424     3.069     0.000     1.487     3.8 ! theoret trans
+
+!O2X                1   106.700     3.467     0.000     1.600     3.800 ! =O2
+O2X                1  1836.00      2.769     0.000     1.434     3.800 ! Pineda
+
+!HO2                2   298.300     4.196     0.000     0.000     1.000 !ivanov
+!HO2                2   107.400     3.458     0.000     0.000     1.000 ! Chemkin transport database		
+HO2                2   963.003     3.129     2.146     1.959     3.8 ! theoret trans
+!HO2                2   289.300     4.196     0.000     0.000     3.800 ! SveLJ Miller trans
+
+!H2O2               2   298.300     4.196     0.000     0.000     3.800 ! ivanov
+!H2O2               2   107.400     3.458     0.000     0.000     3.800 ! Chemkin transport database		
+H2O2               2  1361.148     3.179     1.702     2.239     3.8 ! theoret trans
+!H2O2               2   289.300     4.196     0.000     0.000     3.800 ! SveLJ Miller trans
+
+!O3                 2   208.400     3.875     0.000     0.000     2.000 !ivanov
+!O3                 2   180.000     4.100     0.000     0.000     2.000 ! Chemkin transport database
+O3                 2  1758.196     3.302     0.550     2.820     1 ! theoret trans
+
+!C                  0    71.400     3.298     0.000     0.000     0.000 ! Chemkin transport database
+C                  0  1609.601     1.849     0.000     1.748     0 ! theoret trans
+!C                  0    30.600     3.385     0.000     0.000     0.000 ! svehla Miller trans
+
+!CH                 1    80.000     2.750     0.000     0.000     0.000 ! Chemkin transport database
+CH                 1   569.314     2.676     1.489     2.271     0 ! theoret trans
+!CH                 1    68.600     3.370     0.000     0.000     0.000 ! SveLJ Miller trans
+
+CHX                 1   569.314     2.676     1.489     2.271     0 ! =CH
+
+!CH2                1   144.000     3.800     0.000     0.000     0.000 ! Chemkin transport database
+CH2                2   289.283     3.458     0.593     2.137     0 ! theoret trans
+!CH2                2    94.860     3.530     0.000     0.000     0.000 ! LJcjp Miller trans
+
+!SCH2               1   144.000     3.800     0.000     0.000     0.000 ! Chemkin transport database
+CH2(SING)          1   144.000     3.800     0.000     0.000     0.000
+SCH2               2   663.955     3.225     1.668     2.412     0 ! theoret trans
+CH2(S)             2    94.860     3.530     0.000     0.000     0.000 ! LJcjp Miller trans
+
+!CH3                1   144.000     3.800     0.000     0.000     0.000 ! Chemkin transport database
+CH3                2   346.192     3.535     0.000     2.354     0 ! theoret trans
+!CH3                2   121.110     3.677     0.000     0.000     0.000 ! LJcjp Miller trans
+
+!CH4                2   141.400     3.746     0.000     2.600    13.000 ! Chemkin transport database
+CH4                2   435.921     3.575     0.000     2.454    13 ! theoret trans
+!CH4                2   147.370     3.813     0.000     2.600    13.000 ! LJcjp Miller trans
+
+!CO                 1    98.100     3.650     0.000     1.950     1.800 ! Chemkin transport database
+!CO                 1   102.865     3.705     0.110     1.950     1.300 ! LLNL		
+CO                 1   565.618     3.355     0.107     1.957     1.8 ! theoret trans
+!CO                 1   102.865     3.705     0.1       1.950     1.800 ! LJDcjp Miller trans
+
+!HCO                2   498.000     3.590     0.000     0.000     0.000 ! Chemkin transport database
+HCO                2   745.695     3.394     1.627     2.561     2 ! theoret trans
+!HCO                2   315.792     4.361     1.2       0.000     2.000 ! LJDcjp Miller trans
+
+!HCOH               2   498.000     3.590     0.000     0.000     0.000!=HCO 
+!HCOH               2   417.000     3.690     1.700     0.000     2.000 ! LLNL
+!HCOH(T)            2   417.000     3.690     1.700     0.000     2.000 ! LLNL
+!hcoh               2   498.000     3.590     0.000     0.000     1.000 ! old LLNL
+HCOH               2   951.628     3.478     1.548     3.049     2 ! theoret trans
+CHOH(T)            2   951.628     3.478     1.548     3.049     2 ! theoret trans
+
+!CH2O               2   498.000     3.590     0.000     0.000     2.000 ! Chemkin transport database
+CH2O               2   934.661     3.408     2.381     2.612     2 ! theoret trans
+!CH2O               2   315.792     4.361     2.3       0.000     2.000 ! LJDcjp Miller trans
+
+!CH2OX              2   498.000     3.590     0.000     0.000     2.000 !=CH2O
+CH2OX              2   934.661     3.408     2.381     2.612     2 ! =CH2O
+
+!CH3O               2   417.000     3.690     1.700     0.000     2.000 ! Chemkin transport database
+CH3O               2   775.034     3.635     1.997     2.954     1 ! theoret trans
+
+!CH2OH              2   417.000     3.690     1.700     0.000     2.000 ! Chemkin transport database
+CH2OH              2   929.368     3.598     1.465     3.128     1 ! theoret trans
+
+!CH3OH              2   481.800     3.626     0.000     0.000     1.000 ! Chemkin transport database
+CH3OH              2  1036.168     3.694     1.679     3.117     1 ! theoret trans
+!CH3OH              2   481.800     3.626     1.700     0.000     1.000 ! Dcjp Miller trans
+
+!CO2                1   244.000     3.763     0.000     2.650     2.100 ! Chemkin transport database
+CO2                1  1201.184     3.386     0.000     2.598     2.1 ! theoret trans
+!CO2                1   235.373     3.808     0.000     2.650     2.100 ! LJcjp Miller trans
+
+!HOCO               2   460.573     1.5       0.000     0.000     1.000 !=HCOOH
+!HOCO               2   436.000     3.970     0.000     0.000     2.000 ! WJP LLNL
+HOCO               2  1250.801     3.600     2.854     3.334     2.1 ! theoret trans
+
+!HCOO               2   460.573     1.5       0.000     0.000     1.000 !=HCOOH 
+!OCHO               2   498.000     3.590     0.000     0.000     2.000 ! WJP LLNL
+!OCHO(B2)          2   767.671     3.503     0.000     0.000     2 ! theoret trans
+OCHO               2   767.671     3.503     1.552     3.046     2 ! theoret trans
+HCOO               2  1916.784     3.531     3.211     4.798     2 ! theoret trans
+
+!CH2OO              1   404.989     4.082     0.000     0.000     1.000 !
+CH2OO              2  1823.477     3.650     3.976     4.365     2 ! theoret trans
+
+!HCOOH              2   460.573     1.5       0.000     0.000     1.000 !est
+!HOCHO              2   436.000     3.970     0.000     0.000     2.000 ! WJP LLNL		
+HCOOH              2  1325.130     3.700     1.438     3.330     2 ! theoret trans
+
+!HOCH2O             1   404.989     4.082     0.000     0.000     1.000 !
+!HOCH2O             2   470.600     4.410     0.000     0.000     1.500 ! WJP LLNL
+HOCH2O             2  1248.670     3.878     1.372     3.682     2 ! theoret trans
+
+!CH2OOH             1   404.989     4.082     0.000     0.000     1.000 !
+CH2OOH             2   481.800     3.626     0.000     0.000     1.000 ! CH3OOH LLNL
+
+HOCHOH             2  1409.636     3.880     0.059     3.825     2 ! =CH2(OH)2
+
+!CH3O2              2   481.800     3.626     0.000     0.000     1.000 !=MetOH WJP LLNL
+CH3O2              2  1251.465     3.933     2.708     3.789     2 ! theoret trans
+!CH3O2              2   386.690     4.684     0.000     0.000     2.000 ! LJcjp Miller trans
+
+!CH3O2H             2   481.800     3.626     0.000     0.000     1.000 !=MetOH WJP LLNL
+CH3O2H             2  1515.877     3.969     0.303     4.067     2 ! theoret trans
+!CH3OOH             2   386.690     4.684     0.000     0.000     2.000 ! LJcjp Miller trans
+
+!CH2(OH)2           1   404.989     4.082     0.000     0.000     1.000 !
+CH2(OH)2           2  1409.636     3.880     0.059     3.825     2 ! theoret trans
+
+cCO3               2  1940.047     3.682     0.838     3.798     1 ! theoret trans
+
+OCHOO              2  1559.197    3.918   1.538   4.071   1 ! theoret trans
+
+OCHOOH             2  2022.313    3.896   1.462   4.166   1 ! theoret trans
+
+HOOCH2O            2  1690.517    4.118   0.961   4.507   1 ! theoret trans
+
+HOCH2OO            2  1700.732    4.049   1.922   4.407   1 ! theoret trans
+
+HOCH2OOH           2  2056.868    4.086   2.111   4.696   1 ! theoret trans
+
+!C2                 1    97.530     3.621     0.000     1.760     4.000 ! Chemkin transport database
+C2                 1  2198.288     3.097     0.000     5.278     4 ! theoret trans
+!C2                 1    78.800     3.913     0.000     1.760     4.000 ! SveLJ Miller trans
+
+!sC2                1    97.530     3.621     0.000     1.760     4.000 ! =C2
+sC2                1  2198.288     3.097     0.000     5.278     4 ! =C2
+
+!C2H                1   209.000     4.100     0.000     0.000     2.500 ! Chemkin transport database
+!C2H                1   265.300     3.721     0.000     0.000     2.500 ! NMM LLNL		
+C2H                1   952.577     3.469     0.771     3.371     2.5 ! theoret trans
+!C2H                1   238.624     4.067     0.000     0.000     2.500 ! LJcjp Miller trans
+
+!H2C2               1   209.000     4.100     0.000     0.000     2.500 !=C2H2
+!H2CC               2   209.000     4.100     0.000     0.000     2.500 ! LLNL
+H2C2               2   824.929     3.767     2.370     3.619     2.5 ! theoret trans
+!H2CC               2   238.        4.07      0.0       0.0       2.5 ! JAM(1/02) Miller trans
+
+!C2H2               1   209.000     4.100     0.000     0.000     2.500 ! Chemkin transport database
+!C2H2               1   265.300     3.721     0.000     0.000     2.500 ! NMM LLNL		
+C2H2               1   902.442     3.655     0.000     3.397     2.5 ! theoret trans
+!C2H2               1   238.624     4.067     0.000     0.000     2.500 ! LJcjp Miller trans
+
+!C2H3               2   209.000     4.100     0.000     0.000     1.000 ! Chemkin transport database
+!C2H3               2   265.300     3.721     0.000     0.000     1.000 ! NMM LLNL		
+C2H3               2   862.368     3.801     0.689     3.884     1 ! theoret trans
+!C2H3               2   218.578     4.219     0.000     0.000     1.000 ! LJcjp Miller trans
+
+!C2H4               2   280.800     3.971     0.000     0.000     1.500 ! Chemkin transport database
+!C2H4               2   238.400     3.496     0.000     0.000     1.500 ! NMM LLNL	
+C2H4               2   901.989     3.893     0.000     4.030     1.5 ! theoret trans
+!C2H4               2   218.578     4.219     0.000     0.000     1.500 ! LJcjp Miller trans
+
+!C2H5               2   252.300     4.302     0.000     0.000     1.500 ! Chemkin transport database
+!C2H5               2   247.500     4.350     0.000     0.000     1.500 ! NMM LLNL	
+C2H5               2   850.569     4.048     0.306     4.135     1.5 ! theoret trans
+!C2H5               2   236.380     4.377     0.000     0.000     1.500 ! LJcjp Miller trans
+
+!C2H6               2   252.300     4.302     0.000     0.000     1.500 ! Chemkin transport database
+!C2H6               2   247.500     4.350     0.000     0.000     1.500 ! NMM LLNL	
+C2H6               2   900.937     4.107     0.000     4.203     1.5 ! theoret trans
+!C2H6               2   236.380     4.377     0.000     0.000     1.500 ! LJcjp Miller trans
+
+!C2O                1   232.400     3.828     0.000     0.000     1.000 ! Chemkin transport database
+C2O                1  1269.249     3.583     1.461     4.122     1 ! theoret trans
+!C2O                1   315.792     4.361     0.000     0.000     1.000 ! LJcjp Miller trans
+
+!HCCO               2   150.000     2.500     0.000     0.000     1.000 ! Chemkin transport database
+HCCO               2  1409.346     3.675     1.574     4.318     1 ! theoret trans
+!HCCO               2   315.792     4.361     0.000     0.000     1.000 ! LJcjp Miller trans
+
+!HCCOH              2   436.000     3.970     0.000     0.000     2.000 ! Chemkin transport database
+HCCOH              2  1726.941     3.697     1.572     4.191     2 ! theoret trans
+!HCCOH              2   387.644     4.512     0.000     0.000     2.000 ! LJcj Miller trans
+
+!CH2CO              2   436.000     3.970     0.000     0.000     2.000 ! Chemkin transport database
+!CH2CO              2   314.300     4.191     1.400     0.000     2.000 ! WJP: KETENE, TCPC, POLING 4TH ED. ROT NO. FROM CHEMKIN TRANPORT DATABASE		
+CH2CO              2  1475.676     3.761     1.404     4.320     1 ! theoret trans
+!CH2CO              2   315.792     4.361     0.000     0.000     1.000 ! LJcjp Miller trans
+
+!CHCHO              2   2.76E+02    4.46E+00  0.00E+00  6.30E+00  1 ! LLNL
+CHCHO              2   531.467     4.070     1.404     4.320     1 ! theoret trans
+
+C2H2O              2   436.000     3.970     0.000     0.000     2.000 !=CH2CO
+
+!CH3CO              2   436.000     3.970     0.000     0.000     2.000 ! Chemkin transport database
+CH3CO              2  1181.931     3.980     2.448     4.496     2 ! theoret trans
+!CH3CO              2   356.814     4.804     2.5       0.000     2.000 ! LJDcjp Miller trans
+
+!CH2HCO             2   436.000     3.970     0.000     0.000     2.000 ! Chemkin transport database
+CH2HCO             2  1330.318     3.929     2.919     4.561     2 ! theoret trans
+!CH2HCO             2   356.814     4.804     2.5       0.000     2.000 ! LJDcj Miller trans
+
+!C2H2OH             2   224.700     4.162     0.000     0.000     1.000 ! Chemkin transport database
+!C2H2OH             1   2.80E+02    4.49E+00  0.00E+00  7.30E+00  1 ! LLNL
+C2H2OH             2  1331.869     3.972     0.795     4.678     1 ! theoret trans
+!C2H2OH             2   386.331     4.775     0.000     0.000     1.000 ! LJcjp Miller trans
+
+H2CCOH             2  1409.653     3.955     1.209     4.797     2 ! theoret trans
+
+CH2CHOW            2   436.000     3.970     0.000     0.000     2.000 !=CH2HCO
+
+!C2H3O1-2           2   436.000     3.970     0.000     0.000     2.000 ! WJP SAME AS CH2CO LLNL
+C2H3O              2  1634.394     3.804     1.710     4.145     2 ! theoret trans
+
+CH3HCOW            2   436.000     3.970     0.000     0.000     2.000 !=CH3HCO
+
+!C2H4O1-2           2   436.000     3.970     0.000     0.000     2.000 ! WJP SAME AS CH2CO LLNL	
+C2H4O              2  1732.165     3.872     1.926     4.216     2 ! theoret trans
+!C2H4O              2   357.        4.8       2.5       0.0       2.0   ! JAM(1/02) Miller trans
+
+!CH3HCO             2   436.000     3.970     0.000     0.000     2.000 ! Chemkin transport database
+CH3HCO             2  1382.375     4.046     2.770     4.473     2 ! theoret trans
+!CH3HCO             2   356.814     4.804     2.5       0.000     2.000 ! LJDcjp Miller trans
+
+!CH2CHOH            2   224.700     4.162     0.000     0.000     1.000 ! LLNL	
+CH2CHOH            2  1413.661     4.070     1.014     4.797     2 ! theoret trans
+
+!C2H5O              2   362.6       4.53      0.000     0.000     1.000  !=C2H5OH
+!C2H5O              2   470.600     4.410     0.000     0.000     1.500 ! NMM LLNL	
+!C2H5O              2   391.000     4.455     0.000     0.000     1.000 ! Dagaut
+C2H5O              2  1253.174     4.223     2.046     4.774     1.5 ! theoret trans
+
+!SC2H5O             2   362.6       4.53      0.000     0.000     1.000  !=C2H5OH
+!CH3CHOH            2   470.600     4.410     0.000     0.000     1.500 ! NMM LLNL
+!SC2H5O             2   391.000     4.455     0.000     0.000     1.000 ! Dagaut
+SC2H5O             2  1318.091     4.196     1.287     4.930     1.5 ! theoret trans
+
+!PC2H5O             2   362.6       4.53      0.000     0.000     1.000  !=C2H5OH
+!CH2CH2OH           2   470.600     4.410     0.000     0.000     1.500 ! NMM LLNL
+!PC2H5O             2   391.000     4.455     0.000     0.000     1.000 ! Dagaut
+PC2H5O             2  1382.739     4.169     1.576     4.868     1.5 ! theoret trans
+
+!CH3OCH2            2   317.637     4.551     1.3       0.000     1.000 !=CH3OCH3
+!CH3OCH2            2   395.000     4.037     1.300     0.000     1.000 ! CH3OCH3 LLNL
+!CH3OCH2            2   436.000     3.970     0.000     0.000     2.000 !est. HR
+CH3OCH2            2  1215.277     4.210     1.361     5.066     1.5 ! theoret trans
+
+!CH3OCH3            2   395.000     4.037     1.300     0.000     1.000 ! SVE,RPD LLNL
+!CH3OCH3            2   436.000     3.970     0.000     0.000     2.000 !est. HR
+CH3OCH3            2  1345.904     4.293     1.324     4.943     1.5 ! theoret trans
+
+!C2H5OH             2   362.6       4.53      0.000     0.000     1.000 ! Chemkin transport database
+!C2H5OH             2   470.600     4.410     0.000     0.000     1.500 ! NMM LLNL
+!C2H5OH             2   391.000     4.455     0.000     0.000     1.000 ! Dagaut
+C2H5OH             2  1409.021     4.226     1.596     4.909     1.5 ! theoret trans
+
+!CHOCO              2   442.089     4.428     0.000     0.000     1.000 != CHOCHO
+CHOCO              2  2010.845     3.900     2.597     4.984     2 ! theoret trans
+
+OCCOH              2  2195.390     3.894     2.458     5.288     2 ! theoret trans
+
+!CHOCHO             2   3.25E+02    4.90E+00  0.00E+00  6.87E+00  1 ! LLNL
+!OCHCHO		   2   470.600     4.410     0.000     0.000     1.500 ! WJP LLNL
+CHOCHO             2  1818.974     4.088     0.000     4.673     2 ! theoret trans
+!OCHCHO             2   406.937     4.823     0.000     0.000     2.000 ! LJcjp Miller trans
+
+C2H2O2             2  2122.934     3.927     3.300     4.475     2 ! theoret trans
+
+HOCHCO             2  2141.970     3.968     1.959     4.970     2 ! theoret trans
+
+HOCCOH             2  2767.074     3.745     1.975     4.879     2 ! theoret trans
+
+HOCH2CO            2  2767.074     3.745     1.975     4.879     2 ! =HOCCOH
+
+OCH2CHO            2  1497.579   4.207    0.000   0.000     2 ! theoret trans
+
+HOCHCHO            2  2767.074     3.745     1.975     4.879     2 ! =HOCCOH
+
+CH2OHCO            2  1652.489   4.209    1.610   5.148     2 ! theoret trans
+
+CH3OCO             2  1704.818   4.123    2.560   4.971     2 ! theoret trans
+
+CH3CO2             2  1555.141     4.155     3.262     4.220     2 ! theoret trans
+
+C2H3O2             2  1762.424     4.104     2.615     5.892     2 ! theoret trans
+
+CH2COOH            2  2217.294    4.139   1.487   5.675   1 ! =CH2CHOOH
+
+CHCHOOH            2  2099.760    4.126   1.447   5.482   2 ! theoret trans
+
+C2H3OOH            2  2217.294    4.139   1.487   5.675   1 ! theoret trans
+
+HOCHCHOH           2  2107.333   4.171    2.262   5.429     1 ! theoret trans
+
+CH3OCHO            2  1854.317     4.198     1.798     5.041     1 ! theoret trans
+
+CH2C(OH)2          2  2089.324   4.188    1.670   5.539     1 ! theoret trans
+
+CH3CHOO            2  1827.403     4.136     1.706     5.020     2 !=CH2CO2H 
+
+HOCH2CHO           2  1960.081   4.224    2.547   5.069     1 ! theoret trans
+
+CH3CO2H            2  1884.383     4.189     1.683     5.053     2 ! theoret trans
+
+CH2CO2H            2  1827.403     4.136     1.706     5.020     2 ! theoret trans
+
+CH2CH2OOH          2  1846.838    4.374   2.091   5.696   1 ! theoret trans
+
+CH3OCHOH           2  1672.125     4.340     1.696     5.714     1 ! theoret trans
+
+CH2OCH2OH          2  1672.125     4.340     1.696     5.714     1 != CH3OCHOH
+
+CH3OCH2O           2  1633.580     4.386     1.565     5.406     1 ! theoret trans
+
+CH3CHOOH           2  1846.838    4.374   2.091   5.696   1 != CH2CH2OOH
+
+CH3OOCH2           2  1761.326   4.483    1.669     5.882     1 !=CH3OOCH3
+
+C2H5O2             2  1729.734     4.282     2.808     5.516     1 ! theoret trans
+
+HOCH2CH2O          2  1703.453   4.359    1.781   5.440     1 ! theoret trans
+
+HOCH2CHOH          2  1665.527   4.362    1.346   5.681     1 ! theoret trans
+
+CH3OCH2OH          2  1672.125     4.340     1.696     5.714     1 != CH3OCHOH
+
+HOCH2CH2OH         2  2107.333   4.171    2.262   5.429     1 != HOCHCHOH
+
+CH3OOCH3           2  1761.326   4.483    1.669     5.882     1 ! theoret trans
+
+C2H5O2H            2  1929.148     4.363     1.844     5.778     1 ! theoret trans
+
+OCCHO2             2  1729.734     4.282     2.808     5.516     1 !=C2H5O2
+
+!C3H2               2   209.000     4.100     0.000     0.000     1.000 ! Chemkin transport database
+C3H2               1  1586.168     4.003     0.507     5.464     1 ! theoret trans
+CHCCH(S)           1  1553.210     3.938     2.443     5.946     1 ! theoret trans
+!C3H2               1   290.616     4.368     0.000     0.000     1.000 ! LJcjp Miller trans
+
+!C3H3               1   252.000     4.760     0.000     0.000     1.000 ! Chemkin transport database
+!C3H3               1   324.800     4.290     0.000     0.000     1.000 ! NMM LLNL
+C3H3               2  1457.899     4.060     0.101     5.606     1 ! theoret trans
+!H2CCCH             2   304.182     4.583     0.000     0.000     1.000 ! LJcjp Miller trans
+
+!AC3H4              1   252.000     4.760     0.000     0.000     1.000 ! Chemkin transport database
+!C3H4-A             1   324.800     4.290     0.000     0.000     1.000 ! ALLENE, NMM LLNL
+AC3H4              2  1506.911     4.148     0.000     5.937     1 ! theoret trans
+!C3H4               2   304.182     4.583     0.2       0.000     1.000 ! LJDcjp Miller trans
+
+!PC3H4              1   252.000     4.760     0.000     0.000     1.000 ! Chemkin transport database
+!C3H4-P             1   324.800     4.290     0.000     0.000     1.000 ! NMM LLNL	
+PC3H4              2  1526.051     4.140     0.763     5.314     1 ! theoret trans
+!C3H4P              2   311.458     4.575     0.7       0.000     1.000 ! LJDcjp Miller trans
+
+!c3h4c              2   324.800     4.290     0.000     0.000     1.000 ! nmm old LLNL
+c-C3H4             2  1862.492     3.984     0.438     5.081     1 ! theoret trans
+!C3H4C              2   310.        4.58      0.5       0.0       1.0   ! JAM (1/02) Miller trans
+
+!C3H5               2   260.000     4.850     0.000     0.000     1.000 ! JAM 
+!C3H5-A             2   316.000     4.220     0.000     0.000     1.000 ! LLNL	
+C3H5               2  1156.257     4.349     0.049     6.034     0 ! theoret trans
+!CH2CHCH2           2   282.433     4.737     0.4       0.0       0.0   ! ljdCJP Miller trans
+
+!SC3H5              2   260.000     4.850     0.000     0.000     1.000 ! JAM   
+!C3H5-S             2   316.000     4.220     0.000     0.000     1.000 ! LLNL	
+SC3H5              2  1352.454     4.310     0.750     5.779     0 ! theoret trans
+!CH3CHCH            2   282.433     4.737     0.4       0.0       0.0   ! ljdCJP Miller trans
+
+!TC3H5              2   260.000     4.850     0.000     0.000     1.000 ! JAM 
+!C3H5-T             2   316.000     4.220     0.000     0.000     1.000 ! LLNL
+TC3H5              2  1421.402     4.247     0.882     5.883     0 ! theoret trans
+!CH3CCH2            2   282.433     4.737     0.4       0.0       0.0   ! ljdCJP Miller trans
+
+c-C3H5             2  1569.421     4.145     0.644  5.309     0 ! theoret trans
+
+!C3H6               2   266.800     4.982     0.000     0.000     1.000 ! Chemkin transport database
+!C3H6               2   307.800     4.140     0.000     0.000     1.000 ! NMM LLNL	
+C3H6               2  1434.164     4.340     0.362     5.876     0 ! theoret trans
+!C3H6               2   282.433     4.737     0.4       0.0       0.0   ! ljdCJP Miller trans
+
+c-C3H6             2  1625.205     4.193     0.002   5.369     0 ! theoret trans
+
+!IC3H7              2   266.800     4.982     0.000     0.000     1.000 ! Chemkin transport database
+!IC3H7              2   303.400     4.810     0.000     0.000     1.000 ! NMM LLNL	
+IC3H7              2  1279.724     4.502     0.256     5.963     1 ! theoret trans
+
+!NC3H7              2   266.800     4.982     0.000     0.000     1.000 ! Chemkin transport database
+!NC3H7              2   303.400     4.810     0.000     0.000     1.000 ! NMM LLNL	
+NC3H7              2  1280.940     4.495     0.334     5.938     1 ! theoret trans
+
+!C3H8               2   266.800     4.982     0.000     0.000     1.000 ! Chemkin transport database
+!C3H8               2   303.400     4.810     0.000     0.000     1.000 ! NMM LLNL
+C3H8               2  1298.571     4.582     0.089     5.987     1 ! theoret trans
+
+!HCCCO              2   436.000     3.970     0.000     0.000     2.000 !est. HR
+!hccco              2   443.200     4.120     0.000     0.000     1.000 ! nmm old LLNL
+HCCCO              2  1944.705     3.864     1.508     6.450     1 ! theoret trans
+
+hcccho             2   443.200     4.120     0.000     0.000     1.000 ! nmm old LLNL
+CHCCHO             2  2001.712     4.120     2.792     5.694     1 ! theoret trans
+
+CH2CCO             2  2293.151     4.010     2.303     6.438     1 ! theoret trans
+
+!C2H3CO             2   443.200     4.120     0.000     0.000     1.000 ! NMM LLNL
+C2H3CO             2  1953.280     4.242     1.099     6.531     1 ! theoret trans
+
+!CH2CCHO            2   3.17E+02    4.83E+00  0.00E+00  8.81E+00  1 ! LLNL
+CH2CCHO            2  2044.326     4.202     3.271     6.438     1 ! theoret trans
+!h2cchco            2   443.200     4.120     0.000     0.000     1.000 ! nmm old LLNL
+
+!CHCHCHO            2   3.17E+02    4.83E+00  0.00E+00  8.81E+00  1 ! LLNL
+!chchcho            2   443.200     4.120     0.000     0.000     1.000 ! nmm old LLNL
+CHCHCHO            2  1834.129     4.277     2.995     6.139     1 ! theoret trans
+
+CH2CHCO            2  1965.261     4.314     1.823     6.094     1 ! =CH3CHCO
+CH3CCO            2  1965.261     4.314     1.823     6.094     1 ! =CH3CHCO
+
+!C2H3CHO            2   428.800     4.958     2.900     0.000     1.000 ! WJP: ACROLEIN, TCPC, POLING 4TH EDITION LLNL		
+!ch2chcho           2   443.200     4.120     0.000     0.000     1.000 ! nmm old LLNL
+CH2CHCHO           2  1990.064     4.279     3.207     6.299     1 ! theoret trans
+
+!CH3CHCO            2   443.200     4.120     0.000     0.000     1.000 ! NMM LLNL	
+CH3CHCO            2  1965.261     4.314     1.823     6.094     1 ! theoret trans
+
+C3H5O              2  1768.159     4.415     1.882     6.326     1 ! theoret trans
+
+CH2CHCHOH          2  1880.863     4.458     0.000     0.000     1 ! theoret trans
+
+(CH2)2COH          2  1894.738     4.406     0.000     0.000     1 ! theoret trans
+
+!CH2CH2CHO          2   424.600     4.820     0.000     0.000     1.000 ! NMM LLNL
+C2H4CHO            2  1799.674     4.448     2.732     6.097     1 ! theoret trans
+
+!C2H5CO             2   424.600     4.820     0.000     0.000     1.000 ! NMM LLNL	
+!C2H5CO             2   436.000     3.970     0.000     0.000     2.000 !est. HR
+C2H5CO             2  1542.364     4.512     2.559     6.264     1 ! theoret trans
+
+!CH3CHCHO           2   387.860     4.687     0.000     0.000     0.000 ! FLAMEMASTER LLNL	
+CH3CHCHO           2  1957.078     4.371     3.023     6.309     1 ! theoret trans
+
+CH2OCHCH2          2  1797.881     4.417     0.674     6.685     1 ! theoret trans
+
+CH3COCH2           2   435.500     4.860     0.000     0.000     1.000 ! NMM LLNL	
+CH2COCH3           2  1783.857     4.495     3.019     6.190     1 ! theoret trans
+
+!CH3COCH3           2   436.000     3.970     0.000     0.000     2.000 !est. HR
+!CH3COCH3           2   435.500     4.860     0.000     0.000     1.000 ! NMM LLNL	
+CH3COCH3           2  1839.794     4.568     2.955     6.212     1 ! theoret trans
+
+CH2CHOCH3          2  1650.963     4.662     1.408     6.814     1 ! =CH3CH2OCH2
+
+C3H6O              2  1974.486     4.448     1.998     6.015     1 ! theoret trans
+
+CH2CH(-O-)CH2              2  1930.420     4.383      1.871    6.122     1 ! theoret trans
+
+CH2CHCH2OH         2  1986.907     4.584      1.776     6.522    1 ! theoret trans
+
+CH3CHCHOH          2  2089.255     4.514      1.278     6.585    1 ! theoret trans
+
+CH2CH2CH2OH        2  1747.965     4.593      1.807     6.588     1 ! theoret trans
+
+CH3CH2CHOH         2  1781.616     4.600      1.243     6.804     1 ! theoret trans
+
+CH3CHCH2OH         2  1858.168     4.575      1.587     6.667     1 ! theoret trans
+
+!C2H5CHO            2   435.200     4.662      2.700     0.000     1.000 ! WJP, PROPANAL LLNL
+!C2H5CHO            2   436.000     3.970      0.000     0.000     2.000 !est. HR
+!c2h5cho            2   424.600     4.820      0.000     0.000     1.000 ! nmm old LLNL
+C2H5CHO            2  1842.071     4.521      2.653     6.163     1 ! theoret trans
+
+CH3(COH)CH2        2  1882.705     4.486      0.631     6.621     1 ! theoret trans
+
+(CH3)2COH          2  1640.650     4.671      1.451     6.915     1 ! theoret trans
+
+!IC3H7O             2    403.637    4.884      1.7   0.000     1.000 != (CH3)2CHOH 
+!IC3H7O             2   459.500     5.036     1.700     0.000     1.000 ! WJP LLNL	
+!IC3H7O             2   266.800     4.982     0.000     0.000     1.000 !=C3H7
+!ic3h7o             2   468.300     4.760     0.000     0.000     1.000 ! nmm old LLNL
+IC3H7O             2  1605.038     4.666     2.063     6.631     1 ! theoret trans
+
+!NC3H7O             2   481.500     4.997     1.700     0.000     1.000 ! WJP LLNL	
+!NC3H7O             2   266.800     4.982     0.000     0.000     1.000 !=C3H7
+!nc3h7o             2   487.900     4.820     0.000     0.000     1.000 ! nmm old LLNL
+NC3H7O             2  1689.836     4.608     1.977     6.507     1 ! theoret trans
+
+CH3CH2OCH2         2  1650.963     4.662     1.408     6.814     1 ! theoret trans
+
+CH2CH2OCH3         2  1672.703     4.665     1.232     6.595     1 ! theoret trans
+
+CH3CHOCH3          2  1618.837     4.725     1.097     6.919     1 ! theoret trans
+
+CH2(CHOH)CH3       2  1592.485     4.689     1.463     6.709     1 ! theoret trans
+
+(CH2OH)CHCH3       2  1847.343     4.635     1.678     6.636     1 != NC3H7OH
+
+NC3H7OH            2  1847.343     4.635     1.678     6.636     1 ! theoret trans
+!NC3H7OH           2   3.31E+02 4.96E+00  0.00E+00  1.38E+01  1 ! LLNL
+
+(CH3)2CHOH         2  1581.874  4.759  1.673  6.685  1 ! theoret trans
+!IC3H7OH           2   3.31E+02 4.96E+00    0.00E+00  1.38E+01 1 ! LLNL
+
+CH3OC2H5           2  1620.653  4.789  1.234  6.781  1 ! theoret trans
+
+CH3C(O)OCH3        2  368.122   5.273  1.700  7.03   1.000 ! LLNL
+CH3C(O)OCH2        2  365.579    5.251     1.700     6.86     1.000 ! LLNL
+CH2C(O)OCH3        2  365.579    5.251     1.700     6.86     1.000 ! LLNL
+
+C2H5OCHO        2   427.100     5.139     2.000     6.690     1.000 ! LLNL
+C2H5OCO         2   427.100     5.139     2.000     6.690     1.000 ! LLNL
+CH3CHOCHO       2   427.100     5.139     2.000     6.690     1.000 ! LLNL
+CH2CH2OCHO      2   427.100     5.139     2.000     6.690     1.000 ! LLNL
+
+C3H5O2             2   481.500     4.997     1.700     0.000     1.000 !=NC3H7O2
+
+CH3OCOCH3          2   446.078     4.989     0.000     0.000     1.000!= CH3(CHOOH)CH2
+
+CH3OCH2OCH3        2   446.078     4.989     0.000     0.000     1.000 != CH3(CHOOH)CH2
+
+NC3H7O2            2   481.500     4.997     1.700     0.000     1.000 ! WJP LLNL	
+NC3H7O2H           2   481.500     4.997     1.700     0.000     1.000 ! WJP LLNL	
+(CH3)2CHOO         2   459.500     5.036     1.700     0.000     1.000 ! WJP LLNL	
+(CH3)2CHOOH        2   459.500     5.036     1.700     0.000     1.000 ! WJP LLNL	
+
+C2H5COOH           2   481.500     4.997     1.700     0.000     1.000 ! = NC3H7O2 
+
+C2H5C(O)O          2   481.500     4.997     1.700     0.000     1.000 !=C2H5COOH
+
+CH2CH2COOH         2   481.500     4.997     1.700     0.000     1.000 !=C2H5COOH
+CH3CHCOOH          2   481.500     4.997     1.700     0.000     1.000 !=C2H5COOH
+C2H3COOH           2   481.500     4.997     1.700     0.000     1.000 !=C2H5COOH
+CH3CHC(OH)2        2   481.500     4.997     1.700     0.000     1.000 !=C2H5COOH
+
+CH2CHCOOH          2   481.500     4.997     1.700     0.000     1.000 !=C2H5COOH
+
+CH3COCOCH2         2   490.832   5.238   0.0   0.000     1.000 ! =(CH3CO)2
+(CH3CO)2           2   490.832   5.238   0.0   0.000     1.000 ! est 
+
+!C4H                1   357.000     5.180     0.000     0.000     1.000
+C4H                1  2520.936  4.064  0.865  7.180  1 ! theoret trans
+!C4H;pi           1  2520.936  4.064  4.542  7.817  1
+
+!C4H2               1   357.000     5.180     0.000     0.000     1.000
+C4H2           1  2165.650  4.106  0.000  7.110  1 ! theoret trans
+
+!IC4H3              1   357.000     5.180     0.000     0.000     1.000 
+IC4H3              2  2263.598  4.260  0.397  7.983  1 ! theoret trans CH2CCCH 
+
+!NC4H3              1   357.000     5.180     0.000     0.000     1.000 
+NC4H3              2  2124.236  4.233  0.399  7.101  1 ! theoret trans CHCHCCH
+
+CH2CHCC            1   357.000     5.180     0.000     0.000     1.000 
+
+!CH2CHCCH           2   357.000     5.180     0.000     0.000     1.000 ! JAM
+CH2CHCCH         2  2097.868  4.362  0.406  7.352  1 ! theoret trans
+
+!CH2CCCH2           1   357.000     5.180     0.000     0.000     1.000 ! C4H4 
+CH2CCCH2         2  2322.704  4.295  0.000  8.574  1 ! theoret trans
+
+
+
+CH2CHCHCH          2   357.000     5.180     0.000     0.000     1.000 ! JAM
+
+CH2CHCCH2          2   357.000     5.180     0.000     0.000     1.000 ! JAM
+
+H2C4O              2   357.000     5.180     0.000     0.000     1.000 ! JAM
+
+CH3(CHOOH)CH2      2   459.500     5.036     1.700     0.000     1.000 !=(CH3)2CHOOH
+
+(CH2OOH)CH2CH2     2   481.500     4.997     1.700     0.000     1.000 !=NC3H7O2H
+(CH2OOH)CHCH3      2   481.500     4.997     1.700     0.000     1.000 !=NC3H7O2H 
+(CH2OOH)CH2CH2OO   2   481.500     4.997     1.700     0.000     1.000 !=NC3H7O2H
+
+(CHO)CH2(CH2O)     2   481.500     4.997     1.700     0.000     1.000 !=NC3H7O2H
+CH2CHCH2OOH        2   481.500     4.997     1.700     0.000     1.000 !=NC3H7O2H
+(CH2OOH)-c-C2H3O   2  1974.486     4.448     1.998     6.015     1.000 !=C3H6O 
+
+CH3CHCHOOH         2   481.500     4.997     1.700     0.000     1.000 !=NC3H7O2H
+
+CH3(CHO)CHO        2   459.500     5.036     1.700     0.000     1.000 !=(CH3)2CHOOH  
+CH3(CO)CH2O        2   459.500     5.036     1.700     0.000     1.000 !=(CH3)2CHOOH  
+CH3(COOH)CH2       2   459.500     5.036     1.700     0.000     1.000 !=(CH3)2CHOOH  
+CH3(CHOOH)CH2OO    2   459.500     5.036     1.700     0.000     1.000 !=(CH3)2CHOOH  
+HOOH2C(CHOO)CH3    2   459.500     5.036     1.700     0.000     1.000 !=(CH3)2CHOOH  
+HOOH2C(CHOOH)CH2   2   459.500     5.036     1.700     0.000     1.000 !=(CH3)2CHOOH  
+
+(OCH)CH2CH2OOH     2   481.500     4.997     1.700     0.000     1.000 !=NC3H7O2H   
+
+
+CH3(CHOOH)CHO      2   459.500     5.036     1.700     0.000     1.000 !=(CH3)2CHOOH
+CH3(CO)CH2OOH      2   459.500     5.036     1.700     0.000     1.000 !=(CH3)2CHOOH   
+
+c-C2H3O-CH2O       2  1974.486     4.448     1.998     6.015     1.000 !=C3H6O  
+
+!AR                 0   136.500     3.330     0.000     0.000     0.000
+AR                 0   127.697     3.462     0.000     1.609     2 ! theoret trans
+
+!N2                 1    71.400     3.798     0.000     1.760     4.000 !ivanov
+N2                 1    97.839     3.610     0.000     1.756     4 ! theoret trans
+
+!HE                 0    10.220     2.556     0.000     0.000     0.000 !ivanov
+HE                 0    11.442     2.715     0.000     0.204     2 ! theoret trans
+
+N                  0    71.400     3.298     0.000     0.000     0.000 ! Chemkin transport database
+
+NH                 1    80.000     2.650     0.000     0.000     4.000 ! Chemkin transport database
+
+NH2                2    80.000     2.650     0.000     2.260     4.000 ! Chemkin transport database
+
+NH3                2   481.000     2.920     1.470     0.000    10.000 ! Chemkin transport database
+
+NNH                2    71.400     3.798     0.000     0.000     1.000 ! Chemkin transport database
+
+
+N2H2               2    71.400     3.798     0.000     0.000     1.000 ! Chemkin transport database
+
+N2H3               2   200.000     3.900     0.000     0.000     1.000 ! Chemkin transport database
+
+N2H4               2   205.000     4.230     0.000     4.260     1.500 ! Chemkin transport database
+
+NO                 1    97.530     3.621     0.000     1.760     4.000 ! Chemkin transport database
+
+HNO                2   116.700     3.492     0.000     0.000     1.000 ! Chemkin transport database
+
+H2NO               2   116.700     3.492     0.000     0.000     1.000 ! Chemkin transport database
+
+HNOH               2   116.700     3.492     0.000     0.000     1.000 ! Chemkin transport database
+
+NH2OH              2   116.700     3.492     0.000     0.000     1.000 !=HNOH
+
+NO2                2   200.000     3.500     0.000     0.000     1.000 ! Chemkin transport database
+
+HONO               2   232.400     3.828     0.000     0.000     1.000  !=HNNO
+
+N2O                1   232.400     3.828     0.000     0.000     1.000 ! Chemkin transport database
+
+HNNO               2   232.400     3.828     0.000     0.000     1.000 ! Chemkin transport database
+
+NO3                2   378.400     4.175     0.000     0.000     1.000  !=SO3
+
+HNO3               2   378.400     4.175     0.000     0.000     1.000  !=SO3
+
+N2O3               2   202.6       5.164     0.000     0.000     1.000  !=C2F4
+
+N2O4               2   202.6       5.164     0.000     0.000     1.000  !=C2F4
+
+N2O5               2   202.6       5.164     0.000     0.000     1.000  !=C2F4
+
+CN                 1    75.000     3.856     0.000     0.000     1.000 ! Chemkin transport database
+
+HCN                1   569.000     3.630     0.000     0.000     1.000 ! Chemkin transport database
+
+HNC                1   569.000     3.630     0.000     0.000     1.000  !=HCN
+
+H2CN               1   569.000     3.630     0.000     0.000     1.000 ! Chemkin transport database
+
+HCNH               1   569.000     3.630     0.000     0.000     1.000 !=H2CN
+
+CNN                1   232.400     3.828     0.000     0.000     1.000 ! Chemkin transport database
+
+NCN                1   232.400     3.828     0.000     0.000     1.000 ! OIS
+
+HCNN               2   150.000     2.500     0.000     0.000     1.000 ! *
+
+HNCN               2   150.000     2.500     0.000     0.000     1.000 !=HCNN
+
+NCO                1   232.400     3.828     0.000     0.000     1.000  !(OIS)
+
+HNCO               2   232.400     3.828     0.000     0.000     1.000 ! Chemkin transport database
+
+HOCN               2   232.400     3.828     0.000     0.000     1.000  !(JAM)
+
+HCNO               2   232.400     3.828     0.000     0.000     1.000 ! JAM
+
+H2CNO              2   232.400     3.828     0.000     0.000     1.000 !=HCNO
+
+CH3NO              2   232.400     3.828     0.000     0.000     1.000 !=HCNO
+
+CH3NO2             2   232.400     3.828     0.000     0.000     1.000 ! from Glarborg
+
+CH2NO2             2   232.400     3.828     0.000     0.000     1.000 ! from Glarborg
+
+CH3ONO             2   232.400     3.828     0.000     0.000     1.000 ! from Glarborg
+
+C2N2               1   349.000     4.361     0.000     0.000     1.000  !(OIS)
+
+!NC4H9              2   357.000     5.176     0.000     0.000     1.000
+PC4H9              2  1733.386     4.854     0.299     7.738     1 ! theoret trans CH3CH2CH2CH2
+
+!SC4H9              2   357.000     5.176     0.000     0.000     1.000
+SC4H9              2  1673.769     4.933     0.286     7.801     1 ! theoret trans CH3CH2CHCH3
+
+PC4H9O2            2   473.247      5.395  0.0   0.000     1.000 !=NC4H9OOH 
+SC4H9O2            2   466.894      5.358  0.0   0.000     1.000 !=SC4H9OOH 
+TC4H9O2            2   546.155      5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+IC4H9O2            2   546.155      5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+
+PC4H9O2H           2   473.247   5.395   0.0   0.000     1.000 ! est 
+SC4H9O2H           2   466.894   5.358   0.0   0.000     1.000 ! est 
+IC4H9O2H            2      505.540    5.450      0.000      0.000      0.000      !! 
+TC4H9O2H            2      505.540    5.450      0.000      0.000      0.000      !! 
+
+!T2C4H8             2   340.348   5.013      0.0      0.000     1.000 
+!C2C4H8             2   345.906   4.985      0.3      0.000     1.000 
+T2C4H8             2   1971.548  4.718     0.000    7.752  1 ! theoret trans CH3CHCHCH3
+C2C4H8             2   1971.548  4.718     0.000    7.752  1 ! theoret trans CH3CHCHCH3
+
+C4H8-1      2  1799.513  4.761  0.366  7.726  1 ! theoret trans CH2CHCH2CH3
+!C4H8               2   357.000     5.176     0.000     0.000     1.000
+
+PC4H9O             2   447.153   5.261    1.8     0.000   1.000 !=NC4H9OH
+SC4H9O             2   442.424   5.245    0.0   0.000     1.000 !=SC4H9OH
+
+C4H71-1            2  1852.905  4.652  0.703  7.458  1 ! theoret trans CH3CH2CHCH
+C4H71-2            2  1852.905  4.652  0.703  7.458  1 ! =C4H71-1
+C4H71-3            2  1799.513  4.761  0.366  7.726  1 ! theoret trans CH2CHCH2CH3
+C4H71-4            2  1836.452  4.687  0.513  7.510  1 ! theoret trans CH2CHCH2CH2
+C4H72-2            2  1954.874  4.589  0.650  7.850  1 ! theoret trans CH3CCHCH3
+
+C4H71-O              2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+
+C4H8OOH1-2           2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+C4H8OOH1-3           2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+C4H8OOH1-4           2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+C4H8OOH2-1           2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+C4H8OOH2-3           2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+C4H8OOH2-4           2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+
+C4H8O1-2             2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+C4H8O1-3             2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+C4H8O1-4             2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+C4H8O2-3             2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+
+IC4H10               2  1583.309  5.026  0.142  7.784  1 ! theoret trans (CH3)2CHCH3
+C4H10                2  1657.880  4.929  0.000  7.792  1 ! theoret trans CH3CH2CH2CH3
+
+IC4H9                2  1567.345  4.959  0.338  7.773  1 ! theoret trans (CH3)2CHCH2
+TC4H9                2  1693.032  4.878  0.216  7.931  1 ! theoret trans (CH3)3C
+
+!(CH3)3CO           2   401.969   5.261    1.7     0.000   1.000 !=(CH3)3COH
+TC4H9O               2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+
+!OCH2CH(CH3)2       2   435.004     5.248     1.700     0.000     1.000 !=(CH3)2CHCH2OH
+IC4H9O               2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+IC4H8O               2.000      436.400    5.352      0.000      0.000      1.000      !! Aramco 3.0
+
+!(CH3)2CHCHO        2   407.369   5.255   0.0   0.000     1.000 ! est 
+IC3H7CHO             2.000      436.400    5.352      0.000      0.000      1.000      !! Aramco 3.0
+IC3H7CO              2.000      436.400    5.352      0.000      0.000      1.000      !! Aramco 3.0
+IC3H6CHO             2.000      436.400    5.352      0.000      0.000      1.000      !! Aramco 3.0
+TC3H6CHO             2.000      436.400    5.352      0.000      0.000      1.000      !! Aramco 3.0
+IC3H5CHO             2.000      436.400    5.352      0.000      0.000      1.000      !! Aramco 3.0
+IC3H6CO              2.000      436.400    5.352      0.000      0.000      1.000      !! Aramco 3.0
+IC3H5CO              2.000      436.400    5.352      0.000      0.000      1.000      !! Aramco 3.0
+IC3H4CHO-A           2.000      436.400    5.352      0.000      0.000      1.000      !IC3H5CO! Aramco 3.0
+SC4H7OH-I            2.000      436.400    5.352      0.000      0.000      1.000      !IC4H8O! Aramco 3.0
+IC4H8O2H-I           2.000      502.200    5.356      1.800      0.000      1.000      !! Aramco 3.0
+IC4H8O2H-T           2.000      502.200    5.356      1.800      0.000      1.000      !! Aramco 3.0
+TC4H8O2H-I           2.000      502.200    5.356      1.800      0.000      1.000      !! Aramco 3.0
+C4H8OM-3             2.000      444.197    5.063      0.000      0.000      0.000      !! Aramco 3.0 CC4H8O
+IC4H7OOH             2.000      436.400    5.352      0.000      0.000      1.000      !! Aramco 3.0
+
+IC4H8                2  1813.702  4.818  0.499  7.697  1 ! theoret trans (CH3)2CCH2
+IC4H7                2  1681.764  4.636  0.000  0.000  1 ! theoret trans CH3C(CH2)2
+IC4H7-I1             2.000      380.022    4.633      0.000      0.000      0.000      !! Aramco 3.0
+
+IC4H7O2              2.000      436.400    5.352      0.000      0.000      1.000      !TC3H6OCHO! Aramco 3.0
+IC4H6OOH-I           2.000      436.400    5.352      0.000      0.000      1.000      !TC3H6OCHO! Aramco 3.0
+IC4H7O               2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+CH3C(-O-)CH2         2.000      411.000    4.820      0.000      0.000      1.000      !C3H5O! Aramco 3.0
+IC4H8OH-IT           2.000      496.000    5.200      0.000      0.000      1.000      !PC4H9O! Aramco 3.0
+IC4H8OH-TI           2.000      496.000    5.200      0.000      0.000      1.000      !PC4H9O! Aramco 3.0
+IC4H7OH              2.000      502.200    5.356      1.800      0.000      1.000      !! Aramco 3.0
+IC4H8OH              2.000      496.000    5.200      0.000      0.000      1.000      !! Aramco 3.0
+IC4H6OH              2.000      502.200    5.356      1.800      0.000      1.000      !! Aramco 3.0
+CH3COCHO             2.000      301.658    5.310      0.000      0.000      1.000      !C3H3O2H! Aramco 3.0
+IC3H5OCH2            2.000      496.000    5.200      0.000      0.000      1.000      !C4H7O! Aramco 3.0
+PC4H8OH-2            2.000      496.000    5.200      0.000      0.000      1.000      !PC4H9O! Aramco 3.0
+
+!IC4H5              2   357.000     5.180     0.000     0.000     1.000 
+IC4H5                2  2012.212  4.550  0.133  8.202  1 ! theoret trans CH2CHCCH2
+!NC4H5              2   357.000     5.180     0.000     0.000     1.000 
+NC4H5                2  1929.785  4.503  0.626  7.901  1 ! theoret trans CH2CHCHCH
+
+!CH3CCCH2           2   357.000     5.180     0.000     0.000     1.000 ! JAM
+CH3CCCH2         2  2142.506  4.470  0.907  7.768  1 ! theoret trans
+
+CHCCH2CH2          2  1929.785  4.503  0.626  7.901  1 !=NC4H5
+
+!CH3CHCCH           2   357.000     5.180     0.000     0.000     1.000 !=C4H5
+CH3CHCCH         2  1955.073  4.483  0.602  7.546  1 ! theoret trans
+
+!CH2CHCHCH2         2   357.000     5.180     0.000     0.000     1.000 ! JAM
+CH2CHCHCH2       2  2085.089  4.514  0.000  8.099  1 ! theoret trans
+
+!CH2(CHOH)C2H5      2   442.424   5.245    0.0   0.000     1.000 !=CH3(CHOH)C2H5
+SC4H8OH-1            2.000      496.000    5.200      0.000      0.000      1.000      !PC4H9O! Aramco 3.0
+
+!CH3(CHOH)CHCH3     2   442.424   5.245    0.0   0.000     1.000 !=CH3(CHOH)C2H5
+SC4H8OH-3            2.000      496.000    5.200      0.000      0.000      1.000      !PC4H9O! Aramco 3.0
+
+C4H71-3OH            2.000      436.400    5.352      0.000      0.000      1.000      !IC4H8O! Aramco 3.0
+
+!CH2CHCH2CH2OH      2   447.389   5.160  0.0   0.000     1.000 ! est 
+C4H71-4OH            2.000      436.400    5.352      0.000      0.000      1.000      !IC4H8O! Aramco 3.0
+C4H71-1OH            2.000      436.400    5.352      0.000      0.000      1.000      !IC4H8O! Aramco 3.0
+C4H71-2OH            2.000      436.400    5.352      0.000      0.000      1.000      !IC4H8O! Aramco 3.0
+C4H72-1OH            2.000      436.400    5.352      0.000      0.000      1.000      !IC4H8O! Aramco 3.0
+C4H72-2OH            2.000      436.400    5.352      0.000      0.000      1.000      !IC4H8O! Aramco 3.0
+C4H7O2-1             2.000      436.400    5.352      0.000      0.000      1.000      !IC4H7OOH! Aramco 3.0
+
+C2H5CCH        2  1892.314  4.563  0.772  7.164  1 ! theoret trans CH3CH2CCH
+
+AC3H5OCH2            2.000      523.200    5.664      1.700      0.000      1.000      !SC3H5OCH2! Aramco 3.0
+
+CH3OCH2O2H           2.000      395.000    4.037      1.300      0.000      1.000      !! Aramco 3.0
+CH3OCH2O2            2.000      395.000    4.037      1.300      0.000      1.000      !! Aramco 3.0
+CH2OCH2O2H           2.000      395.000    4.037      1.300      0.000      1.000      !! Aramco 3.0
+O2CH2OCH2O2H         2.000      395.000    4.037      1.300      0.000      1.000      !! Aramco 3.0
+HOOCH2OCHO           2.000      395.000    4.037      1.300      0.000      1.000      !! Aramco 3.0
+OCH2OCHO             2.000      395.000    4.037      1.300      0.000      1.000      !! Aramco 3.0
+HOCH2OCO             2.000      395.000    4.037      1.300      0.000      1.000      !! Aramco 3.0
+
+
+
+END
+
+
+C3H4OOH            1   485.984   4.899      1.5   0.000     1.000 !=C2H5COOH
+
+CH3CHCHOO          2   488.367   4.809   0.000     0.000     1.000 !=CH2CHCOOH
+CH3(COO)CH2        2   446.078     4.989     0.000     0.000     1.000 != CH3(CHOOH)CH2
+
+
+
+
+CHCHCH2OOH         2   488.367   4.809   0.000     0.000     1.000 !=C3H4OOH
+CH3CCHOOH          2   488.367   4.809   0.000     0.000     1.000 !=C3H4OOH
+CH2CHCHOOH         2   488.367   4.809   0.000     0.000     1.000 !=C3H4OOH
+CH(COOH)CH3        2   446.078     4.989     0.000     0.000     1.000!= CH3(CHOOH)CH2
+CH3(CHOH)CHO       2   446.078     4.989     0.000     0.000     1.000!= CH3(CHOOH)CH2
+CH3(CO)CH2OH       2   488.367     4.809     0.000     0.000     1.000 !=CH2CHCOOH
+
+
+
+!HCOOC2H5 no reactions 
+(CH2OOH)CHCH2      2   450.947   4.895 0.000     0.000     1.000 ! est 
+!CH3COOCH3 no reactions 
+
+(CH2OH)(CHO)CH3    2   446.078     4.989     0.000     0.000     1.000 != CH3(CHOOH)CH2
+OCH2(CHOH)CH3      2   446.078     4.989     0.000     0.000     1.000 != CH3(CHOOH)CH2
+
+
+COOOC2H3           1   504.025     5.147     0.000     0.000     1.000 !=(CHO)CH2(CH2OOH)
+C2H3C(OOH)O        2   488.495     5.072     0.000     0.000     1.000  !=C2H5C(OOH)O     
+C3O2               1   485.984   4.899      1.5   0.000     1.000 !=C3H4OOH
+
+
+CH3CO3             2   357.000     5.176     0.000     0.000     1.000  !=C4H8
+OCHCH2O2           1   485.984   4.899      1.5   0.000     1.000 !=C3H4OOH
+OCCH2OOH           1   485.984   4.899      1.5   0.000     1.000 !=C3H4OOH
+CH2(CO)OOH         2   488.367   4.809   0.000     0.000     1.000 !=CH2CHCOOH
+CH3CO3H            2   357.000     5.176     0.000     0.000     1.000  !=C4H8
+C2H4O3             2   488.367   4.809   0.000     0.000     1.000 !=CH2CHCOOH
+CH3OOCH2O          2   357.000     5.176     0.000     0.000     1.000  !=C3H5O2
+(CH2OH)(CH2OO)     1   523.393   4.895  0.000  0.000  1.000 != (CH2OOH)CH2OOH
+C2H4O4             1   523.393     4.895     0.000     0.000     1.000 !=(CH2OOH)CH2OO
+O2CH2CO2H          1   523.393     4.895     0.000     0.000     1.000 !=(CH2OOH)CH2OO
+
+!C2H5ONO2 no reactions 
+(CH2OOH)CH2OO      1   523.393   4.895 0.000  0.000  1.000 != (CH2OOH)CH2OOH
+(CH2OOH)CH2OOH     1   523.393   4.895 0.000  0.000  1.000 ! est
+
+
+
+END
+
+ 1-15: Species name                                                             
+ 16-80: Molecular parameters                                                    
+        molecule index: 0 = atom, 1= linear molec.                              
+                        2 = nonlinear molec.                                    
+        L-J potential well depth, e/kb (K)                                      
+        L-J collision diameter, s,                                              
+        Dipole moment, f, Debye                                                 
+        Polarizability, `,  2                                                   
+        Rotational relaxation number, Zrot at 298K                              
+
+theoret trans:
+https://tcg.cse.anl.gov/papr/databases/transport.dat
+
+END
+
+
+!CL                 0   151.000     3.339     0.000     2.300     1.0 ! law
+CL                 0   130.800     3.613     0.000     0.000     1.0 !chemk37
+HCL                1   344.700     3.339     1.100     2.640     1.0
+CL2                1   316.000     4.217     0.200     4.600     1.0
+
+CLO                1   211.350     3.842     1.700     2.990     1.0
+HOCL               2   453.970     3.968     1.930     3.390     1.0
+CL2O               2   424.1       4.313     0.000     0.000     1.000 !to check
+
+
+CLNO               2   349.400     1.8       0.000     0.000     1.000! estim
+NOCL               2   349.400     1.8       0.000     0.000     1.000!=CLNO
+
+OCLO               2   200.000     3.500     0.000     0.000     1.000 !=NO2 
+CLOO               2   448.853     4.007     0.000     0.000     1.000 !=CLOOH
+CL2O2              2   450.947     4.477     0.000     0.000     1.000 ! est
+
+NO2CL              2   455.846     4.451     0.000     0.000     1.000  !est
+CLONO              2   527.669     4.093     0.000     0.000     1.000  !est
+
+CLONO2             2   487.701     4.606     0.000     0.000     1.000  !est 
+
+CCL                1   224.700     4.163     1.570     3.730     1.0 ! =CHCL
+CHCL               1   224.700     4.163     1.570     3.730     1.0
+CH2CL              2   340.280     4.305     0.800     3.830     1.0
+CH3CL              2   350.000     4.182     1.900     4.230     1.0
+CCL2               1   348.000     4.644     0.000     5.630     1.0
+CHCL2              2   420.850     4.694     1.570     6.030     1.0
+CH2CL2             2   356.300     4.898     1.800     6.430     1.0
+CCL3               2   444.360     5.031     0.000     7.930     1.0
+CHCL3              2   340.200     5.389     1.100     8.330     1.0
+CCL4               2   322.700     5.947     0.000    10.530     1.0
+
+CLCN               1   468.794     4.451     0.000     0.000     1.000 
+
+CCLO               1   388.530     4.730     1.800     4.490     1.0
+CHCLO              2   361.000     4.340     1.500     4.890     1.0
+CH2CLO             2   535.00      4.610     1.800     4.820     1.0
+CH3OCL             2   372.986     4.378     0.000     0.000     1.000 !est
+CLCH2OH            2   445.254     4.387     0.000     0.000     1.000 !est 
+COCL2              2   361.312     4.652     1.1       0.000     1.000 
+CCL3OH             2   533.391     5.072     0.000     0.000     1.000 !est 
+
+CCL3NO2            2   552.821     5.472     0.000     0.000     1.000 !est 
+!CH3ONO2 no reactions 
+
+C2CL               1   332.620     4.335     0.440     5.540     1.0 !=C2HCL
+C2HCL              1   332.620     4.335     0.440     5.540     1.0
+CHCHCL             1   345.170     4.738     1.500     5.740     1.0
+CH2CCL             1   345.170     4.738     1.500     5.740     1.0
+C2H3CL             1   349.000     4.644     1.500     6.140     1.0
+CH2CH2CL           2   379.290     4.816     2.000     5.960     1.0
+CH3CHCL            2   379.290     4.816     2.000     5.960     1.0
+C2H5CL             2   300.000     4.898     2.000     6.360     1.0
+C2CL2              1   442.700     4.958     0.000     7.440     1.0
+CHCCL2             1   426.190     5.140     0.900     7.640     1.0
+CHCLCCL            1   426.190     5.140     0.900     7.640     1.0
+CH2CCL2            1   412.180     5.013     1.340     8.040     1.0
+CHCLCHCL           1   426.190     5.140     0.900     8.040     1.0
+(Z)-CHCLCHCL       1   426.190     5.140     0.900     8.040     1.0 !=CHCLCHCL
+(E)-CHCLCHCL       1   426.190     5.140     0.900     8.040     1.0 !=CHCLCHCL
+CHCL2CH2           2   435.910     5.103     2.000     7.860     1.0
+CH3CCL2            2   435.910     5.103     2.000     7.860     1.0
+CH2CLCHCL          2   471.190     5.116     1.800     7.860     1.0
+CH2CHCL2           1   426.190     5.140     0.900     8.040     1.0
+CH3CHCL2           2   435.900     5.102     2.000     8.260     1.0
+CH2CLCH2CL         2   471.200     5.116     1.800     8.260     1.0
+C2CL3              1   473.360     5.247     0.900     9.540     1.0
+C2HCL3             1   472.500     5.316     0.900     9.940     1.0
+CHCLCHCL2          1   472.500     5.316     0.900     9.940     1.0
+CH2CLCCL2          2   498.910     5.379     1.700     9.760     1.0
+CH2CCL3            1   472.500     5.316     0.900     9.940     1.0
+CH3CCL3            2   454.000     5.406     1.770    10.160     1.0
+CH2CLCHCL2         2   498.900     5.397     1.700    10.160     1.0
+C2CL4              1   514.900     5.640     0.000    11.840     1.0
+CHCLCCL3           1   514.900     5.640     0.000    11.840     1.0
+CHCL2CCL2          2   525.050     5.872     1.320    11.660     1.0
+CH2CLCCL3          2   520.600     5.841     1.390    12.060     1.0
+CHCL2CHCL2         2   540.700     5.868     1.320    12.060     1.0
+C2CL5              2   556.000     6.142     0.910    13.560     1.0
+C2HCL5             2   556.000     6.142     0.920    13.960     1.0
+C2CL6              2   581.780     6.457     0.000    15.860     1.0
+!H2CNCH2      1   381.113   4.186         !=H3CNCH2 
+!CH2NCH3      1   381.113   4.186
+
+CHCLCO             1   441.752     4.597     0.000     0.000     1.000 ! est 
+CH2COCL            2   403.399     4.762     2.4       0.000     1.000 !=CH3COCL
+CHCLCHOH           1   467.919     4.695     0.000     0.000     1.000 ! est
+CH3COCL            2   403.399     4.762     2.4       0.000     1.000 ! est 
+CH2CCLOH           1   457.244     4.735     0.000     0.000     1.000 ! est 
+!c-CLC2H3O no reactions 
+CH3CCLO            2   448.204     4.751     0.000     0.000     1.000 ! est 
+CH2CLCHO           2   442.927     4.835     0.000     0.000     1.000 ! est 
+CH2CHCLOH          1   459.552  4.805   0.000   0.000     1.000 !=CH3CHCLOH
+CHCLCH2OH          1   466.158   4.850   0.000   0.000     1.000 !=CH2CLCH2OH
+CH3CHCLO           1   459.552   4.805   0.000   0.000     1.000 ! =CH3CHCLOH 
+CH2CLCH2O          1   466.158   4.850   0.000   0.000     1.000 ! =CH2CLCH2OH
+CH3OCH2CL          1   403.131   4.843   0.000   0.000     1.000 ! est
+CH2CLCH2OH         1   466.158   4.850   0.000   0.000     1.000 ! est 
+CH3CHCLOH          1   459.552   4.805  0.000   0.000     1.000 ! est 
+CCL2CO             2   502.457   4.982   0.000   0.000     1.000 ! est 
+CHCL2CHO           2   491.347   5.140    0.000   0.000     1.000 ! est 
+CCL2CHOH           1   515.211   5.066    0.000   0.000     1.000 ! est 
+CH2CLCOCL          2   500.876   5.107  0.000   0.000     1.000 ! est 
+CH2CLCHCLO         2   509.470   5.153   0.000   0.000     1.000 !=CH2CLCHCLOH
+CHCL2CH2O          2   509.470   5.153    0.000   0.000     1.000 != CHCL2CH2OH 
+CCL2CH2OH          1   509.470   5.153    0.000   0.000     1.000 != CHCL2CH2OH
+CHCL2CH2OH         1   509.470   5.153 0.000   0.000     1.000 ! est 
+CH3CCL2OH          1   506.886   5.120  0.000   0.000     1.000 ! est 
+!CCL3CHO no reactions
+!CHCL2COCL no reactions 
+!CCL3CH2OH no reactions 
+!CCL3COCL no reactions 
+
+CH2CLCOOH          2   517.570   4.895  0.000     0.000     1.000  ! est
+CH3COOCL           1   447.552   4.902    0.000     0.000     1.000  ! est 
+CH2CLCH2O2         1   487.870   4.982  0.000   0.000  1.000 != CH2CLCH2O2H 
+CH3CHCLO2          1   481.978   4.939  0.000   0.000  1.000 != CH3CHCLO2H
+CHCL2COOH          1   548.718   5.187  0.000   0.000  1.000 ! est
+CH2CLCHCLO2        1   526.822   5.270   0.000  0.000  1.000 ! =CH2CLCHCLO2H 
+CCL3COOH           2   579.316   5.460  0.000  0.000  1.000 ! est
+!CCL3CH2OO no reactions 
+!CCL3CCLHO2 no reactions 
+!C2H5ONO no reactions 
+!C2H5NO2 no reactions 
+
+CH2CCCL            1   401.253   4.835   0.000     0.000   1.000 !=CH2CCHCL 
+!CH2CCHCL no reactions 
+!CH3CCCL no reactions 
+CH2CLCCH           1   420.923   4.843   0.000     0.000   1.000 ! est
+CHCLCHCH2          1   401.043   4.975  0.000     0.000   1.000 != CH3CHCHCL
+c-C3H4CL           2   378.523   4.805   0.000     0.000   1.000 !=c-C3H5CL 
+CH2CLCHCH          1   408.163   4.985   2.0  0.000   1.000 != CH2CHCH2CL 
+CH3CCLCH2          1   406.422   4.989   0.000     0.000   1.000 ! est
+CH3CHCHCL          1   401.043   4.975   0.000     0.000   1.000 ! est
+!(Z)-CH3CHCHCL     1    401.043   4.975        
+!(E)-CH3CHCHCL     1    401.043   4.975         
+CH2CHCH2CL         1   408.163   4.985   2.0   0.000   1.000 
+(CH3)2CCL          2   388.898   5.072  0.000     0.000   1.000 != (CH3)2CHCL
+CH2CLCHCH3         1   398.507   5.113  0.000     0.000   1.000 !=C2H5CH2CL 
+!CH3CHCLCH2 no reactions 
+C2H5CHCL           1   398.507   5.113  0.000     0.000   1.000 !=C2H5CH2CL
+n-C3H7CL           1   399.428   5.123      2.0      0.000   1.000 
+iso-C3H7CL         2   385.135   4.957      2.1      0.000   1.000 
+CH3CHCCL2          1   474.096   5.308  0.000     0.000   1.000 ! est
+!CH2CCLCH2CL no reactions
+!(Z)-CH2CLCHCHCL no reactions 
+!(E)-CH2CLCHCHCL no reactions 
+C2H5CHCL2          1   458.171   5.388   0.000     0.000   1.000 ! est 
+CH3CHCLCH2CL       2   458.191   4.928   1.900     0.000   1.000 
+!CH2CLCH2CH2CL no reactions 
+CH3CCL2CH3         2   454.751   5.358   0.000     0.000   1.000 ! est 
+CCL2CCCL           1   517.235   5.496  0.000     0.000   1.000 !=CCL2CCHCL 
+CH2CHCCL3          1   504.146   5.536   0.000     0.000   1.000 ! est 
+!CH3CHCLCHCL2 no reactions 
+CCLCCCL3           1    566.072   5.496  0.000     0.000   1.000 ! est 
+CCL3CH2CHCL        1   545.772   5.903   0.000     0.000   1.000 !=CCL3CH2CH2CL 
+!CH3CHCLCCL3 no reactions 
+C3CL6              1   606.452   6.283   0.000     0.000   1.000 ! est 
+
+CH2CLCH2OCH3       2   429.035   5.232     0.000     0.000     1.000 ! est 
+CH3CHCLOCH3        2   420.923   5.193     0.000     0.000     1.000 ! est 
+!CL2CHCH2OCH3 no reactions 
+!CCL3COCCL3 no reactions 
+
+CH3CHCLCOOH        2   524.471   5.232    0.000     0.000     1.000 ! est 
+!NC3H7ONO no reactions
+!n-C3H7NO2 no reactions 
+
+END
+
+C2H5(CO)OO         2   488.495   5.072  0.000   0.000   1.000 ! =C2H5C(OOH)O
+C3H4O#4OOH         1   504.025     5.147     0.000     0.000     1.000 !=(CHO)CH2(CH2OOH)
+CH3(CHOO)CHO       1   504.025     5.147     0.000     0.000     1.000 !=(CHO)CH2(CH2OOH)
+(OCH)CH2CH2OO      1   504.025     5.147     0.000     0.000     1.000 !=(CHO)CH2(CH2OOH)
+CH3(CO)CH2OO       2   488.495     5.072     0.000     0.000     1.000 !=C2H5(CO)OO
+CH3(CHOH)COOH      2   488.495     5.072     0.000     0.000     1.000 !=C2H5(CO)OO
+(CHO)CH2(CH2OOH)   1   504.025   5.147  0.000   0.000   1.000 !=(CH2OOH)CH2CHO
+
+!CH3OCH2OCHO no reactions 
+
+C2H5C(OOH)O        2   488.495   5.072  0.000     0.000     1.000 ! est 
+CH3-c-CHCH(OOH)O   2   456.779   4.865   0.000     0.000     1.000 ! est 
+CH3-c-C(OOH)CH2O   2   460.162   4.858   0.000     0.000     1.000 ! est 
+CH3CH2CHO3H        2   488.495     5.072     0.000     0.000     1.000 !=C2H5C(OOH)O
+OOCH2CH2CH2OH      1   537.344     3.912     0.000     0.000     1.000 !=HOOCH2CH2CH2OOH
+ CH2(CHOOH)CH2OH   2   532.878     5.238     0.000     0.000     1.000 !=CH3(CHOOH)CH2OO
+HOHC(CHOOH)CH3     2   532.878     5.238     0.000     0.000     1.000 !=CH3(CHOOH)CH2OO
+CH3(COH)CH2OOH     2   488.495     5.072     0.000     0.000     1.000 !=C2H5(CO)OO
+CH3CH(CHOH)OOH     2   488.495     5.072     0.000     0.000     1.000 !=C2H5(CO)OO
+CH2(CHOH)CH2OOH    2   488.495     5.072     0.000     0.000     1.000 !=C2H5(CO)OO
+HOCH2CHCH2OOH      2   488.495     5.072     0.000     0.000     1.000 !=C2H5(CO)OO
+CH2C(OH)(OOH)CH3   2   488.495     5.072     0.000     0.000     1.000 !=C2H5(CO)OO
+HOCHCH2CH2OOH      2   488.495     5.072     0.000     0.000     1.000 !=C2H5(CO)OO
+C2H4(CHOH)OOH      2   488.495     5.072     0.000     0.000     1.000 !=C2H5C(OOH)O
+(CH2OH)(CHOO)CH3   2   516.113   5.120  0.000  0.000  1.000 !=(CH2OH)(CHOOH)CH3
+(CH2OO)(CHOH)CH3   2   516.113   5.120  0.000  0.000  1.000 !=(CH2OOH)(CHOH)CH3
+CH3(CHOOH)CH2OH    2   532.878     5.238     0.000     0.000     1.000 != CH3(CHOOH)CH2OO
+C3H8O3             2   488.495     5.072     0.000     0.000     1.000 !=C2H5C(OOH)O
+C2H3O#4COOOH       2   532.878     5.238     0.000     0.000     1.000 != CH3(CHOOH)CH2OO
+OOC3H5O2#4         2   532.878     5.238     0.000     0.000     1.000 != CH3(CHOOH)CH2OO
+C3H4O2#4OOH        2   532.878     5.238     0.000     0.000     1.000 != CH3(CHOOH)CH2OO
+CH2(COO)CH2OOH     2   532.878     5.238     0.000     0.000     1.000 != CH3(CHOOH)CH2OO
+OOCHCHCH2OOH       1   537.344     3.912     0.000     0.000     1.000 !=HOOCH2CH2CH2OOH
+CH3(COO)CHOOH      2   532.878     5.238     0.000     0.000     1.000 !=CH3(CHOOH)CH2OO
+OOCH2CHCHOOH       1   537.344     3.912     0.000     0.000     1.000 !=HOOCH2CH2CH2OOH
+OOCH(COOH)CH3      2   532.878     5.238     0.000     0.000     1.000 !=HOOH2C(CHOO)CH3
+OOCH2(COOH)CH2     2   532.878     5.238     0.000     0.000     1.000 !=CH3(CHOOH)CH2OO
+C2H4OHCOOOH        1   537.344     5.277     0.000     0.000     1.000 !=(CH2OOH)CH2CHOOH
+HOOH2CCH2(CO)CH3   2    522.960   5.431  0.000     0.000     1.000 ! est 
+HOH2C(CHOO)C2H5    2 530.604   5.472 0.000  0.000   1.000 !=(CH2OH)(CHOOH)C2H5
+OOH2C(CHOH)C2H5    2 530.604   5.472 0.000  0.000   1.000 !=(CH2OOH)(CHOH)C2H5
+!NC3H7ONO2 no reactions 
+!(CH3)2CHONO2 no reactions 
+
+HOOHC(CHOOH)CH3    2   532.878   5.238 0.000  0.000  1.000 !=CH3(CHOOH)(CH2OOH)
+(CH2OOH)CH2CHOOH   1   537.344   5.277 0.000  0.000  1.000 !=CH2(CH2OOH)2
+CH3(COOH)CH2OOH    2   532.878   5.238 0.000  0.000  1.000 !=CH3(CHOOH)(CH2OOH)
+
+CH(CH2OOH)2        1   537.344   5.277 0.000  0.000  1.000 !=CH2(CH2OOH)2
+HOOCH2CH2CH2OOH    1   537.344   3.912 0.000     0.000     1.000 ! est 
+CH3(CHOOH)CH2OOH   2   532.878   5.238   0.000     0.000     1.000 ! est 
+C2H3O2#4COOOH      2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OOC3H4O#4OOH       2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+CH3CHOO(CHOH)OOH   2   546.155     5.576     0.000     0.000     1.000 !=CH3(CHOOH)C2H4OO
+OOCH2COH(OOH)CH3   2   546.155     5.576     0.000     0.000     1.000 !=HOOC2H4CHOOHCH2 
+CH3(CO3H)CH2OOH    2   546.155     5.576     0.000     0.000     1.000 !=CH3(CHOOH)C2H4OO
+OOCH2CHOHCH2OOH    2   550.314     5.610     0.000     0.000     1.000 !=HOOCH2C2H4CHOOH 
+HOCH2CHOOCH2OOH    2   550.314     5.610     0.000     0.000     1.000 !=HOOCH2C2H4CHOOH 
+HOCHOOCH2CH2OOH    2   550.314     5.610     0.000     0.000     1.000 !=HOOCH2C2H4CHOOH 
+OOC2H4(CHOH)OOH    2   550.314     5.610     0.000     0.000     1.000 !=HOOCH2C2H4CHOOH 
+HOHCOO(CHOOH)CH3   2   550.314     5.610     0.000     0.000     1.000 !=HOOCH2C2H4CHOOH 
+OOCH2CHOOHCH2OH    2   550.314     5.610     0.000     0.000     1.000 !=HOOCH2C2H4CHOOH 
+
+cC4H6              2   365.282     4.809     0.000     0.000     1.000 !=c-C4H8          
+
+CH3CCCH3           2   357.000     5.180     0.000     0.000     1.000 ! JAM
+CH2CCHCH3          2   357.000     5.180     0.000     0.000     1.000
+
+NC4H7              2   357.000     5.176     0.000     0.000     1.000  !=C4H8
+CH2C(CH3)CH2       2   332.425     5.038  0.000     0.000     1.000 !=CH2C(CH3)2
+CH3CHCHCH2         2   357.000     5.176     0.000     0.000     1.000  !=C4H8
+c-C4H7             2   365.282     4.809      0.000     0.000     1.000 !=c-C4H8 
+
+c-C4H8             2   365.282   4.809     0.000     0.000     1.000 !est 
+
+C4H2CL             1   421.676   5.093  0.000     0.000     1.000 !=C4H3CL 
+C4H3CL             1   421.676   5.093   0.000     0.000     1.000 ! est
+!CH2CCLCHCH2 no reactions 
+CHCLCHC2H5         1   437.495   5.346   0.000     0.000     1.000 ! est 
+!CLCHC(CH3)CH3 no reactions 
+CH2C(CH3)CH2CL     2   421.300   5.358   0.000     0.000     1.000 ! est 
+!CH2CCLC2H5 no reactions 
+CLCH2CH2CHCH2      1   422.425   5.358   0.000     0.000     1.000 ! est 
+c-C4H7CL           2   398.507   5.147   0.000     0.000     1.000 ! est 
+!CH3CCLCHCH3 no reactions 
+!CH2CLCHCHCH3 no reactions 
+CH3CHCLCHCH2       2   414.011   5.315   0.000     0.000     1.000 ! est 
+(CH3)2CCLCH2       2   412.439   5.401   0.000     0.000     1.000 !=(CH3)3CCL 
+(CH3)3CCL          2   402.605   5.385      2.1    0.000     1.000 
+NC4H9CL            1   430.398   5.487      2.0    0.000     1.000 
+SC4H9CL            2   413.404   5.446      2.1    0.000     1.000 
+iso-C4H9CL         2   416.730   5.431  0.000     0.000     1.000 ! est 
+CLCH2CHCLCHCH2     2   475.748   5.605  0.000     0.000     1.000 ! est 
+!(CH2CL)2CCH2 no reactions
+!CHCLC(CH3)CH2CL no reactions
+!CH2CLCCLCHCH3 no reactions 
+!CH2CLCHCHCH2CL no reactions 
+CH2CLCH2CH2CH2CL   1   483.730   5.742   0.000     0.000     1.000 ! est 
+CHCL2C3H7          1   477.733   5.709  0.000     0.000     1.000 ! est 
+!CH3CCL2C2H5 no reactions 
+!CH3CHCLCHCLCH3 no reactions 
+(CH3)2CCLCH2CL     2   474.661   5.682   0.000     0.000     1.000 ! est 
+(CH3)2CHCCL2CH3    2   486.920   5.943    0.000     0.000     1.000 ! est 
+!CCL2C(CH3)CH2CL no reactions 
+CCL3CH2CHCH3       1   521.108   5.938    0.000     0.000     1.000 !=CCL3C3H7
+
+COC3H5             1   485.984     4.899     1.500     0.000     1.000 !=C3H4OOH         
+CH2CHCH2CHO        2   421.488   5.147  0.000     0.000     1.000 ! est 
+C4H7O#4            1   485.984     4.899     1.500     0.000     1.000 !=C3H4OOH 
+C4H7O#5            1   485.984     4.899     1.500     0.000     1.000 !=C3H4OOH 
+
+CH3CHCHCHO         1   426.309   5.140   0.000     0.000     1.000 ! est 
+n-C3H7CO           2   433.098    2.6   0.000     0.000     1.000 !=n-C3H7CHO 
+
+n-C3H7CHO          2   433.098    2.6   0.0   0.000     1.000 ! est 
+CH2CHOC2H5         2   377.194   1.3   0.0   0.000     1.000 ! est 
+C2H5COCH3          2   377.194   1.3   0.0   0.000     1.000 
+
+(CH2OH)CHC2H5      2   449.661   5.283  0.0   0.000     1.000 ! est 
+
+C2H5OC2H4          1   370.603   5.293    1.3     0.000   1.000 !=(C2H5)2O
+
+(C2H5)2O           2   370.603   5.293    1.3   0.000     1.000 
+(CH3)2CHOCH3       2   368.856   5.248    0.0   0.000     1.000 ! est 
+(CH3)2CHCH2OH      2   435.004   5.248     1.7      0.000     1.000 
+NC4H9OH            2   447.153   5.261     1.8      0.000     1.000 
+(CH3)3COH          2   401.969   5.261     1.7      0.000     1.000 
+CH2CHOCH2CH2CL     2   449.500   5.460  0.0   0.000     1.000 ! est 
+CH3CHCLOC2H5       2   444.592   5.536   0.0   0.000     1.000 ! est 
+CLCH2(CH2)2CH2OH   2   501.972   5.576    0.0   0.000     1.000 ! est 
+!(CH3)2C(CH2CL)OH no reactions 
+!(CH3)3COCL no reactions
+!CH3OCH2CH2CH2CL no reactions 
+!(CLCH2CH2)2O no reactions 
+CH2C(O)C(O)CH3     2  490.832   5.238  0.0   0.000     1.000 !=CH3C(O)C(O)CH3
+C4H6O2             2   447.062   5.079  0.0   0.000     1.000 ! est 
+CH2CHCOOCH3        2   416.898   5.196    1.7   0.000     1.000 
+!CH3COOCHCH2 no reactions 
+
+DIOXYLR14          2   466.132   5.013      0.4  0.000     1.000 !=DIOXANE14
+(CHO)CH2CH2CH2O    2    498.044   5.388  0.0   0.000   1.000 !=(CHO)CH2CH2CH2OH
+CHOCH2(CHO)CH3     2   495.922   5.352  0.0   0.000   1.000 !=CHOCH2(CHOH)CH3 
+(CH2O)CH2(CO)CH3   2    505.223   5.321  0.0   0.000   1.000 !=(CH2OH)CH2(CO)CH3
+(CH2O)(CO)C2H5     2   456.002   5.315  0.0   0.000   1.000 !=CH3O(CO)C2H5
+(CH2OOH)CH2CHCH2   2    471.249   5.277  0.0   0.000     1.000 ! est 
+(CH2OOH)CHCHCH3    2   474.942   5.270 0.0   0.000     1.000 ! est 
+C4H7OOHY           2   488.495     5.072     0.000     0.000     1.000 != C2H5(CO)OO      
+C4H8OOY            2   488.495     5.072     0.000     0.000     1.000 != C2H5(CO)OO
+DIOXANE14          2   466.132   5.013  0.4      0.000     1.000 
+!CH3COOC2H5 no reactions 
+!C2H5COOCH3 no reactions 
+!HCOOC3H7 no reactions 
+
+(CH2OOH)CH2CHCH3   2    473.247   5.395  0.0   0.000     1.000 !=C3H7CH2OOH 
+
+C3H7(CHOOH)        2   473.247   5.395  0.0   0.000     1.000 !=C3H7CH2OOH
+
+(CH2OOH)C3H6       2    473.247   5.395  0.0   0.000    1.000  !=C3H7CH2OOH
+
+CH3(COOH)C2H5      2   466.894   5.358  0.0   0.000     1.000 != SC4H9OOH 
+
+OOC4H7O#4          2   529.143     5.431     0.000     0.000     1.000 !=C3H7C(OOH)O     
+OOC4H7O#5          2   529.143     5.431     0.000     0.000     1.000 !=C3H7C(OOH)O
+C4H6O#4OOH         2   529.143     5.431     0.000     0.000     1.000 !=C3H7C(OOH)O
+C4H6O#5OOH         2   529.143     5.431     0.000     0.000     1.000 !=C3H7C(OOH)O
+CLCH2CH2COOH       2   529.143   5.270 0.0   0.000     1.000 ! est 
+CH3CHCLC(O)OCH3    2   480.892   5.582   0.0   0.000     1.000 ! est 
+CH3C(O)OCH2CH2CL   2   486.788   5.616   0.0   0.000     1.000 ! est 
+CLCH2C(O)OC2H5     2   486.788   5.616   0.0   0.000     1.000 ! est 
+C2H5CHCLCOOH       2   538.344   5.571   0.0   0.000     1.000 ! est 
+CH3CHCLCH2COOH     2   538.344   5.571   0.0   0.000     1.000 ! est 
+CL(CH2)3COOH       2   542.681   5.606    0.0   0.000     1.000 ! est 
+!NC4H9NO2 no reactions 
+!NC4H9ONO no reactions 
+n-C3H7(CO)OO       2   529.143   5.431  0.0   0.000     1.000 !=C3H7C(OOH)O
+c-CH(OOH)C3H6O     2    505.103   5.153  0.0   0.000     1.000 ! est 
+CHOCH2(CHOOH)CH3   2    514.531   5.460  0.0   0.000     1.000 ! est 
+C3H7C(OOH)O        2   529.143   5.431   0.0   0.000     1.000 ! est 
+CH3(CHOOH)CH2CHO   2    514.531   5.460  0.0   0.000     1.000 ! est 
+(CH2OOH)C2H4CHO    2    533.801   5.496  0.0   0.000     1.000 ! est 
+(CHO)C2H4CH2OOH    2    516.450   5.496   0.0   0.000     1.000 ! est 
+C2H5-cC(OOH)CH2O   2    479.525   5.245   0.0   0.000     1.000 ! est 
+CHCH2OOHCH(CH3)O   2    524.364   5.548  0.0   0.000     1.000 ! est 
+CH3(CHOOH)cC2H3O   2     470.098   5.219   0.0   0.000     1.000 ! est 
+CH3cCOOHCH(CH3)O   2    473.389   5.238  0.0   0.000     1.000 ! est 
+HOOCH2CH2-cC2H3O   2     482.519   5.258  0.0   0.000     1.000 ! est 
+C2H5-cCHCH(OOH)O   2    476.483   5.251   0.0   0.000     1.000 ! est 
+CH3CHOH(CHOO)CH3   2    525.971   5.437  0.0  0.000  1.000 !=CH3(CHOH)(CHOOH)CH3
+C3H5O#4COOOH       2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+C3H5O#5COOOH       2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+(CH3)2COO(CH2OOH)  2   546.155     5.576     0.000     0.000     1.000 !=CH3(CHOOH)C2H4OO
+OOC2H3(CH3CH2OOH)  2   550.314     5.610     0.000     0.000     1.000 != HOOCH2C2H4CHOOH 
+!NC4H9ONO2 no reactions 
+CH(OOH)2C3H6       2     546.155   5.576  0.0  0.000  1.000 !=C3H7CH(OOH)2
+C3H7(CHOOH)OO      2   546.155   5.576    0.0  0.000  1.000 !=C3H7CH(OOH)2
+CH2(CHOOH)2CH3     2    541.900   5.542   0.0  0.000  1.000 !=(CH3(CHOOH))2
+CH(OOH)2CHC2H5     2   546.155   5.576   0.0  0.000  1.000 !=C3H7CH(OOH)2
+C3H7C(OOH)2        2     546.155   5.576  0.0  0.000  1.000 !=C3H7CH(OOH)2
+HOOCH2C2H4CHOOH    2    550.314   5.610  0.0  0.000  1.000 !=(CH2(CH2OOH))2
+HOOCH2C2H4CH2OO    2    550.314   5.610  0.0  0.000  1.000 !=(CH2(CH2OOH))2
+HOOC2H4(CHOO)CH3   2    546.155   5.576  0.0  0.000  1.000 !=HOOCH2CH2(CHOOH)CH3
+HOOC2H3CHOOHCH3    2    546.155   5.576  0.0  0.000  1.000 !=HOOCH2CH2(CHOOH)CH3
+HOOCH2CHC2H4OOH    2    546.155   5.576   0.0  0.000  1.000 !=(CH2(CH2OOH))2
+HOOC2H4(COOH)CH3   2    546.155   5.576   0.0  0.000 1.000 !=HOOCH2CH2(CHOOH)CH3
+CH3(CHOOH)C2H4OO   2    546.155   5.576  0.0  0.000 1.000 !=CH3(CHOOH)CH2CH2OOH
+HOOH2C(COOH)C2H5   2    546.155   5.576  0.0  0.000 1.000 !=(CH2OOH)(CHOOH)C2H5
+HOOH2C(CHOO)C2H5   2    546.155   5.576  0.0  0.000 1.000 !=(CH2OOH)(CHOOH)C2H5
+OOH2C(CHOOH)C2H5   2    546.155   5.576  0.0  0.000 1.000 !=(CH2OOH)(CHOOH)C2H5
+HOOHC(CHOOH)C2H5   2    546.155   5.576  0.0  0.000 1.000 !=(CH2OOH)(CHOOH)C2H5 
+HOOC2H4CHOOHCH2    2    546.155   5.576  0.0  0.000 1.000 !=HOOCH2CH2(CHOOH)CH3 
+HOOCH2CHCHOOHCH3   2    546.155   5.576  0.0  0.000 1.000 !=HOOCH2CH2(CHOOH)CH3 
+CH3CHOOHCHOO)CH3   2    541.900   5.542  0.0  0.000 1.000 !=(CH3(CHOOH))2
+HOOCH2CHOOHCHCH3   2    546.155   5.576  0.0  0.000 1.000 !=(CH2OOH)(CHOOH)C2H5
+HOOCH2CHOOHC2H4    2    546.155   5.576  0.0  0.000 1.000 !=(CH2OOH)(CHOOH)C2H5
+CH3CHOOHCOOHCH3    2    541.900   5.542  0.0  0.000 1.000 !=(CH3(CHOOH))2
+HOOC2H4CHOOHCH3    2    546.155   5.576  0.0  0.000 1.000 ! est 
+HOOCH2CHOOHC2H5    2    546.155   5.576  0.0  0.000 1.000 ! est 
+(CH3(CHOOH))2      2    541.900   5.542      0.0  0.000 1.000 ! est 
+(CH2(CH2OOH))2     2    550.314   5.610    0.0  0.000 1.000 ! est 
+C5H2               1   357.000     5.180     0.000     0.000     1.000
+C5H3               1   357.000     5.180     0.000     0.000     1.000
+C5H5               2   391.884   5.280      0.9      0.000     1.000 !=C3H7CCH 
+c-C5H5             2   408.852   5.147  0.000     0.000     1.000 !=c-C5H6
+c-C5H6             2   408.852   5.147  0.0  0.000 1.000 ! est 
+!C2H5CCCH3 no reactions 
+C3H7CCH            2   391.884   5.280      0.9      0.000 1.000 
+CH2C(CH3)CHCH2     2   384.341   5.267      0.3      0.000 1.000 
+c-C5H8             2   401.811      5.267    0.9     0.000 1.000 ! est 
+CH2CHCH2CHCH2      1   379.576   5.267      0.4      0.000 1.000 
+C5H9               1   370.774   5.395  0.0  0.000 1.000 !=C5H10
+C5H10-1                1   370.774   5.395  0.0  0.000 1.000 !=C5H10
+C5H10Y                1   370.774   5.395  0.0  0.000 1.000 !=C5H10
+c-C5H9             2   406.337   5.163      0.0  0.000 1.000 !=c-C5H10
+(CH3)2CHCHCH2      2   357.341   5.163   0.0  0.000 1.000 ! est 
+c-C5H10            2   406.337   5.163   0.0   0.000 1.000 
+C5H10(1)           1   370.774   5.395    0.0  0.000 1.000 ! est 
+(CH3)2CCHCH3       2   373.223   5.395    0.0  0.000 1.000 ! est 
+CH3CHCHC2H5        1   377.988   5.395    0.0  0.000 1.000 ! est 
+C2H5C(CH3)CH2      2   369.253   5.395    0.5      0.000 1.000 ! est 
+n-C5H11            1   372.985   5.440      0.0  0.000 1.000 !=NC5H12
+(CH3)3CCH2         2   357.442   5.443  0.0  0.000 1.000 !=(CH3)4C
+(CH3)2CHCH2CH2     2   363.201   5.472  0.0  0.000 1.000 !=(CH3)2CHCH2CH3 
+NC5H12             1   372.985   5.440      0.0      0.000 1.000 
+IC5H12             2   365.600   5.452      0.1      0.000 1.000 
+neo-C5H12          2   344.477   5.434      0.0      0.000 1.000 
+c-C5H7CL(1)        2   469.519   5.370    0.0  0.000 1.000 ! est 
+c-C5H7CL(3)        2   463.932   5.364    0.0  0.000 1.000 ! est 
+!CH2CHCHCLC2H5 no reactions 
+CH2CHC3H6CL        1   445.914   5.667   0.0  0.000 1.000 ! est 
+CH2C(CH3)CHCLCH3   2   437.495   5.649   0.0  0.000 1.000 ! est 
+(CH3)2CCHCH2CL     2   449.176   5.677     0.0  0.000 1.000 ! est 
+CH2CHC(CH3)CLCH3   2   434.718   5.616    0.0  0.000 1.000 ! est 
+CH2CCLCH(CH3)2     2   437.495   5.649    0.0  0.000 1.000 ! est 
+CH2C(CH2CL)C2H5    2   454.280   5.682    0.0  0.000 1.000 ! est 
+(CH3)2CHCHCHCL     2   452.382   5.638     0.0  0.000 1.000 ! est 
+c-C5H9CL           2   462.132   5.449      0.0  0.000 1.000 ! est 
+CH2CCH3)CH2CH2CL   2   444.923   5.682     0.0  0.000 1.000 ! est 
+n-C5H11CL          1   448.204   5.779  0.0  0.000 1.000 ! est 
+CH2CLCH2CH(CH3)2   2   440.909   5.747    0.0  0.000 1.000 ! est 
+!(CH3)3CCH2CL      2   437.150   5.720           
+!CH3CHCLCH(CH3)2 no reactions 
+C2H5CHCLC2H5       2   440.909   5.747    0.0  0.000 1.000 ! est 
+CH3CCL(CH3)C2H5    2   437.150   5.720   0.0  0.000 1.000 ! est 
+!n-C3H7CHCLCH3 no reactions 
+(CH3)2CHCH2CHCL2   2   489.797   5.968   0.0  0.000 1.000 ! est 
+!CH3CHCLCCL(CH3)2 no reactions 
+C2H5CH(CH2CL)2     2   495.419   5.998   0.0  0.000 1.000 ! est 
+! CH3CHCLCH2CHCLCH3 ! CH3CHCLCH2CHCLCH3 no reactions
+! C2H5CCLCH3)CH2CL ! C2H5CCL(CH3)CH2CL no reactions
+! CLC2H4CH(CH3)CH2CL ! CLC2H4CH(CH3)CH2CL no reactions
+! (CH3)2CCLCH2CH2CL ! (CH3)2CCLCH2CH2CL no reactions
+C5H4O              2   450.000     5.500     0.000     0.000     1.000 ! =C5H5OH 
+C5H5O              2   450.000     5.500     0.000     0.000     1.000 ! =C5H5OH 
+C5H5O(1,3)         2   450.000     5.500     0.000     0.000     1.000 ! =C5H5OH 
+C5H4OH             2   450.000     5.500     0.000     0.000     1.000 ! =C5H5OH 
+COC4H7             1   504.025     5.147     0.000     0.000     1.000 !=(CHO)CH2(CH2OOH)
+C4H7CHOY           2   473.247     5.395     0.000     0.000     1.000 !=C3H7(CHOOH)     
+C5H10O#3           2   450.000     5.500     0.000     0.000     1.000 !=C5H4OH
+C5H5OH             2   450.000     5.500     0.000     0.000     1.000 ! JAM
+NC4H7CHO           2   445.089   5.449   0.0  0.000 1.000 ! est 
+!C2H5COCHCH2 no reactions 
+CH3CHCHC(O)CH3     2   448.041   5.425   0.0  0.000 1.000 ! est 
+!c-C5H8O no reactions
+!C2H5C(O)CHCH3 no reactions 
+CH2CHCH2CH2OCH3    2   405.809   5.502    0.0  0.000 1.000 ! est 
+c-C5H10O           2   374.204   5.413    0.0  0.000 1.000 ! est 
+C5H9OH             1   468.065   5.507    0.0  0.000 1.000 ! est 
+!C2H5CHCH2OCH3 no reactions 
+!n-C3H7CH(1)OCH3 no reactions 
+!CH3CHCH2CH2OCH3 no reactions 
+!n-C5H11OH no reactions
+!(CH3)3COCH3 no reactions
+!NC4H9OCH3 no reactions 
+CH3CHCLCH2CO)CH3   2   498.292   5.883    0.0  0.000 1.000 ! est 
+CH3O(CH2)4CL       1   471.965   5.873     0.0  0.000 1.000 ! est 
+CLCH2CCH3)2CH2OH   2   510.052   5.821    0.0  0.000 1.000 ! est 
+C5H8O2             2   499.157   5.472    0.0  0.000 1.000 ! est 
+CH2C(CH3)COOCH3    2   448.691   5.554    0.0  0.000 1.000 ! est 
+CH2CHCH2C(O)OCH3   2   449.661   5.548      0.0  0.000 1.000 ! est 
+HC(O)OC3H6CH2      2   471.249   5.704     0.0  0.000 1.000  !=HC(O)OC4H9
+HC(O)OC2H4CHCH3    2   471.249   5.704     0.0  0.000 1.000  !=HC(O)OC4H9
+HC(O)OCH2CHC2H5    2   471.249   5.704     0.0  0.000 1.000  !=HC(O)OC4H9
+!CH3COOC3H7 no reactions 
+HCOOC4H9           2   471.249   5.704     0.0  0.000 1.000 ! est 
+!CH3COOCH(CH3)2 no reactions 
+!n-C3H7COOCH3 no reactions 
+(CH3)3CCH2OO       2   482.654   5.655   0.0  0.000 1.000 !=(CH3)3CCH2OOH
+C5H10OOH           1   491.347   5.715   0.0  0.000 1.000 ! est 
+CL(CH2)3C(O)OCH3   2   503.665   5.913   0.0  0.000 1.000 ! est 
+CLCH2(CH2)3COOH    2   555.294   5.903     0.0  0.000 1.000 ! est 
+CLCH2CO)OCHCH3)2   2   498.292   5.883   0.0  0.000 1.000 ! est 
+CeCOOCHCH3)CH2CL   2   498.292   5.883    0.0  0.000 1.000 ! est 
+CLCH2CH2CO)OC2H5   2   503.665   5.913     0.0  0.000 1.000 ! est 
+CH3)2CCLC(O)OCH3   2   495.545   5.857     0.0  0.000 1.000 ! est 
+CHCL2CO)OCHCH3)2   2   535.328   6.094    0.0  0.000 1.000 ! est 
+CH3COOCHCH3)CCL3   2   568.035   6.297     0.0  0.000 1.000 ! est 
+CCL3C(O)OCHCH3)2   2   568.035   6.297       0.0  0.000 1.000 ! est 
+!n-C5H11ONO no reactions 
+!n-C5H11NO2 no reactions 
+!n-C3H7CH(CH3)NO3 no reactions 
+C6H                1   357.000     5.180     0.000     0.000     1.000 ! =C6H2
+C6H2               1   357.000     5.180     0.000     0.000     1.000
+C6H3               2   412.300     5.349     0.000     0.000   1.000 ! =C6H5(l)
+C6H4(l)            2   412.300     5.349     0.000     0.000   1.000 ! =C6H5(L) 
+C6H4               2   412.300     5.349     0.000     0.000   1.000 ! =C6H5(L) 
+c-C6H4             2   412.300     5.349     0.000     0.000     1.000 !=C6H6
+n-C6H5             2   412.300     5.349     0.000     0.000     1.000 
+CHCHCHCHCCH        2   412.300     5.349     0.000     0.000     1.000 
+i-C6H5             2   412.300     5.349     0.000     0.000     1.000 
+C6H5(L)            2   412.300     5.349     0.000     0.000     1.000 ! JAM
+C6H5(l)            2   412.300     5.349     0.000     0.000     1.000 ! JAM
+CH2-c-C5H3         2   430.472   5.147      0.000     0.000     1.000 !=fulvene 
+C6H5               2   412.300     5.349     0.000     0.000     1.000 ! JAM
+C6H6               2   412.300     5.349     0.000     0.000     1.000 ! SVE
+CH2-c-C5H4         2   430.472     5.147    0.000     0.000     1.000 !fulvene
+C6H6(M)            2   412.300     5.349     0.000     0.000   1.000 != C6H5(L)
+C6H6(l)            2   412.300     5.349     0.000     0.000   1.000 != C6H5(L)
+CH2CCHCHCCH2       2   412.300     5.349   0.000     0.000     1.000 != C6H5(L)
+CHCCH2CH2CCH       2   412.300     5.349     0.000     0.000   1.000 != C6H5(L)
+CH3-c-C5H3         2   430.472     5.147    0.000     0.000   1.000 !=fulvene 
+c-C6H7             2   412.300     5.349     0.000     0.000   1.000 !=C6H6
+n-C6H7             2   412.300     5.349     0.000     0.000   1.000 !=C6H5(L)
+i-C6H7             2   412.300     5.349     0.000     0.000   1.000 != C6H5(L)
+CH2CHCHCHCHCH      2   412.300     5.349     0.000     0.000   1.000 != C6H5(L)
+CH2CHCHCCHCH2      2   412.300     5.349     0.000     0.000   1.000 != C6H5(L)
+C6H7               2   412.300     5.349     0.000     0.000     1.000 ! JAM
+C6H8               2   441.752   5.496  0.000     0.000     1.000 ! est
+C6H9               2   441.752   5.496  0.000     0.000     1.000 ! est 
+C6H10              2   441.752   5.496  0.000     0.000     1.000 ! est 
+!(CH2C(CH3))2 no reactions 
+CH3(CH)4CH3        2   441.752   5.496  0.000     0.000     1.000 ! est 
+c-C6H10            2   441.752   5.496  0.000     0.000     1.000 ! est 
+CH2CHCH2CH2CHCH2   2   441.752   5.496  0.000     0.000     1.000 ! est 
+C6H11              2   400.222   5.701   0.4  0.000     1.000 !=C6H12(1)
+c-C6H11            2   439.530   5.463   0.3  0.000     1.000 !=c-C6H12 
+C6H12(1)           2   400.222   5.701      0.4      0.000     1.000 
+CH3CHC(CH3)C2H5    2   411.340   5.707      0.000     0.000     1.000 ! est 
+!(CH3)2CC(CH3)2 no reactions 
+(CH3)3CCHCH2       2   386.869   5.655   0.000     0.000     1.000 ! est 
+C2H5CH(CH3)CHCH2   2   391.789   5.682   0.000     0.000     1.000 ! est 
+(CH3)2CHCH2CHCH2   2   391.789   5.682   0.000     0.000     1.000 ! est 
+CH3)2CHC(CH3)CH2   2   390.460   5.688  0.000     0.000     1.000 ! est 
+c-C6H12            2   439.530   5.463   0.3      0.000     1.000 
+n-C6H13            2   403.002   5.808   0.0   0.000     1.000 != n-C6H14 
+!(CH3)3CCH2CH2 no reactions 
+n-C6H14            2   403.002   5.808      0.0      0.000     1.000 
+(CH3)2CHCH(CH3)2   2   397.046   5.744      0.000     0.000     1.000 ! est 
+!(CH3)2CHC3H7 no reactions
+!(C2H5)2CHCH3 no reactions 
+o-C6H4CL           2   502.184   5.463      1.6  0.000     1.000 !=C6H5CL 
+C6H4CL(m)          2   502.184   5.463      1.6  0.000     1.000 != C6H5CL 
+p-C6H4CL           2   502.184   5.463      1.6  0.000     1.000 != C6H5CL 
+C6H5CL             2   502.184   5.463      1.6      0.000     1.000 
+c-C6H10CL(1)       2   487.315   5.720   0.0      0.000     1.000 != c-C6H11CL
+c-C6H10CL(2)       2   487.315   5.720   0.0      0.000     1.000 != c-C6H11CL 
+c-C6H10CL(3)       2   487.315   5.720   0.0      0.000     1.000 != c-C6H11CL 
+c-C6H10CL(4)       2   487.315   5.720   0.0      0.000     1.000 != c-C6H11CL 
+CH3(CH)3CLC2H5     2   464.081   5.933   0.000     0.000     1.000 ! est 
+CH2CH(CH2)3CH2CL   2   466.474   5.968    0.000    0.000     1.000 ! est 
+c-C6H11CL          2   487.315   5.720   0.000     0.000     1.000 ! est 
+! CH3CHCLCH2CH2CHCH2 ! CH3CHCLCH2CH2CHCH2 no reactions
+! CLCH2CH2CHC(CH3)2 ! CLCH2CH2CHC(CH3)2 no reactions
+n-C6H13CL          2   468.794   6.061   0.000     0.000     1.000 ! est 
+(CH3)2CHC3H6CL     2   462.283   6.032   0.000     0.000     1.000 ! est 
+C2H5C(CH3)CLC2H5   2   458.939   6.008    0.000     0.000     1.000 ! est 
+CH2CLCH2C(CH3)3    2   458.939   6.008    0.000     0.000     1.000 ! est 
+!(CH3)3CCHCLCH3 no reactions 
+C2H5CHCH3)C2H4CL   2   462.283   6.032    0.000     0.000     1.000 ! est 
+CH3)2CCLCH(CH3)2   2   452.064   5.978    0.000     0.000     1.000 ! est 
+o-C6H4CL2          2   549.189     5.763  0.000     0.000     1.000 ! est 
+C6H4CL2(p)         2   537.945     5.763  0.000     0.000     1.000 ! est 
+C6H4CL2(m)         2   537.945     5.763  0.000     0.000     1.000 ! est 
+c-C6H10CL2(1,1)    2   528.723   5.963   0.000     0.000     1.000 ! est 
+(E)cC6H10CL2(12)   2   526.397   5.968   0.000     0.000     1.000 ! est 
+(Z)cC6H10CL2(12)   2   526.397   5.968 0.000  0.000  1.000 !=(E)c-C6H10CL2(1,2)
+(E)cC6H10CL2(13)   2   526.397   5.968 0.000  0.000  1.000 !=(E)c-C6H10CL2(1,2)
+(Z)cC6H10CL2(13)   2   526.397   5.968 0.000  0.000  1.000 != (E)c-C6H10CL2(1,2)
+(E)cC6H10CL2(14)   2   526.397   5.968 0.000  0.000  1.000 != (E)c-C6H10CL2(1,2)
+(Z)cC6H10CL2(14)   2   526.397   5.968 0.000  0.000  1.000 != (E)c-C6H10CL2(1,2)
+!CH2CLCHCLC4H9 no reactions 
+!(CH3CHCLCH2)2 no reactions 
+CLCH2(CH2)4CH2CL   2   516.563   6.288   0.000     0.000     1.000 ! est 
+C6H3CL3(1,2,3)     2   580.986   6.012   0.000     0.000     1.000 ! est 
+C6H3CL3(1,2,4)     2   580.986   6.012   0.000     0.000     1.000 ! est 
+C6H5O              2   450.000     5.500     0.000     0.000     1.000 ! JAM
+C6H5OH             2   450.000     5.500     0.000     0.000     1.000  
+!c-C6H10O no reactions
+!n-C6H13OH no reactions
+!(n-C3H7)2O no reactions 
+!(i-C3H7)2O no reactions 
+!c-C6H10O      2   499.484    3.1      
+!(i-C3H7)2O       2   417.691   5.938    
+o-C6H4CLO          2   594.416   5.283   0.000     0.000     1.000 != o-C6H4CLOH 
+C6H4CLO(m)         2   585.675   5.283  0.000     0.000     1.000 != C6H4CLOH(m)  
+p-C6H4CLO          2   585.675   5.283  0.000     0.000     1.000 != p-C6H4CLOH 
+o-C6H4CLOH         2   594.416   5.283  0.000     0.000     1.000 ! est 
+C6H4CLOH(m)        2   585.675   5.283  0.000     0.000     1.000 ! est 
+p-C6H4CLOH         2   585.675   5.283  0.000     0.000     1.000 ! est 
+C6H4O2             2   425.943   5.484  0.000     0.000     1.000 ! est 
+C6H5OO             2   530.812   5.419  0.000     0.000     1.000 !=C6H5OOH
+CH2CHC2H4CO)OCH3   2   455.4861   5.852  0.000     0.000     1.000 ! est 
+! CH3COOCH2CHCH3)2 ! CH3COOCH2CH(CH3)2 no reactions
+! CH3COOCH(CH3)C2H5 ! CH3COOCH(CH3)C2H5 no reactions
+CH3CO)OCH2CHC2H5   2   459.779   5.961      1.8  0.000   1.000  !=CH3C(O)OC4H9
+CH3CO)OC2H4CHCH3   2   459.779   5.961      1.8  0.000   1.000 != CH3C(O)OC4H9
+CH3C(O)OC3H6CH2    2   459.779   5.961      1.8  0.000   1.000 != CH3C(O)OC4H9
+CH3C(O)OCHC3H7     2   459.779   5.961      1.8  0.000   1.000 != CH3C(O)OC4H9
+!CH3C(O)OC(CH3)3 no reactions 
+CH3COOC4H9         2   459.779   5.961      1.8      0.000   1.000 
+!NC4H9COOCH3 no reactions 
+CH2CCLCCH3)2COOH   2   564.694   6.037   0.000     0.000     1.000 ! est 
+CLCH2CH2)3COOCH3   2   519.126   6.183   0.000     0.000     1.000 ! est 
+CLCH2CO)OC(CH3)3   2   511.673   6.132   0.000     0.000     1.000 ! est 
+CL(CH2)3CO)OC2H5   2   519.126   6.183   0.000     0.000     1.000 ! est 
+CeCHCLCOOCHCH3)2   2   509.120   6.127   0.000     0.000     1.000 ! est 
+CHCL2C(O)OCCH3)3   2   546.346   6.328   0.000     0.000     1.000 ! est 
+CL3CC(O)OC(CH3)3   2   577.308   6.516   0.000     0.000     1.000 ! est 
+C6H5CH2            2   469.944   5.510      0.4   0.000     1.000 != C6H5CH3
+C6H5CH3            2   469.944   5.510      0.4   0.000     1.000 
+C7H12              2   424.839   5.908  0.000     0.000     1.000 ! est 
+CH2CCHC4H9         2   421.676   5.903  0.000     0.000     1.000 ! est 
+c-C5H9CHCH2        2   442.927   5.671  0.000     0.000     1.000 ! est 
+C2H5CHCCHC2H5      2   426.492   5.898  0.000     0.000     1.000 ! est 
+c-C7H13            2   479.790   5.718  0.000     0.000     1.000 !=c-C7H14
+C7H14(1)           2   426.666   6.153      0.3      0.000     1.000 
+C7H14(2)           2   432.076   5.998  0.000     0.000     1.000 ! est 
+C7H14(3)           2   432.076   5.998  0.000     0.000     1.000 !=C7H14(2)
+c-C7H14            2   479.790   5.718   0.000     0.000     1.000 ! est 
+(CH3)3CC(CH3)CH2   2   423.251   5.961   0.000     0.000     1.000 ! est 
+!c-C6H11CH3 no reactions 
+n-C7H15            2   429.048   6.116    0.000     0.000     1.000 != n-C7H16 
+C7H15(2)           2   429.934   6.094    0.000     0.000     1.000 !=C7H16
+C7H15(3)           2   429.934   6.094   0.000     0.000     1.000 !=C7H16 
+C7H15(4)           2   429.934   6.094   0.000     0.000     1.000 !=C7H16 
+n-C7H16            2   429.048   6.116    0.0      0.000     1.000 
+!(CH3)3CCH(CH3)2 no reactions 
+!(CH3)2CHC4H9 no reactions 
+!CH2(CH(CH3)2)2 no reactions 
+o-C6H4CL(CH2)      2   525.008   5.800  0.0      0.000     1.000 != o-C6H4CLCH3 
+p-C6H4CL(CH2)      2   512.133   5.800  0.0      0.000     1.000 != p-C6H4CLCH3 
+o-C6H4CLCH3        2   525.008   5.800  0.000     0.000     1.000 ! est 
+p-C6H4CLCH3        2   512.133   5.800  0.000     0.000     1.000 ! est 
+C6H5CH2CL          2   512.821   5.800   0.000     0.000     1.000 ! est 
+CH2CCL(CH2)4CH3    2   484.666   6.238   0.000     0.000     1.000 ! est 
+CH3(CH)3CLC3H7     2   483.058   6.202   0.000     0.000     1.000 ! est 
+c-C5H9CH2CH2CL     2   498.663   6.046   0.000     0.000     1.000 ! est 
+!n-C7H15CL no reactions 
+CH3CCLCH3)CCH3)3   2   469.084   6.220   0.000     0.000     1.000 ! est 
+c-C5H9C2HCL2       2   540.624   6.188  0.000     0.000     1.000 ! est 
+! CH3C(CL2)(CH2)4CH3 ! CH3C(CL2)(CH2)4CH3 no reactions
+!C6H5CCL3 no reactions 
+c-C6H10CCL3        2   572.067   6.406   0.000     0.000     1.000 ! est 
+!CLC3H6CHCLC3H6CL no reactions 
+C6H5CO             2   551.735   5.627  0.000     0.000     1.000 !=C6H5CHO
+C6H5CHO            2   551.735   5.627   2.8      0.000     1.000 ! est 
+!C6H5CH2OH no reactions
+!n-C7H15OH no reactions 
+C6H4(CL)COOH(m)    2   593.752   5.923 0.000     0.000     1.000 ! est 
+p-C6H4(CL)COOH     2   593.752   5.923 0.000     0.000     1.000 ! est 
+!CLC(O)OC6H5 no reactions 
+!c-C6H10CLOOCH no reactions 
+(E)cC5H8CLOOCCH3   2   544.040   6.165   0.000     0.000     1.000 ! est 
+(Z)cC5H8CLOOCCH3   2   544.040   6.165   0.000     0.000     1.000 ! est 
+C6H4CCH            2   497.422   5.633   0.000     0.000     1.000 !=C6H5CCH
+SC6H4C2H           2   497.442   5.633   0.000     0.000     1.000 !=C6H5C2H
+C6H5CCH            2   497.422   5.633   0.000     0.000     1.000 ! est 
+n-C6H5C2H2         2   497.442   5.633   0.000     0.000     1.000 !=C6H5C2H
+i-C6H5C2H2         2   497.442   5.633   0.000     0.000     1.000 !=C6H5C2H
+SC6H4C2H3          2   513.777   5.736   0.1  0.000     1.000  !=C6H5CHCH2
+!C6H4CHCH2(2) no reactions 
+C8H8               2   470.962   5.893   0.000     0.000     1.000 ! est 
+C6H5CHCH2          2   513.777   5.736   0.1      0.000     1.000 ! est 
+C6H5CH2CH2         2   490.114   5.829    0.4   0.000     1.000 !=C6H5C2H5*
+!o-C6H4(CH3)2 no reactions 
+!C6H4(CH3)2(m) no reactions 
+!p-C6H4(CH3)2 no reactions 
+C8H14              2   448.041   6.179   0.000     0.000     1.000 ! est 
+c-C6H11CHCH2       2   470.674   6.156  0.000     0.000     1.000 ! est 
+c-C8H15            2   513.936   6.01   0.000     0.000     1.000 !=c-C8H16
+c-C8H16            2   513.936   6.01    0.000     0.000     1.000 ! est 
+NC4H9C(CH3)2CH2    2   436.671   6.325  0.000     0.000     1.000 !=(CH3)3CC4H9
+CH3)3CC(CH3)2CH2   2   430.293   6.252  0.000     0.000     1.000 ! est 
+! CH3(CH(CH3))2C2H5 ! CH3(CH(CH3))2C2H5 no reactions
+(CH3)3CC(CH3)3     2   450.885   6.250    0.000     0.000     1.000 ! est 
+(CH3)3CC4H9        2   436.671   6.325    0.000     0.000     1.000 ! est 
+!n-C8H18 no reactions 
+!i-C8H18 no reactions 
+!C6H5CHCHCL no reactions 
+p-C6H4(CL)CHCH2    2   525.436   5.988   0.000     0.000     1.000 ! est 
+C6H5CH2CH2CL       2   527.563   6.080   0.000     0.000     1.000 ! est 
+C6H5CHCLCH3        2   522.851   6.051    0.000     0.000     1.000 ! est 
+!C6H5CHCHCH2CL no reactions 
+c-C6H11CH2CH2CL    2   519.568   6.270    0.000     0.000     1.000 ! est 
+!C3H7CCL(CH3)C3H7 no reactions 
+!CH3(CH2)5CHCLCH3 no reactions 
+pC6H4(CL)CHCLCH3   2   559.076   6.279    0.000     0.000     1.000 ! est 
+c-C6H10(CCL3)2     2   652.361   7.140   0.000     0.000     1.000 ! est 
+C8H8O              2   528.618   5.821   0.000     0.000     1.000 ! est 
+o-C6H4(OH)CHCH2    2   585.288   5.548  0.000     0.000     1.000 ! est 
+!((CH3)3C)2O no reactions
+!(NC4H9)2O no reactions 
+o-C6H4OHCH2CH2CL   2   613.155   5.193   0.000     0.000     1.000 ! est 
+!CLC(O)O(CH2)5CH3 no reactions 
+! c-C6H10CLO(O)CCH3 ! c-C6H10CLO(O)CCH3 no reactions
+! C6H4CLC(O)OCH3(2) ! C6H4CLC(O)OCH3(2) no reactions
+C9H7               2   516.450   5.836  0.000     0.000     1.000 ! est 
+C6H5CCCH2          2   494.536   5.923  0.000     0.000     1.000 !=C6H5CHCCH2
+!C6H4CH2CHCH2 no reactions 
+p-C6H4(CH3)CHCH2   2   516.563   6.022 0.000  0.000  1.000 !=C6H4(CH3)CHCH2(m)
+C6H4(CH3)CHCH2m    2   516.563   6.022  0.000     0.000     1.000 ! est 
+C6H5CH2CHCH2       2   498.416   6.022   0.000     0.000     1.000 ! est 
+C6H5CHC2H5         2   506.789   6.153  0.000     0.000     1.000 !=C6H5C3H7
+C6H5C3H7           2   506.789   6.153    0.000     0.000     1.000 ! est 
+pC6H4CH3)CHCLCH3   2   536.238   6.310   0.000     0.000     1.000 ! est 
+C6H4CH3)CHCLCH3m   2   536.238   6.310   0.000     0.000     1.000 ! est 
+C6H5CH2CH2CH2CL    2   541.214   6.336   0.000     0.000     1.000 ! est 
+!n-C9H20 no reactions 
+C6H4(CHCH2)OCH3m   2   540.131   6.109 0.000  0.000   1.000!= o-C6H4(CHCH2)OCH3
+pC6H4(CHCH2)OCH3   2   540.131   6.109 0.000  0.000  1.000!= o-C6H4(CHCH2)OCH3
+oC6H4(CHCH2)OCH3   2   540.131   6.109   0.000     0.000     1.000 ! est 
+oC6H4C2H4CL)OCH3   2   575.033   6.415    0.000     0.000     1.000 ! est 
+C6H4C2H4CL)OCH3m   2   565.298   6.415    0.000     0.000     1.000 ! est 
+pC6H4C2H4CL)OCH3   2   565.298   6.415    0.000     0.000     1.000 ! est 
+C6H4CLC(O)OC2H5m   2   576.174   6.449    0.000     0.000     1.000 ! est 
+pC6H4CLC(O)OC2H5   2   576.174   6.449    0.000     0.000     1.000 ! est 
+C10H6              2   536.742   6.008  0.000     0.000     1.000 !=C10H8
+C6H4(C2H)2         2   550.127   6.017    0.000     0.000     1.000 ! est 
+C10H7(1)           2   536.742   6.008  0.000     0.000     1.000 !=C10H8
+C10H7(2)           2   536.742   6.008  0.000     0.000     1.000 !=C10H8
+C10H7              2   536.742   6.008  0.000     0.000     1.000 !=C10H8
+C10H8              2   536.742   6.008    0.000     0.000     1.000 ! est 
+C6H5CCCHCH2        2   538.145   6.109    0.000     0.000     1.000 ! est 
+!(CH3)3CCCC(CH3)3 no reactions 
+C10H21(2)          2   490.511   6.835      0.0  0.000     1.000  !=n-C10H22 
+C10H21(3)          2   490.511   6.835      0.0  0.000     1.000  !=n-C10H22 
+n-C10H22           2   490.511   6.835      0.0    0.000     1.000  
+!(n-C5H11)2O no reactions 
+SC10H6CCHA         2   570.083   6.350  0.0  0.000     1.000 !=C10H7CCH 
+SC10H6CCHB         2   570.083   6.350  0.0  0.000     1.000 !=C10H7CCH 
+C10H7CCHA          2   570.083   6.350     0.000     0.000     1.000 ! est 
+C10H7CCHB          2   570.083   6.350     0.000     0.000     1.000 ! est 
+C6H5C6H4           2   562.957   6.384   0.0  0.000     1.000 !=(C6H5)2
+C10H7C2H2          2   570.083   6.350  0.0  0.000     1.000 !=C10H7CCH
+(C6H5)2            2   562.957   6.384  0.000     0.000     1.000 ! est 
+(C6H5)2H           2   562.957   6.384  0.0  0.000     1.000 !=(C6H5)2 
+!CLC6H4C6H5(2) no reactions 
+!CLC6H4C6H5(3) no reactions 
+!CLC6H4C6H5(4) no reactions 
+C10H6(C2H)2        2   599.854   6.658   0.000     0.000     1.000 ! est 
+C14H9(1)           2   693.242   6.644      0.0  0.000     1.000  != C14H10  
+C14H9(4)           2   693.242   6.644      0.0  0.000     1.000  != C14H10  
+C14H10             2   693.242   6.644      0.0      0.000     1.000 
+C16H9              2   627.908   6.897  0.0  0.000     1.000 != C16H10  
+C16H10             2   627.908   6.897  0.000     0.000     1.000 ! est 
+C14H9C2H           2   623.435   6.933  0.000     0.000     1.000 ! est 
+C14H9C2H2          2   623.435   6.933  0.0  0.000     1.000 !=C14H9C2H 
+!ht(3-yl)(5-v) no reactions 
+!ht(3-yl)(5-a) no reactions 
+!ht(3-yl)(6-a) no reactions 
+!ot(3-yl) no reactions 
+C6CL6              2   646.350   6.658   0.000     0.000     1.000 ! est 
+A1ae(2-yl)         2   706.605   7.509  0.0  0.000     1.000  !=C6CL5CCL2CHCL2 
+A1bu(4-yl)         2   743.455   8.067  0.0  0.000 1.000 !=C6CL5CCLCCLCCL2CHCL2 
+A1bd               2   734.548   7.929   0.000     0.000     1.000 ! est 
+A1bd(4-yl)         2   734.548   7.929 0.0  0.000     1.000 !=A1bd
+A1bd(3-yl)         2   734.548   7.929 0.0  0.000     1.000 !=A1bd
+A1aa(b-yl)         2   653.058   6.756  0.0  0.000     1.000  !=C6HCL4C2CL 
+A1aabv(2-yl)       2   700.826   7.426  0.0  0.000 1.000  !=C6CL4(C2CL)(CCLCHCL)
+A2(a-yl)           2   731.037   7.719  0.0  0.000     1.000  !=C10HCL7    
+A2(b-yl)           2   731.037   7.719  0.0  0.000     1.000  !=C10HCL7   
+!A1av(1-yl) no reactions 
+A1bd(1-yl)(3-a)    2   735.510 7.996 0.0  0.000 1.000 !=C6CL4(CHCCLCCLCCL2)(C2CL) 
+A1bd(1-yl)(4-a)    2   735.510   7.996 0.0  0.000     1.000   !=C6CL4(CHCCLCCLCCL2)(C2CL)
+A1bd(1-yl)(3-v)    2   752.702   8.309  0.0  0.000 1.000  !=C6CL4(CHCCLCCLCCL2)(C2CL3)
+A2aa               2   731.773   7.739   0.000     0.000     1.000 ! est 
+A2bv               2   749.301   8.072   0.000     0.000     1.000 ! est 
+A2av               2   749.301   8.072   0.000     0.000     1.000 ! est 
+A1ht(1-yl)         2   755.643   8.309  0.0  0.000     1.000  !=C6CL5CHC5CL6  
+A2R5               2   728.564   7.710   0.000     0.000     1.000 ! est 
+A2                 2   713.718   7.515    0.000     0.000     1.000 ! est 
+A2be(2-yl)         2   757.538   8.206  0.0  0.000     1.000  !=C10CL7CCL2CHCL2
+A2be(1-yl)         2   757.538   8.206  0.0  0.000     1.000  !=C10CL7CHCLCCL3 
+A1R6(a-yl)(bv)     2   757.051   8.216  0.0  0.000     1.000  !=A1R6(bv)
+A2bv(2-yl)         2   737.181   7.929  0.0  0.000     1.000  !=A2CCLCHCL  
+
+
+C4H2OH             2   224.700     4.162     0.000     0.000     1.000  !(*)
+C4H3               1   357.000     5.180     0.000     0.000     1.000
+
+CH2CHCH2           2   260.000     4.850     0.000     0.000     1.000 ! JAM
+CH3CH2CCH          2   357.000     5.180     0.000     0.000     1.000 ! JAM
+CH4O               2   417.000     3.690     1.700     0.000     2.000
+CNC                1   232.400     3.828     0.000     0.000     1.000 ! OIS
+H2CCCCH            2   357.000     5.180     0.000     0.000     1.000 ! JAM
+H2CCCCH2           2   357.000     5.180     0.000     0.000     1.000 ! JAM
+H2CCCH             2   252.000     4.760     0.000     0.000     1.000 ! JAM
+H2S                2   301.000     3.600     0.000     0.000     1.000  !(OIS)
+HC2N2              1   349.000     4.361     0.000     0.000     1.000 ! OIS
+HCCHCCH            2   357.000     5.180     0.000     0.000     1.000 ! JAM
+HCO+               1   498.000     3.590     0.000     0.000     0.000
+HSO2               2   252.000     4.290     0.000     0.000     1.000  !(OIS)
+
+NCNO               2   232.400     3.828     0.000     0.000     1.000 ! OIS
+SO2                2   252.000     4.290     0.000     0.000     1.000  !(OIS)
+SO3                2   378.400     4.175     0.000     0.000     1.000  !(OIS)
+C2F4               2   202.6       5.164     0.000     0.000     1.000  !(mec) 
+iso-C4H9             2   357.000     5.176     0.000     0.000     1.000
+C4H9               2   357.000     5.176     0.000     0.000     1.000
+C3H4P              1   252.000     4.760     0.000     0.000     1.000 ! JAM
+C3H7               2   266.800     4.982     0.000     0.000     1.000
+CH3CC              2   252.000     4.760     0.000     0.000     1.000 ! JAM
+CH3CCH2            2   260.000     4.850     0.000     0.000     1.000 ! JAM
+CH3CHCH            2   260.000     4.850     0.000     0.000     1.000 ! JAM
+C2N                1   232.400     3.828     0.000     0.000     1.000 ! OIS
+CN2                1   232.400     3.828     0.000     0.000     1.000 ! OIS
+
+!END
+!Vc was estimated using Joback method:
+!Vc = 17.5 + ??V
+!Tc was estimated using Fedors method:
+!Tc = 535log(??T)
+!
+!* Vc, Tc from the table (Appendix A)
+!
+N2O5         1   144.000     3.800     0.000     0.000     0.000!arb
+HNO2         1   232.400   3.824   0.000   0.000   1.000!=HNNO
+c-C3H5O       2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OXETANE       2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+CH2(COOH)CH2       2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OH-c-CHCH2OCH  2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OH-c-CHCH2CHO 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+CH2OH-c-C2H3O 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OH-c-C2H2O-CH3 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+CH3(OH)-c-CCH2O 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OH-c-CHCH2OCH2 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OH-c-CHCH2CH2O 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OOc-C3H5O 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+(CH3)2CO3H 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OOC3H4O2#4OOH 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+
+(CH3)2C(CH2OOH) 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+CH2C(OOH)(CH3)2 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+CH2CH(CH3)CH2OOH 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+
+COOOC3H5 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OOCH2C(OOH(CH3)2 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OOC4H6O#4OOH 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+OOC4H6O#5OOH 2   546.155     5.576     0.000     0.000     1.000 !=C3H7(CHOOH)OO
+
+! checked with chemkin 3.7 only Cl was changed
+
+transport for these chlorinated species is from Comb. Flame 114 (1998) 285.
+
+CL                 0   151.000     3.339     0.000     2.300     1.0
+HCL                1   344.700     3.339     1.100     2.640     1.0
+CL2                1   316.000     4.217     0.200     4.600     1.0
+CLO                1   211.350     3.842     1.700     2.990     1.0
+HOCL               2   453.970     3.968     1.930     3.390     1.0
+COCL2              1   376.000     4.700     1.100     6.790     1.0
+CHCLO              2   361.000     4.340     1.500     4.890     1.0
+CHCL               1   224.700     4.163     1.570     3.730     1.0
+CCL2               1   348.000     4.644     0.000     5.630     1.0
+CCL3               2   444.360     5.031     0.000     7.930     1.0
+CHCL2              2   420.850     4.694     1.570     6.030     1.0
+CH2CL              2   340.280     4.305     0.800     3.830     1.0
+CH3CL              2   350.000     4.182     1.900     4.230     1.0
+CH2CL2             2   356.300     4.898     1.800     6.430     1.0
+CHCL3              2   340.200     5.389     1.100     8.330     1.0
+CCL4               2   322.700     5.947     0.000    10.530     1.0
+C2HCL              1   332.620     4.335     0.440     5.540     1.0
+C2CL2              1   442.700     4.958     0.000     7.440     1.0
+CH2CCL             1   345.170     4.738     1.500     5.740     1.0
+CHCHCL             1   345.170     4.738     1.500     5.740     1.0
+CHCLCCL            1   426.190     5.140     0.900     7.640     1.0
+CHCCL2             1   426.190     5.140     0.900     7.640     1.0
+C2CL3              1   473.360     5.247     0.900     9.540     1.0
+C2H3CL             1   349.000     4.644     1.500     6.140     1.0
+CH2CCL2            1   412.180     5.013     1.340     8.040     1.0
+CHCLCHCL           1   426.190     5.140     0.900     8.040     1.0
+CH2CHCL2           1   426.190     5.140     0.900     8.040     1.0
+C2HCL3             1   472.500     5.316     0.900     9.940     1.0
+CHCLCHCL2          1   472.500     5.316     0.900     9.940     1.0
+CH2CCL3            1   472.500     5.316     0.900     9.940     1.0
+C2CL4              1   514.900     5.640     0.000    11.840     1.0
+CHCLCCL3           1   514.900     5.640     0.000    11.840     1.0
+CH2CH2CL           2   379.290     4.816     2.000     5.960     1.0
+CH3CHCL            2   379.290     4.816     2.000     5.960     1.0
+CH2CLCHCL          2   471.190     5.116     1.800     7.860     1.0
+CH3CCL2            2   435.910     5.103     2.000     7.860     1.0
+CHCL2CH2           2   435.910     5.103     2.000     7.860     1.0
+CH2CLCCL2          2   498.910     5.379     1.700     9.760     1.0
+CHCL2CCL2          2   525.050     5.872     1.320    11.660     1.0
+C2CL5              2   556.000     6.142     0.910    13.560     1.0
+C2H5CL             2   300.000     4.898     2.000     6.360     1.0
+CH3CHCL2           2   435.900     5.102     2.000     8.260     1.0
+CH2CLCH2CL         2   471.200     5.116     1.800     8.260     1.0
+CH2CLCHCL2         2   498.900     5.397     1.700    10.160     1.0
+CH3CCL3            2   454.000     5.406     1.770    10.160     1.0
+CHCL2CHCL2         2   540.700     5.868     1.320    12.060     1.0
+CH2CLCCL3          2   520.600     5.841     1.390    12.060     1.0
+C2HCL5             2   556.000     6.142     0.920    13.960     1.0
+C2CL6              2   581.780     6.457     0.000    15.860     1.0
+CH2CLO             2   535.00      4.610     1.800     4.820     1.0
+CCLO               1   388.530     4.730     1.800     4.490     1.0
+
+END
+
+
