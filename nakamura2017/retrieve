@@ -1,0 +1,25 @@
+#!/bin/bash -e
+# Nakamura, Hisashi, Susumu Hasegawa, and Takuya Tezuka. "Kinetic modeling of ammonia/air weak flames in a micro flow reactor with a controlled temperature profile." Combustion and Flame 185 (2017): 16-27.
+# http://dx.doi.org/10.1016/j.combustflame.2017.06.021
+# https://github.com/jiweiqi/CollectionOfMechanisms/tree/master/Nitrogen/Nakamura
+# Mechanism contains 38 species and 232 reactions.
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN $DIR_CANTERA_ORIG
+
+WEB_CHEM=https://raw.githubusercontent.com/jiweiqi/CollectionOfMechanisms/master/Nitrogen/Nakamura/chem.inp
+WEB_THERMO=https://raw.githubusercontent.com/jiweiqi/CollectionOfMechanisms/master/Nitrogen/Nakamura/therm.dat
+WEB_TRANSPORT=https://raw.githubusercontent.com/jiweiqi/CollectionOfMechanisms/master/Nitrogen/Nakamura/tran.dat
+WEB_CANTERA=https://raw.githubusercontent.com/jiweiqi/CollectionOfMechanisms/master/Nitrogen/Nakamura/Nakamura.cti
+
+echo "Getting files from web"
+wget --output-document=$CHEMKIN_CHEM $WEB_CHEM
+wget --output-document=$CHEMKIN_THERMO $WEB_THERMO
+wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
+wget --output-document=$CANTERA_ORIG_CHEM $WEB_CANTERA
+echo "Done"
+
+cd -
