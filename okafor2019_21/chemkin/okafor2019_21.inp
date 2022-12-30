@@ -1,0 +1,183 @@
+!=== Sub-mechanism with Carbon number <= 0 ===
+
+! Reduced Mechanism based in Okafor et al. Combust. Flame 2018 with updates
+ELEMENTS
+O H N AR 
+END
+SPECIES
+H2 H O O2 OH 
+H2O HO2 H2O2 N NH 
+NH2 NH3 N2H2 NNH NO 
+NO2 N2O HNO N2 N2H3 
+AR 
+END
+
+REACTIONS MOLES CAL/MOLE
+!GRI Mech 3.0
+O+H2=H+OH    3.87E4 2.7 6.26E3
+! reference:
+! Marinov, N. M., Pitz, W. J., Westbrook, C. K., Vincitore, A. M.,
+! Castaldi, M. J., Senkan, S. M. "Aromatic and Polycyclic Aromatic
+! Hydrocarbon Formation in a Laminar Premixed n-Butane Flame"
+! Combustion and Flame 114 192-213 (1998).
+! UCRL-WEB-204236
+! Review and release date: May 19, 2004.
+!GRI Mech 3.0
+O+HO2=OH+O2    2.0E13 0.0 0.0E0
+!GRI Mech 3.0
+H+O2+M=HO2+M    2.8E18 -0.86 0.0E0
+    O2/0.0/
+    H2O/0.0/
+    N2/0.0/
+    AR/0.0/
+!GRI Mech 3.0
+H+2O2=HO2+O2    2.08E19 -1.24 0.0E0
+!GRI Mech 3.0
+H+O2+H2O=HO2+H2O    1.126E19 -0.76 0.0E0
+!GRI Mech 3.0
+H+O2+N2=HO2+N2    2.6E19 -1.24 0.0E0
+!GRI Mech 3.0
+H+O2+AR=HO2+AR    7.0E17 -0.8 0.0E0
+!Hong et al.
+H+O2=O+OH    1.04E14 0.0 1.5286E4
+!GRI Mech 3.0
+H+OH+M=H2O+M    2.2E22 -2.0 0.0E0
+    H2/0.73/
+    H2O/3.65/
+    AR/0.38/
+!GRI Mech 3.0
+H+HO2=O2+H2    4.48E13 0.0 1.068E3
+!GRI Mech 3.0
+H+HO2=2OH    8.4E13 0.0 6.35E2
+!GRI Mech 3.0
+OH+H2=H+H2O    2.16E8 1.51 3.43E3
+!GRI Mech 3.0
+2OH(+M)=H2O2(+M)    7.4E13 -0.37 0.0E0
+    H2/2.0/
+    H2O/6.0/
+    AR/0.7/
+    LOW/2.3E18 -9.0E-1 -1.7E3/
+    TROE/7.346E-1 9.4E1 1.756E3 5.182E3/
+!GRI Mech 3.0
+2OH=O+H2O    3.57E4 2.4 -2.11E3
+!hong pci 2013
+OH+HO2=H2O+O2    7.0E12 0.0 -1.09296E3
+    DUP
+!hong pci 2013
+OH+HO2=H2O+O2    4.5E14 0.0 1.09296E4
+    DUP
+!GRI Mech 3.0
+OH+H2O2=HO2+H2O    1.7E18 0.0 2.941E4
+!GRI Mech 3.0
+2HO2=O2+H2O2    1.3E11 0.0 -1.63E3
+    DUP
+!GRI Mech 3.0
+2HO2=O2+H2O2    4.2E14 0.0 1.2E4
+    DUP
+!GRI Mech 3.0
+N+NO=N2+O    2.7E13 0.0 3.55E2
+!GRI Mech 3.0
+N+O2=NO+O    9.0E9 1.0 6.5E3
+!GRI Mech 3.0
+N+OH=NO+H    3.36E13 0.0 3.85E2
+!GRI Mech 3.0
+N2O+O=N2+O2    1.4E12 0.0 1.081E4
+!GRI Mech 3.0
+N2O+H=N2+OH    3.87E14 0.0 1.888E4
+!GRI Mech 3.0
+N2O+OH=N2+HO2    2.0E12 0.0 2.106E4
+!GRI Mech 3.0
+N2O(+M)=N2+O(+M)    7.91E10 0.0 5.602E4
+    H2/2.0/
+    H2O/6.0/
+    AR/0.625/
+    LOW/6.37E14 0.0E0 5.664E4/
+!GRI Mech 3.0
+HO2+NO=NO2+OH    2.11E12 0.0 -4.8E2
+!GRI Mech 3.0
+NO+O+M=NO2+M    1.06E20 -1.41 0.0E0
+    H2/2.0/
+    H2O/6.0/
+    AR/0.7/
+!GRI Mech 3.0
+NO2+O=NO+O2    3.9E12 0.0 -2.4E2
+!GRI Mech 3.0
+NO2+H=NO+OH    1.32E14 0.0 3.6E2
+! SKR/GLA04 DAV/HAN90,rv/Tian Mech
+NH+H=N+H2    3.0E13 0.0 0.0E0
+! SKR/GLA04 CEC94/Tian Mech
+NH+O=NO+H    9.2E13 0.0 0.0E0
+! SKR/GLA04 JAM est/Tian Mech
+NH+OH=HNO+H    2.0E13 0.0 0.0E0
+! SKR/GLA04 JAM est/Tian Mech
+NH+OH=N+H2O    5.0E11 0.5 2.0E3
+! SKR/GLA04 MIL/MEL92/Tian Mech
+NH+O2=HNO+O    4.6E5 2.0 6.5E3
+! SKR/GLA04 MIL/MEL92/Tian Mech
+NH+O2=NO+OH    1.3E6 1.5 1.0E2
+! Klippenstein et al
+NH+NO=N2O+H    1.8E14 -0.351 -2.44E2
+! SKR/GLA04 MIL/MEL92/Tian Mech
+NH+NO=N2+OH    2.2E13 -0.23 0.0E0
+! SKR/GLA04 LIN/PAG95/Tian Mech
+NH2+H=NH+H2    7.2E5 2.32 7.99E2
+!           INO/WAS99,DRA/WAG84,ADA/PHI94/Tian Mech
+NH2+O=HNO+H    6.6E13 0.0 0.0E0
+! SKR/GLA04 JAM est/Tian Mech
+NH2+OH=NH+H2O    4.0E6 2.0 1.0E3
+! SKR/GLA04 DEA/BOZ00/Tian Mech
+NH2+HO2=NH3+O2    9.2E5 1.94 -1.152E3
+! SKR/GLA04 DAV/HAN90/Tian Mech
+2NH2=NH3+NH    5.0E13 0.0 1.0E4
+! SKR/GLA04 JAM est/Tian Mech
+NH2+NH=N2H2+H    5.0E13 0.0 0.0E0
+! SKR/GLA04 WHY/PHI83/Tian Mech
+NH2+N=N2+2H    7.0E13 0.0 0.0E0
+! SKR/GLA04 MIL/GLA99/Tian Mech
+NH2+NO=N2+H2O    2.8E20 -2.654 1.258E3
+! SKR/GLA04 MIL/GLA99/Tian Mech
+NH2+NO=NNH+OH    2.3E10 0.425 -8.14E2
+! SKR/GLA04 PAR/LIN97/Tian Mech
+NH2+NO2=N2O+H2O    1.6E16 -1.44 2.68E2
+! SKR/GLA04 MIL/GLA99/Tian Mech
+NNH=N2+H    6.5E7 0.0 0.0E0
+! SKR/GLA04 JAM est/Tian Mech
+NNH+O=N2O+H    1.0E14 0.0 0.0E0
+! SKR/GLA04 MIL/MEL92/Tian Mech
+NNH+O=NH+NO    5.0E13 0.0 0.0E0
+! SKR/GLA04 MIL/GLA99/Tian Mech
+NNH+O2=N2+HO2    2.0E14 0.0 0.0E0
+! SKR/GLA04 MIL/GLA99 /Tian Mech
+NNH+O2=N2+H+O2    5.0E13 0.0 0.0E0
+!GRI Mech 3.0
+H+NO+M=HNO+M    4.48E19 -1.32 7.4E2
+    H2/2.0/
+    H2O/6.0/
+    AR/0.7/
+!GRI Mech 3.0
+HNO+H=H2+NO    9.0E11 0.72 6.6E2
+!GRI Mech 3.0
+HNO+OH=NO+H2O    1.3E7 1.9 -9.5E2
+!GRI Mech 3.0
+HNO+O2=HO2+NO    1.0E13 0.0 1.3E4
+!GRI Mech 3.0
+NH3+H=NH2+H2    5.4E5 2.4 9.915E3
+!Cardelino et al.
+NH3+M=NH2+H+M    6.6E17 0.0 9.73E4
+!GRI Mech 3.0
+NH3+OH=NH2+H2O    2.0E6 2.04 5.66E2
+!GRI Mech 3.0
+NH3+O=NH2+OH    9.4E6 1.94 6.46E3
+!Nakamura
+N2H3+M=N2H2+H+M    2.0E16 0.0 3.7E4
+! SKR/GLA04 DEA/BOZ00/Tian Mech
+N2H3+H=N2H2+H2    2.4E8 1.5 -1.0E1
+! SKR/GLA04 DEA/BOZ00/Tian Mech
+N2H3+HO2=N2H2+H2O2    1.4E4 2.69 -1.6E3
+! SKR/GLA04 LIN/PAG96/Tian Mech
+N2H2+H=NNH+H2    8.5E4 2.63 2.3E2
+! SKR/GLA04 DEA/BOZ00/Tian Mech
+N2H2+O=NNH+OH    3.3E8 1.5 4.97E2
+! SKR/GLA04 LIN/PAG96/Tian Mech
+N2H2+OH=NNH+H2O    5.9E1 3.4 1.36E3
+END

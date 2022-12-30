@@ -1,0 +1,23 @@
+#!/bin/bash -e
+# Wang, Du, et al. "Measurement of oxy-ammonia laminar burning velocity at normal and elevated temperatures." Fuel 279 (2020): 118425.
+# https://doi.org/10.1016/j.fuel.2020.118425
+# https://www.sciencedirect.com/science/article/pii/S0016236120314216?casa_token=Zz2BuTMBwaUAAAAA:q208RpmFud7wtwN4Cx3HD44MrueQb2UzLsNjuTm0UDsro2Rows0O9p8i04AyE853_5x-jpYz3G7I#m0005
+# Mechanism contains 21 species and 66 reactions.
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN $DIR_CANTERA_ORIG
+
+echo "Getting files from web"
+mkdir TEMP
+wget --output-document=TEMP/$MECH.zip https://ars.els-cdn.com/content/image/1-s2.0-S0016236120314216-mmc2.zip
+unzip TEMP/$MECH.zip -d TEMP
+
+mv TEMP/mechanisms/reduced_okafor/chem_C0.inp  $CHEMKIN_CHEM
+mv TEMP/mechanisms/reduced_okafor/thermo_C0.dat $CHEMKIN_THERMO
+mv TEMP/mechanisms/reduced_okafor/tran_C0.dat  $CHEMKIN_TRANSPORT
+mv TEMP/mechanisms/reduced_okafor/chem_C0.cti  $CANTERA_ORIG_CHEM
+rm -r TEMP
+echo "Done"
