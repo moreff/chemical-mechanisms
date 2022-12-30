@@ -1,0 +1,22 @@
+#!/bin/bash -e
+# Okafor, Ekenechukwu Chijioke, et al. "Measurement and modelling of the laminar burning velocity of methane-ammonia-air flames at high pressures using a reduced reaction mechanism." Combustion and Flame 204 (2019): 162-175.
+# https://www.sciencedirect.com/science/article/pii/S0010218019301026?casa_token=Mebhj9Z_DeoAAAAA:qSlmNX8ZiFvqxTZDofcnPGk5w2t7ObAXGkhnzXlk4rhytRIrveTAMpXhAerLHPEM4PIIM4c0UR78
+# https://doi.org/10.1016/j.combustflame.2019.03.008
+# Mechanism contains 21 species and 67 reactions.
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+
+
+WEB_CHEM=https://ars.els-cdn.com/content/image/1-s2.0-S0010218019301026-mmc2.txt
+WEB_THERMO=https://ars.els-cdn.com/content/image/1-s2.0-S0010218019301026-mmc3.txt
+WEB_TRANSPORT=https://ars.els-cdn.com/content/image/1-s2.0-S0010218019301026-mmc4.txt
+
+echo "Getting files from web"
+wget --output-document=$CHEMKIN_CHEM $WEB_CHEM
+wget --output-document=$CHEMKIN_THERMO $WEB_THERMO
+wget --output-document=$CHEMKIN_TRANSPORT $WEB_TRANSPORT
+echo "Done"
