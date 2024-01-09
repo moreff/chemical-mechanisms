@@ -1,0 +1,549 @@
+!This file is part of the supplementary material for the following publication:
+!Measurement of the laminar burning velocity and kinetics study of the importance of the hydrogen recovery mechanism of ammonia/hydrogen/air premixed flames
+!Author: Gabriel J. Gotama, Akihiro Hayakawa, Ekenechukwu C. Okafor, Ryuhei Kanoshima, Masao Hayashi, Taku Kudo, and Hideaki Kobayashi
+!Combustion and Flame, Vol. 236, 111753
+!https://doi.org/10.1016/j.combustflame.2021.111753
+
+!Reduced Gas-Phase-Kinetics File
+
+!Base mechanism: X. Han, Z. Wang, Y. He, Y. Zhu, K. Cen, Experimental and kinetic modeling study of laminar burning velocities of NH3/syngas/air premixed flames. Combustion and Flame, 213, 1-13. https://doi.org/10.1016/j.combustflame.2019.11.032
+
+ELEMENTS
+H N O AR HE
+END
+
+SPECIES
+O   O2   HE  AR   OHEX
+H   H2   OH  H2O  HO2  H2O2	HNO   H2NO  H2NN
+N	  N2   NO	 NO2	N2O  NH3	NNH	  NH2	  NH    N2H2	N2H3	N2H4
+END
+
+REACTIONS
+!Note: Reactions with '*' have different rate constants from mechanism by Han et al. (2020)
+!///////////////////////////////////////////////////////////////////////////////
+!                                H Submech
+!///////////////////////////////////////////////////////////////////////////////
+
+!R1
+H+O2<=>O+OH                5.0712E+015   -0.48596       16126.7
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R2
+O+H2<=>H+OH                  1.2554E+006    2.27039       6956.9
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R3*
+OH+H2<=>H+H2O                4.38E+13	0	6991
+!K. Lam, D.F. Davidson, R.K. Hanson, A shock tube study of H2 + OH -> H2O + H using OH laser absorption, Int. J. Chem. Kinet. 45 (2013) 363-373.
+
+!R4
+2OH<=>O+H2O                  8.4999E+004    2.26419      -1784.8
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R5
+2H+M<=>H2+M                  4.9806E+018   -1.21273       612.04
+H2/2.5/ O2/1/ H2O/12/ HE/0.83/ AR/1/
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R6
+2O+M<=>O2+M                    6.165E+15    -0.5000        0.00
+H2/2.5/ H2O/12/ AR/0.83/ HE/0.83/
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R7
+O+H+M<=>OH+M                   4.714E+18    -1.0000        0.00
+H2/2.5/ O2/1/ H2O/12/ AR/0.75/ HE/0.75/
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R8
+H+OH+M<=>H2O+M               1.4818E+024   -2.53792       120.79
+H2/2.5/ O2/1/ H2O/12/ AR/0.38/ HE/0.44/
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R9*
+H+O2(+M) = HO2(+M)          	4.65084E+12  0.44  0.000E+00
+LOW/6.366E+20 -1.72  5.248E+02/
+TROE/0.5  1E-30  1E+30/
+H2/2.0/ H2O/14/ O2/0.78/ AR/0.67/ HE/0.8/
+!B. Mei, X. Zhang, S. Ma, M. Cui, H. Guo, Z. Cao, Y. Li, Experimental and kinetic modeling investigation on the laminar flame propagation of ammonia under oxygen enrichment and elevated pressure conditions, Combustion and Flame 210 (2019) 236-246.
+
+!R10*
+H+HO2<=>H2+O2               1.86E8	1.72	-1157
+!S.H. Mousavipour, V. Saheb, Theoretical study on the kinetic and mechanism of H + HO2 reaction, Bull. Chem. Soc. Jpn. 80 (2007) 1901-1913.
+
+!R11
+HO2+H<=>2OH                  5.7734E+013     0.000        171.02
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R12
+HO2+O<=>OH+O2                  3.250E+13     0.000         0.00
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R13
+HO2+OH<=>H2O+O2             9.5840E+011    0.42008      -948.59
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R14
+2HO2<=>H2O2+O2                 1.300E+11     0.000       -1630.0
+DUPLICATE
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R15
+2HO2<=>H2O2+O2               1.6048E+015     0.0000       15549
+DUPLICATE
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R16
+2OH(+M)<=>H2O2(+M)             2.148E+05     2.3219    -3402.4
+LOW                  /       1.9928E+018   -1.17797    -4272.7     /
+TROE                 /        4.3000E-01  1.0000E-30 1.0000E+30 1.0000E+30 /
+H2O/5/ AR/0.67/ O2/0.8/ HE/0.43/ H2O2/5.13/ H2/2.47/
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R17
+H2O2+H<=>H2O+OH                2.410E+13     0.0000     3970.0
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R18
+H2O2+H<=>H2+HO2              9.7543E+019   -1.92495       9425.1
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R19
+H2O2+O<=>OH+HO2                9.550E+06     2.0000     3970.0
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R20
+H2O2+OH<=>H2O+HO2              1.740E+12     0.0000      318.00
+DUPLICATE
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R21
+H2O2+OH<=>H2O+HO2              7.590E+13     0.0000     7269.0
+DUPLICATE
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!///////////////////////////////////////////////////////////////////////////////
+!                                N Submech
+!///////////////////////////////////////////////////////////////////////////////
+
+!R22
+NH3+O=NH2+OH  		1.63E07	1.85	6457
+!D. Baulch, C.T. Bowman, C. Cobos, R. Cox, T. Just, J. Kerr, M. Pilling, D. Stocker, J. Troe, W.J.J.o.p. Tsang, c.r. data, Evaluated kinetic data for combustion modeling: supplement II, 34 (2005) 757-1397.
+
+!R23
+NH3+H=NH2+H2   		1.26E14	0	2.15E04
+!R.K. Hanson, S. Salimian, Survey of rate constants in the N/H/O system, Combustion chemistry, Springer1984, pp. 361-421.
+
+!R24*
+NH3+OH=NH2+H2O          1.56E+05	2.372	118.9
+!A. Stagni, C. Cavallotti, S. Arunthanayothin, Y. Song, O. Herbinet, F. Battin-Leclerc, T. Faravelli, An experimental, theoretical and kinetic-modeling study of the gas-phase oxidation of ammonia, React. Chem. Eng. (2020) 5 696-711.
+
+!R25
+NH3+HO2=NH2+H2O2	3.0E11	0	22000
+!J.A. Miller, C.T. Bowman, Kinetic modeling of the reduction of nitric oxide in combustion products by isocyanic acid, International Journal of Chemical Kinetics 23 (1991) 289-313
+
+!R26
+NH3+NO=NH2+HNO		3.26E07	1.73	5.66E04
+!A.M. Mebel, E.W.G. Diau, M.C. Lin, K. Morokuma, Theoretical Rate Constants for the NH3 + NOx ? NH2 + HNOx (x = 1, 2) Reactions by ab Initio MO/VTST Calculations, The Journal of Physical Chemistry 100 (1996) 7517-7525.
+
+!R27
+NH3+NH+M=N2H4+M		1.09E15	0	0
+!C. Zetzsch, F. Stuhl, Formation and Fate of NH(X3S-) in the Pulsed Vacuum UV Photolysis of NH3, Berichte der Bunsengesellschaft f r physikalische Chemie 85 (1981) 564-568
+
+!R28
+NH2+O=NH+OH		7.0E12	0	0
+DUP
+!P. Glarborg, J.A. Miller, B. Ruscic, S.J. Klippenstein, Modeling nitrogen chemistry in combustion, Progress in Energy and Combustion Science 67 (2018) 31-68
+
+!R29
+NH2+O=NH+OH		8.6E-1	4.01	1673
+DUP
+!P. Glarborg, J.A. Miller, B. Ruscic, S.J. Klippenstein, Modeling nitrogen chemistry in combustion, Progress in Energy and Combustion Science 67 (2018) 31-68
+
+!R30
+HNO+H=NH2+O		3.5E15	-0.3	2.92E04
+!N. Cohen, K.J.J.o.p. Westberg, c.r. data, Chemical Kinetic Data Sheets for High-Temperature Reactions. Part II, 20 (1991) 1211-1311
+
+!R31
+NH+H2=NH2+H             2.1E13   0     15417
+!A. Fontijn, S.M. Shamsuddin, D. Crammond, P. Marshall, W.R. Anderson, Kinetics of the NH reaction with H2 and reassessment of HNO formation from NH + CO2, H2O, Combustion and Flame 145 (2006) 543-551
+
+!R32
+NH2+OH<=>NH+H2O 	9.6E06	1.97	669
+!S.H. Mousavipour, F. Pirhadi, A. HabibAgahi, A Theoretical Investigation on the Kinetics and Mechanism of the Reaction of Amidogen with Hydroxyl Radical, The Journal of Physical Chemistry A 113 (2009) 12961-12971.
+
+!R33
+NH2+O2=H2NO+O		2.6E11	0.4872	29050
+!S.J. Klippenstein, L.B. Harding, P. Glarborg, J.A. Miller, The role of NNH in NO formation and control, Combustion and Flame 158 (2011) 774-789.
+
+!R34
+NH2+O2=HNO+OH		2.9E-2	3.764	18185
+!S.J. Klippenstein, L.B. Harding, P. Glarborg, J.A. Miller, The role of NNH in NO formation and control, Combustion and Flame 158 (2011) 774-789.
+
+!R35
+NH2+H2NO=HNO+NH3	3.0E12	0	1000
+!P. Glarborg, M.U. Alzueta, K. Dam-Johansen, J.A. Miller, Kinetic Modeling of Hydrocarbon/Nitric Oxide Interactions in a Flow Reactor, Combustion and Flame 115 (1998) 1-27
+
+!R36
+NH2+NO2=N2O+H2O		1.6E16	-1.44	268
+!J. Park, M.C. Lin, A Mass Spectrometric Study of the NH2 + NO2 Reaction, The Journal of Physical Chemistry A 101 (1997) 2643-2647
+
+!R37
+NH2+NO2=H2NO+NO		6.5E16	-1.44	268
+!J. Park, M.C. Lin, A Mass Spectrometric Study of the NH2 + NO2 Reaction, The Journal of Physical Chemistry A 101 (1997) 2643-2647
+
+!R38*
+NH2+NO=N2+H2O    2.70E+17	-1.85	0.00E+00
+!W. Hack, H. Schacke, M. Schr  ter, H.Gg. Wagner, Reaction rates of NH2-radicals with NO, NO2, C2H2, C2H4 and other hydrocarbons, Symposium (International) on Combustion 17 (1979) 505-513
+
+!R39*
+NH2+NO=NNH+OH    1.43E+07	1.40	-1777
+!J. Park, M.C. Lin, Product branching ratios in the NH2 + NO reaction: A re-evaluation, J. Phys. Chem. A 103 (1999) 8906-8907.
+
+!R40
+H2NO+H=NH2+OH		5.0E13	0	0
+!P. Glarborg, M.U. Alzueta, K. Dam-Johansen, J.A. Miller, Kinetic Modeling of Hydrocarbon/Nitric Oxide Interactions in a Flow Reactor, Combustion and Flame 115 (1998) 1-27
+
+!R41
+NH2+HO2=H2NO+OH		2.5E17	-1.28	1166
+!R. Sumathi, S.D. Peyerimhoff, A quantum statistical analysis of the rate constant for the HO2 + NH2 reaction, Chemical Physics Letters 263 (1996) 742-748.
+
+!R42
+NH2+HO2=NH3+O2		4.5E13	0	0
+!O. Sarkisov, S. Cheskis, V. Nadtochenko, E. Sviridenkov, V. Vedeneev, Spectroscopic Study of Elementary Reactions Involving Oxomethyl, Amidogen, and Nitrosyl Hydride, Arch. Comb 4 (1984) 111-120.
+
+!R43
+NH2+NH=NH3+N		9.6E03	2.46	107
+!S.J. Klippenstein, L.B. Harding, B. Ruscic, R. Sivaramakrishnan, N.K. Srinivasan, M.C. Su, J.V. Michael, Thermal Decomposition of NH2OH and Subsequent Reactions: Ab Initio Transition State Theory and Reflected Shock Tube Experiments, The Journal of Physical Chemistry A 113 (2009) 10241-10259
+
+!R44
+NH2+NH=N2H3		7.0E13	0	0
+!P.B. Pagsberg, J. Eriksen, H. Christensen, Pulse radiolysis of gaseous ammonia-oxygen mixtures, Journal of Physical Chemistry 83 (1979) 582-590
+
+!R45
+NH2+NH<=>N2H2+H         4.3E14  -0.272  -77
+!S.J. Klippenstein, L.B. Harding, B. Ruscic, R. Sivaramakrishnan, N.K. Srinivasan, M.C. Su, J.V. Michael, Thermal Decomposition of NH2OH and Subsequent Reactions: Ab Initio Transition State Theory and Reflected Shock Tube Experiments, The Journal of Physical Chemistry A 113 (2009) 10241-10259
+
+!R46
+NH2+NH2=NH3+NH		5.6E0	3.53	552
+!S.J. Klippenstein, L.B. Harding, B. Ruscic, R. Sivaramakrishnan, N.K. Srinivasan, M.C. Su, J.V. Michael, Thermal Decomposition of NH2OH and Subsequent Reactions: Ab Initio Transition State Theory and Reflected Shock Tube Experiments, The Journal of Physical Chemistry A 113 (2009) 10241-10259
+
+!R47
+NH2+NH2(+M)=N2H4(+M)	5.6E14	-0.414	66
+LOW/1.6E34   -5.49   1987/
+TROE/0.31  1E-30  1E30  1E30/
+!S.J. Klippenstein, L.B. Harding, B. Ruscic, R. Sivaramakrishnan, N.K. Srinivasan, M.C. Su, J.V. Michael, Thermal Decomposition of NH2OH and Subsequent Reactions: Ab Initio Transition State Theory and Reflected Shock Tube Experiments, The Journal of Physical Chemistry A 113 (2009) 10241-10259
+
+!R48
+NH2+NH2=N2H3+H		1.2E12	-0.03	10084
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341.
+
+!R49*
+NH2+NH2=N2H2+H2		7.83E11   0   0
+!N. Stothard, R. Humpfer, H. Grotheer, The multichannel reaction NH2 + NH2 at ambient temperature and low pressures, Chem. Phys. Letters 240 (1995) 474-480.
+
+!R50
+NH2+NH2=H2NN+H2	 	7.2E04	1.88	8802
+!S.J. Klippenstein, L.B. Harding, B. Ruscic, R. Sivaramakrishnan, N.K. Srinivasan, M.C. Su, J.V. Michael, Thermal Decomposition of NH2OH and Subsequent Reactions: Ab Initio Transition State Theory and Reflected Shock Tube Experiments, The Journal of Physical Chemistry A 113 (2009) 10241-10259
+
+!R51*
+NH2+N=N2+H+H		5.00E+13	0	0
+!K.P. Shrestha, L. Seidel, T. Zeuch, F. Mauss, Detailed kinetic mechanism for the oxidation of ammonia including the formation and reduction of nitrogen oxides, Energy & Fuels 32 (2018) 10202-10217.
+
+!R52
+NH+H=N+H2               3.01E13  0.0  0.0
+!C. Morley. The mechanism of NO formation from nitrogen compounds in hydrogen flames studied by laser fluorescence. In: editor^editors. Symposium (International) on Combustion; 1981: Elsevier. p. 23-32.
+
+!R53
+NH+N=N2+H		9.0E11	0.5	0
+!A.A. Konnov, Implementation of the NCN pathway of prompt-NO formation in the detailed reaction mechanism, Combustion and Flame 156 (2009) 2093-2105
+
+!R54
+NH+OH=N+H2O		2.0E09	1.2	0
+!N. Cohen, K.J.J.o.p. Westberg, c.r. data, Chemical Kinetic Data Sheets for High-Temperature Reactions. Part II, 20 (1991) 1211-1311
+
+!R55
+NH+OH=HNO+H		3.2E14	-0.376	-46
+!S.J. Klippenstein, L.B. Harding, B. Ruscic, R. Sivaramakrishnan, N.K. Srinivasan, M.C. Su, J.V. Michael, Thermal Decomposition of NH2OH and Subsequent Reactions: Ab Initio Transition State Theory and Reflected Shock Tube Experiments, The Journal of Physical Chemistry A 113 (2009) 10241-10259.
+
+!R56*
+NH+O2=HNO+O             3.92E+13	0.00	17885
+!D.L. Baulch, C.J. Cobos, R.A Cox, P. Frank, G. Hayman, Th. Just, J.A. Kerr, T. Murrells, M.J. Pilling, J. Troe, R.W. Walker, J. Warnatz, Evaluated kinetic data for combustion modeling. Supplement I, J. Phys. Chem. Ref. Data 23 (1994) 847-1029.
+
+!R57
+NH+O2=NO+OH		2.014E16 -1.38	 5672
+!M.R. Talipov, S.L. Khursan, R.L. Safiullin, RRKM and Ab Initio Investigation of the NH (X) Oxidation by Dioxygen, The Journal of Physical Chemistry A 113 (2009) 6468-6476
+
+!R58
+NH+NO=N2O+H          	1.8E14 -0.351   -244
+
+!R59
+NH+NO=N2+OH             2.7E12 -0.0721  -512
+!S.J. Klippenstein, L.B. Harding, P. Glarborg, J.A. Miller, The role of NNH in NO formation and control, Combustion and Flame 158 (2011) 774-789
+
+!R60
+NH+NH=NH2+N		5.7E-1	3.88	342
+!S.J. Klippenstein, L.B. Harding, B. Ruscic, R. Sivaramakrishnan, N.K. Srinivasan, M.C. Su, J.V. Michael, Thermal Decomposition of NH2OH and Subsequent Reactions: Ab Initio Transition State Theory and Reflected Shock Tube Experiments, The Journal of Physical Chemistry A 113 (2009) 10241-10259.
+
+!R61
+NH+NH=N2H2		6.26E13	-0.036	-161
+!S.J. Klippenstein, L.B. Harding, B. Ruscic, R. Sivaramakrishnan, N.K. Srinivasan, M.C. Su, J.V. Michael, Thermal Decomposition of NH2OH and Subsequent Reactions: Ab Initio Transition State Theory and Reflected Shock Tube Experiments, The Journal of Physical Chemistry A 113 (2009) 10241-10259.
+
+!R62
+N+O+M=NO+M		7.6E14	-0.1	-1770
+H2O/16.25/
+!Y. Zhang, O. Mathieu, E.L. Petersen, G. Bourque, H.J. Curran, Assessing the predictions of a NOx kinetic mechanism on recent hydrogen and syngas experimental data, Combustion and Flame 182 (2017) 122-141
+
+!R63
+N+NO=N2+O		2.1E13	0	0
+!D. Baulch, C.T. Bowman, C. Cobos, R. Cox, T. Just, J. Kerr, M. Pilling, D. Stocker, J. Troe, W. Tsang, Evaluated kinetic data for combustion modeling: supplement II, Journal of physical and chemical reference data 34 (2005) 757-1397.
+
+!R64
+N+O2=NO+O		5.9E09	1.0	6199
+!D. Baulch, C.T. Bowman, C. Cobos, R. Cox, T. Just, J. Kerr, M. Pilling, D. Stocker, J. Troe, W. Tsang, Evaluated kinetic data for combustion modeling: supplement II, Journal of physical and chemical reference data 34 (2005) 757-1397.
+
+!R65
+N2+M=N+N+M		1.89E18	-0.85	224950
+H2O/16.25/
+!Y. Zhang, O. Mathieu, E.L. Petersen, G. Bourque, H.J. Curran, Assessing the predictions of a NOx kinetic mechanism on recent hydrogen and syngas experimental data, Combustion and Flame 182 (2017) 122-141.
+
+!R66
+NNH=N2+H		1.00E+09 0	0
+!S.J. Klippenstein, L.B. Harding, P. Glarborg, J.A. Miller, The role of NNH in NO formation and control, Combustion and Flame 158 (2011) 774-789
+
+!R67
+NNH+O=N2+OH		1.2E13	0.145	-217
+!S.J. Klippenstein, L.B. Harding, P. Glarborg, J.A. Miller, The role of NNH in NO formation and control, Combustion and Flame 158 (2011) 774-789
+
+!R68
+NNH+O=N2O+H		1.0E14	0	0
+!P. Glarborg, M.U. Alzueta, K. Dam-Johansen, J.A. Miller, Kinetic Modeling of Hydrocarbon/Nitric Oxide Interactions in a Flow Reactor, Combustion and Flame 115 (1998) 1-27.
+
+!R69
+NNH+O=NH+NO		3.3E14	-0.23	-1013
+!J.W. Bozzelli, A.M. Dean, O+ NNH: A possible new route for NOx formation in flames, International journal of chemical kinetics 27 (1995) 1097-1109
+
+!R70
+NNH+OH=N2+H2O		5.0E13	0	0
+!P. Glarborg, M.U. Alzueta, K. Dam-Johansen, J.A. Miller, Kinetic Modeling of Hydrocarbon/Nitric Oxide Interactions in a Flow Reactor, Combustion and Flame 115 (1998) 1-27.
+
+!R71
+NNH+H=N2+H2		1.0E12	0	0
+!J.W. Bozzelli, A.M. Dean, O+ NNH: A possible new route for NOx formation in flames, International journal of chemical kinetics 27 (1995) 1097-1109
+
+!R72*
+NNH+O2=N2+HO2		1.20E+12	-3.40E-01	149
+!J.W. Bozzelli, A.M. Dean, O+ NNH: A possible new route for NOx formation in flames, International journal of chemical kinetics 27 (1995) 1097-1109
+
+!R73
+NNH+O2=N2+H+O2		5.0E13	0	0
+!P. Glarborg, M.U. Alzueta, K. Dam-Johansen, J.A. Miller, Kinetic Modeling of Hydrocarbon/Nitric Oxide Interactions in a Flow Reactor, Combustion and Flame 115 (1998) 1-27.
+
+!R74
+NNH+NO=N2+HNO		5.0E13	0	0
+!P. Glarborg, M.U. Alzueta, K. Dam-Johansen, J.A. Miller, Kinetic Modeling of Hydrocarbon/Nitric Oxide Interactions in a Flow Reactor, Combustion and Flame 115 (1998) 1-27.
+
+!R75
+N2H2+O=NNH+OH		3.3E08	1.5	497
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R76
+N2H2+H=NNH+H2		1.1E14	0	3128
+!P. Glarborg, J.A. Miller, B. Ruscic, S.J. Klippenstein, Modeling nitrogen chemistry in combustion, Progress in Energy and Combustion Science 67 (2018) 31-68
+
+!R77
+N2H2+OH=NNH+H2O		5.9E01	3.4	-1363
+!D.P. Linder, X. Duan, M. Page, Thermal rate constants for R+ N2H2? RH+ N2H (R= H, OH, NH2) determined from multireference configuration interaction and variational transition state theory calculations, The Journal of chemical physics 104 (1996) 6298-6307
+
+!R78
+N2H2+NH=NNH+NH2		2.4E06	2.0	-1192
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R79
+N2H2+NO=N2O+NH2		4.0E12	0	11922
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R80
+N2H2+NH2=NNH+NH3	8.8E-2	4.05	-1610
+!D.P. Linder, X. Duan, M. Page, Thermal rate constants for R+ N2H2? RH+ N2H (R= H, OH, NH2) determined from multireference configuration interaction and variational transition state theory calculations, The Journal of chemical physics 104 (1996) 6298-6307
+
+!R81
+H2NN+H=NNH+H2		4.8E08	1.5	-894
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R82
+H2NN+H=N2H2+H		7.0E13	0	0
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R83
+H2NN+O=NNH+OH		3.3E08	1.5	-894
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R84
+H2NN+O=NH2+NO		7.0E13	0	0
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R85
+H2NN+OH=NNH+H2O		2.4E06	2.0	-1192
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R86
+H2NN+HO2=NNH+H2O2	2.9E04	2.69	-1600
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R87
+H2NN+O2=NH2+NO2		1.5E12	0	5961
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R88
+H2NN+NH2=NNH+NH3	1.8E06	1.94	-1152
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R89
+N2H3+O=N2H2+OH		1.7E08	1.5	-646
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R90
+N2H3+O=NH2+HNO		3.0E13	0	0
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R91
+N2H3+H=N2H2+H2		2.4E08	1.5	-10
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R92
+N2H3+OH=N2H2+H2O	1.2E06	2.0	-1192
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R93
+N2H3+NH2=N2H2+NH3	9.2E05	1.94	-1152
+!A.M. Dean, J.W. Bozzelli, Combustion chemistry of nitrogen, Gas-phase combustion chemistry, Springer2000, pp. 125-341
+
+!R94
+N2H4+H=N2H3+H2		4.5E07	1.8	2613
+!D.-Y. Hwang, A.M. Mebel, Reaction mechanism of N2/H2 conversion to NH3: a theoretical study, The Journal of Physical Chemistry A 107 (2003) 2865-2874
+
+!R95
+N2H4+OH=N2H3+H2O	4.0E13	0	0
+!P. Glarborg, K. Dam-Johansen, J.A. Miller, R.J. Kee, M.E. Coltrin, Modeling the thermal DENOx process in flow reactors. Surface effects and nitrous oxide formation, International Journal of Chemical Kinetics 26 (1994) 421-436.
+
+!R96
+HNO+O=NO+OH             3.61E+13 0      0
+!W. Tsang, J.T. Herron, Chemical Kinetic Data Base for Propellant Combustion I. Reactions Involving NO, NO2, HNO, HNO2, HCN and N2O, Journal of Physical and Chemical Reference Data 20 (1991) 609-663.
+
+!R97
+HNO+H=NO+H2		4.47E11	0.72	650
+!M.R. Soto, M. Page, Ab initio variational transition-state-theory reaction-rate calculations for the gas-phase reaction H+ HNO? H2+ NO, The Journal of chemical physics 97 (1992) 7287-7296
+
+!R98*
+HNO+OH=NO+H2O           1.2E09   1.189     334
+!H.M.T. Nguyen, S. Zhang, J. Peeters, T.N. Truong, M.T. Nguyen, Direct ab initio dynamics studies of the reactions of HNO with H and OH radicals, Chem. Phys. Letters 388 (2004) 94-99.
+
+!R99
+HNO+N=NO+NH		1.0E13	 0	1990
+!R. Sivaramakrishnan, K. Brezinsky, G. Dayma, P. Dagaut, High pressure effects on the mutual sensitization of the oxidation of NO and CH4 C2H6 blends, Physical Chemistry Chemical Physics 9 (2007) 4230-4244
+
+!R100
+NO+O(+M)=NO2(+M)	1.3E15	-0.75	0
+LOW/9.44E24  -2.87  1551/
+TROE/0.962  10.0  7962/
+AR /0.6/ NO2 /6.2/ NO /1.8/ O2 /0.8/ N2O /4.4/ H2O /10.0/
+!Y. Zhang, O. Mathieu, E.L. Petersen, G. Bourque, H.J. Curran, Assessing the predictions of a NOx kinetic mechanism on recent hydrogen and syngas experimental data, Combustion and Flame 182 (2017) 122-141
+
+!R101
+NO+H=N+OH		2.17E14	0	49500
+!D. Baulch, C. Cobos, R. Cox, P. Frank, G. Hayman, T. Just, J. Kerr, T. Murrells, M. Pilling, J. Troe, Evaluated kinetic data for combustion modeling. Supplement I, Journal of Physical and Chemical Reference Data 23 (1994) 847-848
+
+!R102
+NO+H=NH+O		9.9E14	-0.1	69900
+!N. Cohen, K.J.J.o.p. Westberg, c.r. data, Chemical Kinetic Data Sheets for High-Temperature Reactions. Part II, 20 (1991) 1211-1311
+
+!R103
+NO+H+M=HNO+M		3.0E20	-1.75	0
+H2O/4.1/ H2/1.25/
+!R. Sivaramakrishnan, K. Brezinsky, G. Dayma, P. Dagaut, High pressure effects on the mutual sensitization of the oxidation of NO and CH4 C2H6 blends, Physical Chemistry Chemical Physics 9 (2007) 4230-4244
+
+!R104
+NO+HO2=NO2+OH        2.1E12   0.00    -497.0
+!D. Baulch, C.T. Bowman, C. Cobos, R. Cox, T. Just, J. Kerr, M. Pilling, D. Stocker, J. Troe, W.J.J.o.p. Tsang, c.r. data, Evaluated kinetic data for combustion modeling: supplement II, 34 (2005) 757-1397
+
+!R105
+N2O+H=N2+OH		6.4E07	1.835	13492
+!S.J. Klippenstein, L.B. Harding, P. Glarborg, J.A. Miller, The role of NNH in NO formation and control, Combustion and Flame 158 (2011) 774-789
+
+!R106
+N2O(+M)=N2+O(+M)          1.69E+11   0.00      57653       !\AUTHOR: YJZ !\REF: Zuev and Starikovskii, Khim. Fiz, 1991, 10: 52-63 !\OMMENT:
+LOW /7.2E+14 0 57410/                                      !\AUTHOR: YJZ !\REF:Javoy et al., IJCK, 2009, 41(5): 357-375 !\OMMENT:
+O2/1.4/ N2/1.7/ H2O/12.0/ NO/3.0/ N2O/3.5/
+!Zhang
+
+!R107
+NO2+H=NO+OH		1.507E14  0	362
+! Y. Zhang, O. Mathieu, E.L. Petersen, G. Bourque, H.J. Curran, Assessing the predictions of a NOx kinetic mechanism on recent hydrogen and syngas experimental data, Combustion and Flame 182 (2017) 122-141
+
+!R108
+NO2+O=NO+O2		5.86E12	0	-238
+! Y. Zhang, O. Mathieu, E.L. Petersen, G. Bourque, H.J. Curran, Assessing the predictions of a NOx kinetic mechanism on recent hydrogen and syngas experimental data, Combustion and Flame 182 (2017) 122-141
+
+!///////////////////////////////////////////////////////////////////////////////
+!                                New Additions
+!///////////////////////////////////////////////////////////////////////////////
+! The reactions below were added in the present study
+
+!R109
+HNO+O2=NO+HO2 2.00E+13	0	15898
+! Dean AM Bozzelli JW (Gardiner WC) Gas Phase Combustion Chemistry, Springer 2000
+
+!R110
+NH2+H(+M)=NH3(+M)                    1.6E14   0.000       0
+ LOW  /3.6E22 -1.760 0/
+ TROE /0.5 1E-30 1E30 1E30/
+!G. Altinay, R.G. Macdonald, Determination of the rate constant for the NH2(X2B1) + NH2 (X2B1) and Nh2(X2B1) + H recombination reactions in N2 as a function of temperature and pressure, J. Phys. Chem. A 119 (2015) 7593-7610.
+
+!///////////////////////////////////////////////////////////////////////////////
+!                                OHEX Submech
+!///////////////////////////////////////////////////////////////////////////////
+!R111
+H+O+M<=>OHEX+M                 1.500E+13     0.0000     5975.0
+H2/1/ H2O/6.5/ O2/0.4/ N2/0.4/ AR/0.35/
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R112
+OHEX+H2O<=>OH+H2O              5.930E+12     0.5000     -859.99
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R113
+OHEX+H2<=>OH+H2                2.950E+12     0.5000     -444.00
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R114
+OHEX+N2<=>OH+N2                1.080E+11     0.5000     -1242.0
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R115
+OHEX+OH<=>2OH                  6.010E+12     0.5000     -764.00
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R116
+OHEX+H<=>OH+H                  1.310E+12     0.5000      -167.01
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R117
+OHEX+AR<=>OH+AR                1.690E+12     0.0000     4135.0
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!R118
+OHEX<=>OH+HV                   1.450E+06     0.0000        0.00
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+!Comment from Han et al. (2020):
+!Chemkin can identify automatically the HV in photoactive reactions.
+!If other code has trouble identifying HV, e.g., the LOGOsoft,
+!please revise #41 (R118 in this study) as following:
+!OHEX<=>OH                   1.450E+06     0.0000        0.00
+
+!R119
+OHEX+O2<=>OH+O2                2.100E+12     0.5000     -477.99
+!T. Varga et al., Development of a joint hydrogen and syngas combustion mechanism based on an optimization approach, Int. J. Chem. Kinet. 48 (2016) 407-422.
+
+END

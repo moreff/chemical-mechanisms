@@ -1,0 +1,23 @@
+#!/bin/bash -e
+# Gotama, Gabriel J., et al. "Measurement of the laminar burning velocity and kinetics study of the importance of the hydrogen recovery mechanism of ammonia/hydrogen/air premixed flames." Combustion and Flame 236 (2022): 111753.
+# https://doi.org/10.1016/j.combustflame.2021.111753
+# https://www.sciencedirect.com/science/article/pii/S001021802100496X?via%3Dihub
+# Mechanism contains 26 species and 119 reactions.
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+
+echo "Getting files from web"
+mkdir TEMP
+wget --output-document=TEMP/$MECH.zip https://ars.els-cdn.com/content/image/1-s2.0-S001021802100496X-mmc2.zip
+unzip TEMP/$MECH.zip -d TEMP
+
+mv "TEMP/Mechanism Files/Gas-Phase-Kinetics_Reduced.inp"  $CHEMKIN_CHEM
+mv "TEMP/Mechanism Files/Thermodynamics_Reduced.dat" $CHEMKIN_THERMO
+mv "TEMP/Mechanism Files/Transport_Reduced.dat"  $CHEMKIN_TRANSPORT
+rm -r TEMP
+
+echo "Done"
