@@ -1,0 +1,27 @@
+#!/bin/bash -e
+# Zhang, Xiaoyuan, et al. "Combustion chemistry of ammonia/hydrogen mixtures: Jet-stirred reactor measurements and comprehensive kinetic modeling." Combustion and Flame 234 (2021): 111653.
+# https://doi.org/10.1016/j.combustflame.2021.111653
+# https://www.sciencedirect.com/science/article/pii/S0010218021003965?via%3Dihub
+# Mechanism contains 38 species and 263 reactions.
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+mkdir $DIR_CHEMKIN
+
+echo "Getting files from web"
+mkdir TEMP
+wget --output-document=TEMP/${MECH}_CHEM.zip https://ars.els-cdn.com/content/image/1-s2.0-S0010218021003965-mmc3.zip
+wget --output-document=TEMP/${MECH}_THERMO.zip https://ars.els-cdn.com/content/image/1-s2.0-S0010218021003965-mmc4.zip
+wget --output-document=TEMP/${MECH}_TRANSPORT.zip https://ars.els-cdn.com/content/image/1-s2.0-S0010218021003965-mmc5.zip
+unzip TEMP/${MECH}_CHEM.zip -d TEMP
+unzip TEMP/${MECH}_THERMO.zip -d TEMP
+unzip TEMP/${MECH}_TRANSPORT.zip -d TEMP
+
+mv "TEMP/SMM3_Reaction mechanism.inp" $CHEMKIN_CHEM
+mv "TEMP/SMM4_Thermodynamic data.dat" $CHEMKIN_THERMO
+mv "TEMP/SMM5_Transport data.dat" $CHEMKIN_TRANSPORT
+rm -r TEMP
+
+echo "Done"
