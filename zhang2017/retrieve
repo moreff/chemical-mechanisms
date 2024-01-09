@@ -8,7 +8,7 @@ MECH=${PWD##*/}
 
 cd ..
 source ./setpaths $MECH
-mkdir $DIR_CHEMKIN $DIR_CANTERA_ORIG
+mkdir $DIR_CHEMKIN
 
 echo "Getting files from web"
 mkdir TEMP
@@ -20,4 +20,5 @@ mv "TEMP/mechanisms/Zhang(2017)/therm_C0.dat" $CHEMKIN_THERMO
 mv "TEMP/mechanisms/Zhang(2017)/tran_C0.dat"  $CHEMKIN_TRANSPORT
 mv "TEMP/mechanisms/Zhang(2017)/chem_C0.cti"  $CANTERA_ORIG_CHEM
 rm -r TEMP
+
 echo "Done"

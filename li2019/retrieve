@@ -9,7 +9,7 @@ MECH=${PWD##*/}
 cd ..
 source ./setpaths $MECH
 mkdir $DIR_CHEMKIN
-echo $DIR_CHEMKIN
+
 echo "Getting files from web"
 mkdir TEMP
 wget --output-document=TEMP/${MECH}_CHEM.zip https://ars.els-cdn.com/content/image/1-s2.0-S0016236119314139-mmc5.zip
