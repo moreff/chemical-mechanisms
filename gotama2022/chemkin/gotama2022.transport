@@ -1,0 +1,43 @@
+!This file is part of the supplementary material for the following publication:
+!Measurement of the laminar burning velocity and kinetics study of the importance of the hydrogen recovery mechanism of ammonia/hydrogen/air premixed flames
+!Author: Gabriel J. Gotama, Akihiro Hayakawa, Ekenechukwu C. Okafor, Ryuhei Kanoshima, Masao Hayashi, Taku Kudo, and Hideaki Kobayashi
+!Combustion and Flame, Vol. 236, 111753
+!https://doi.org/10.1016/j.combustflame.2021.111753
+
+!Detailed Transport File
+
+H                  0   145.000     2.050     0.000     0.000     0.000
+H2                 1    38.000     2.920     0.000     0.790   280.000
+O                  0    80.000     2.750     0.000     0.000     0.000
+O2                 1   107.400     3.458     0.000     1.600     3.800
+OH                 1    80.000     2.750     0.000     0.000     0.000
+H2O                2   572.400     2.605     1.844     0.000     4.000
+N2                 1    97.530     3.621     0.000     1.760     4.000
+HO2                2   107.400     3.458     0.000     0.000     1.000
+H2O2               2   107.400     3.458     0.000     0.000     3.800
+AR                 0   136.500     3.330     0.000     0.000     0.000
+HE                 0    10.200     2.576     0.000     0.000     0.000
+OHEX               1    80.000     2.750     0.000     0.000     0.000
+N                  0    71.400     3.298     0.000     0.000     0.000
+NO                 1    97.530     3.621     0.000     1.760     4.000
+NO2                2   200.000     3.500     0.000     0.000     1.000
+N2O                1   232.400     3.828     0.000     0.000     1.000
+NH3                2   481.000     2.920     1.470     0.000    10.000
+HNO                2   116.700     3.492     0.000     0.000     1.000
+H2NO               2   116.700     3.492     0.000     0.000     1.000
+NNH                2    71.400     3.798     0.000     0.000     1.000
+NH2                2    80.000     2.650     0.000     2.260     4.000
+NH                 1    80.000     2.650     0.000     0.000     4.000
+N2H2               2    71.400     3.798     0.000     0.000     1.000
+N2H3               2   200.000     3.900     0.000     0.000     1.000
+N2H4               2   205.000     4.230     0.000     4.260     1.500
+H2NN               2    71.400     3.798     0.000     0.000     1.000
+HNO2               2   350.000     3.950     1.639     0.000     1.000 ! = HONO
+HONO2              2   400.000     4.200     0.200     0.000     1.000 ! = NO3
+NO3                2   400.000     4.200     0.200     0.000     1.000 ! CJP
+HON                2   116.700     3.492     0.000     0.000     1.000 ! = HNO
+HONO               2   350.000     3.950     1.639     0.000     1.000 ! CJP
+HNOH               2   116.700     3.492     0.000     0.000     1.000 ! JAM
+
+
+END
