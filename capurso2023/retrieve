@@ -1,0 +1,13 @@
+#!/bin/bash -e
+# Capurso, T., et al. "NOx pathways in lean partially premixed swirling H2-air turbulent flame." Combustion and Flame 248 (2023): 112581.
+# https://doi.org/10.1016/j.combustflame.2022.112581
+# Mechanism contains 15 species and 47 reactions.
+
+MECH=${PWD##*/}
+
+cd ..
+source ./setpaths $MECH
+
+echo "WARNING! Please construct .cti file manually using data from the supplementary materials of the original paper"
+echo "https://doi.org/10.1016/j.combustflame.2022.112581"
+echo "Put resulting file to $CANTERA_ORIG_CHEM"
