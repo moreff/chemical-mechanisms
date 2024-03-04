@@ -19,4 +19,7 @@ mv TEMP/H2_new_mech/H2_new_mech.txt  $CHEMKIN_CHEM
 mv TEMP/H2_new_mech/excite_therm.txt $CHEMKIN_THERMO
 mv TEMP/H2_new_mech/H2_new_trans.txt $CHEMKIN_TRANSPORT
 rm -r TEMP
+
+# Reactions (1, 72), (6,74), (7,75) are duplicate
+
 echo "Done"

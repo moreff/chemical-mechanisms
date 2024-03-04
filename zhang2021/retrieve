@@ -24,4 +24,6 @@ mv "TEMP/SMM4_Thermodynamic data.dat" $CHEMKIN_THERMO
 mv "TEMP/SMM5_Transport data.dat" $CHEMKIN_TRANSPORT
 rm -r TEMP
 
+# Reactions (7,23) (13,25) (14,26) are duplicate
+
 echo "Done"
