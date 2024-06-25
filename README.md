@@ -13,4 +13,4 @@ Sometimes, mechanism cannot be automatically converted to Cantera format due to 
 If so, please manually edit the `convert` script and add this option to `ck2cti` call
 
 ## License and rights
-References for mechanisms are listed in the `retrieve` file for a corresponding mechanism. The author of the repository is not responsible for the correctness of its contents. Please check licenses for mechanisms from corresponding references if applicable
+References for mechanisms are listed in the `retrieve` file for a corresponding mechanism. The author of the repository is not responsible for the correctness of its contents and doesn't own any rights to the published mechanisms. Please check licenses for mechanisms from corresponding references if applicable
